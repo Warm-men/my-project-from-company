@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`open freeService successful page renders correctly 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FDEDE9",
+      "borderColor": "#E85C40",
+      "borderRadius": 91,
+      "borderWidth": 1,
+      "height": 44,
+      "justifyContent": "center",
+      "marginTop": 16,
+      "opacity": 1,
+      "width": 630,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#E85C40",
+        "fontSize": 14,
+      }
+    }
+  />
+</View>
+`;

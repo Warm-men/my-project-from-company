@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tote express information should render correctly 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F7F7F7",
+      "borderColor": "#E9E9E9",
+      "borderRadius": 3,
+      "borderWidth": 1,
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "marginTop": 32,
+      "opacity": 1,
+      "padding": 12,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "height": 68,
+            "marginRight": 12,
+            "width": 68,
+          },
+          Object {
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      >
+        图片
+      </Text>
+      <Image
+        defaultSource={null}
+        source={1}
+        style={
+          Object {
+            "height": 68,
+            "width": 68,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        Object {
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#242424",
+            "fontSize": 14,
+          }
+        }
+      >
+        顺丰速递
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#242424",
+            "fontSize": 14,
+          }
+        }
+      >
+        13823791823
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#242424",
+          "fontSize": 11,
+          "marginRight": -5,
+        }
+      }
+    >
+      查看物流
+    </Text>
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#242424",
+            "fontSize": 20,
+          },
+          undefined,
+          Object {
+            "fontFamily": "EvilIcons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;

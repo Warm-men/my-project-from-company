@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test product item in new arrival collection should render with right style 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "marginBottom": 24,
+      "marginRight": 16,
+      "opacity": 1,
+    }
+  }
+  testID="test-product-item"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "height": 342,
+          "marginTop": 1,
+          "width": 228,
+        },
+        Object {
+          "overflow": "hidden",
+        },
+      ]
+    }
+  >
+    <FastImageView
+      defaultSource={null}
+      description="xx-tt"
+      resizeMode="cover"
+      source={
+        Object {
+          "uri": "xxx",
+        }
+      }
+      style={
+        Object {
+          "height": 342,
+          "width": 228,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      xx-tt
+    </Text>
+  </View>
+  <div>
+    MockComponent
+  </div>
+</View>
+`;

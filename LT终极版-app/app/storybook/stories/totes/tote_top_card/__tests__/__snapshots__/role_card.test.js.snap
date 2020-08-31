@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`role card renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFF",
+      "borderColor": "#f3f3f3",
+      "borderRadius": 4,
+      "borderWidth": 1,
+      "elevation": 1,
+      "flex": 1,
+      "marginHorizontal": 32,
+      "marginTop": 16,
+      "padding": 24,
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.08,
+      "shadowRadius": 4,
+    }
+  }
+>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  />
+</View>
+`;

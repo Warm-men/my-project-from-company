@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`select button in tote return free service should render correctly when focus 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#F2BE7D",
+      "borderRadius": 2,
+      "height": 32,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 104,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontSize": 14,
+      }
+    }
+  >
+    全部留下
+  </Text>
+</View>
+`;
+
+exports[`select button in tote return free service should render correctly when focus 2`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "borderColor": "#CCCCCC",
+      "borderRadius": 2,
+      "borderWidth": 1,
+      "height": 32,
+      "justifyContent": "center",
+      "opacity": 1,
+      "width": 104,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#5E5E5E",
+        "fontSize": 14,
+      }
+    }
+  >
+    全部留下
+  </Text>
+</View>
+`;

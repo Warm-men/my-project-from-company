@@ -1,0 +1,41 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.sensorsdata.analytics.android:android-gradle-plugin2:3.0.4'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        // Add jitpack repository (added by react-native-spinkit)
+        jcenter()
+        google()
+        mavenLocal()
+        maven { url "https://jitpack.io" }
+        maven {
+            url "$rootDir/../node_modules/react-native/android"
+        }
+        flatDir {
+            dirs 'libs'
+            dirs project(':react-native-letote-jdpay').file('libs')
+        }
+    }
+}
+subprojects {
+    afterEvaluate { project ->
+        if (project.hasProperty("android")) {
+            android {
+                compileSdkVersion 28
+                buildToolsVersion "28.0.3"
+            }
+        }
+    }
+}

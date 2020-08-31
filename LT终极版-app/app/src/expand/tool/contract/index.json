@@ -1,0 +1,175 @@
+{
+  "newSubscriptionType": {
+    "openQuestions": [
+      {
+        "title": "1.开通免密支付可以享受哪些特权？",
+        "description": [
+          {
+            "text": "1.享受续费会员每月直减100元特权，该优惠可与优惠券和奖励金叠加"
+          },
+          {
+            "text": "2.享受自在选服务特权，每箱增加2个衣位，将试衣间搬回家"
+          },
+          { "text": "3.享受「快速发货」特权，下单后新衣箱立即发出" }
+        ]
+      },
+      {
+        "title": "2.什么情况下会扣款？",
+        "description": [
+          {
+            "text": "1.在会员到期前第3天上午8点进行续费扣款并延长一个月会员期"
+          },
+          { "text": "2.在信用账户如产生费用后，将会按相应金额进行扣款" }
+        ]
+      },
+      {
+        "title": "3.如何取消免密支付？",
+        "description": [
+          {
+            "text": "除手中有超过一个衣箱的情况外，可至「我的-免密管理」页面随时取消「免密支付」功能"
+          }
+        ]
+      }
+    ],
+    "contractActiveWithNoReductionWelfare": [
+      [
+        {
+          "text": "1.享受自在选服务特权，每箱增加2个衣位，将试衣间搬回家"
+        }
+      ],
+      [{ "text": "2.享受「快速发货」特权，下单后新衣箱立即发出" }]
+    ],
+    "contractActiveWelfare": [
+      [
+        {
+          "text": "1.享受续费会员每月直减100元特权，该优惠可与优惠券和奖励金叠加"
+        }
+      ],
+      [{ "text": "2.享受自在选服务特权，每箱增加2个衣位，将试衣间搬回家" }],
+      [{ "text": "3.享受「快速发货」特权，下单后新衣箱立即发出" }]
+    ],
+    "openContractWelfare": {
+      "bannerUrl": "https://static.letote.cn/free_password/decrease_banner.png",
+      "contentArray": [
+        {
+          "logoUrl": "https://static.letote.cn/free_password/renewal_offer.png",
+          "title": "续费优惠",
+          "description": "享受续费会员每月直减100元，该优惠可与优惠券和奖励金叠加"
+        },
+        {
+          "logoUrl": "https://static.letote.cn/free_password/new_auto_pay_time.png",
+          "title": "续费时间",
+          "description": "平台将在会员到期前第3天上午8点自动续费并延长一个月会员期，如有优惠券和奖励金将会自动使用"
+        },
+        {
+          "logoUrl": "https://static.letote.cn/free_password/repayment.png",
+          "title": "自在选服务",
+          "description": "自在选服务，可免费开通自在选服务，每箱增加2个衣位，将试衣间搬回家,"
+        },
+        {
+          "logoUrl": "https://static.letote.cn/free_password/credit_account.png",
+          "title": "信用账户还款",
+          "description": "信用账户如产生费用，将会按相应金额进行自动还款"
+        },
+        {
+          "logoUrl": "https://static.letote.cn/free_password/new_fast_shipping.png",
+          "title": "衣箱快速发货",
+          "description": "下单后新衣箱立即发出（17点前下单当天发出）不必等待上个衣箱顺丰揽件"
+        },
+        {
+          "logoUrl": "https://static.letote.cn/free_password/new_unbind.png",
+          "title": "解除方式",
+          "description": "如需取消该功能可至「我的-免密管理」页面进行操作"
+        }
+      ]
+    },
+    "dialogMessage": [
+      { "text": "你将失去" },
+      { "text": "「续费会员直减100元」", "increasedBold": true },
+      { "text": "和" },
+      { "text": "「自在选服务」", "increasedBold": true },
+      { "text": "等特权，是否仍要取消？" }
+    ],
+    "agreement": {
+      "title": "莱尔托特免密支付服务协议",
+      "url": "https://wechat.letote.cn/agreement_free_password"
+    }
+  },
+  "subscriptionType": {
+    "contractActiveWelfare": [
+      [
+        { "text": "1.拥有" },
+        { "text": "「优先发货」", "increasedBold": true },
+        { "text": "特权，下单后新衣箱立即发出（17点前下单当天发出）" }
+      ],
+      [{ "text": "2.方便会员到期后及时续费，以免错过会员福利；" }],
+      [{ "text": "3.在平台中确认支付时，免去每次输入密码等烦扰" }]
+    ],
+    "contractActiveWithNoReductionWelfare": [
+      [
+        { "text": "1.拥有" },
+        { "text": "「优先发货」", "increasedBold": true },
+        { "text": "特权，下单后新衣箱立即发出（17点前下单当天发出）" }
+      ],
+      [{ "text": "2.方便会员到期后及时续费，以免错过会员福利；" }],
+      [{ "text": "3.在平台中确认支付时，免去每次输入密码等烦扰" }]
+    ],
+    "openQuestions": [
+      {
+        "title": "1.开通免密支付可以享受哪些特权？",
+        "description": [
+          { "text": "1.拥有「优先发货」特权；" },
+          { "text": "2.方便在会员到期后及时续费，以免错过会员福利；" },
+          { "text": "3.在平台中确认支付时，免去每次输入密码等烦扰" }
+        ]
+      },
+      {
+        "title": "2.什么情况下会扣款？",
+        "description": [
+          {
+            "text": "会员到期后于次日中午12:00自动扣除下月会费，如有优惠券奖励金自动抵扣",
+            "subText": "*季卡及年卡会员到期自动扣除下月会费"
+          }
+        ]
+      },
+      {
+        "title": "3.如何取消免密支付？",
+        "description": [
+          {
+            "text": "除手中有超过一个衣箱的情况外，可至「我的-免密管理」页面随时取消「免密支付」功能"
+          }
+        ]
+      }
+    ],
+    "openContractWelfare": {
+      "bannerUrl": "https://static.letote.cn/free_password/priority_in_delivery.png",
+      "contentArray": [
+        {
+          "logoUrl": "https://static.letote.cn/free_password/new_fast_shipping.png",
+          "title": "衣箱快速发货",
+          "description": "下单后新衣箱立即发出（17点前下单当天发出）不必等待上个衣箱顺丰揽件"
+        },
+        {
+          "logoUrl": "https://static.letote.cn/free_password/new_auto_pay_time.png",
+          "title": "自动续费时间",
+          "description": "会员到期后于次日中午12:00自动扣除下月会费，如有优惠券奖励金自动抵扣",
+          "subDescription": "* 季卡及年卡会员到期自动扣除下月会费"
+        },
+        {
+          "logoUrl": "https://static.letote.cn/free_password/new_unbind.png",
+          "title": "解除方式",
+          "description": "如需取消该功能可至「我的-免密管理」页面进行操作"
+        }
+      ]
+    },
+    "dialogMessage": [
+      { "text": "取消免密支付，你将失去" },
+      { "text": "「优先发货」", "increasedBold": true },
+      { "text": "特权，是否仍取消" }
+    ],
+    "agreement": {
+      "title": "莱尔托特免密支付服务协议",
+      "url": "https://wechat.letote.cn/agreement_free_password"
+    }
+  }
+}

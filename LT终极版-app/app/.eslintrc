@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0,
+    "react/no-unescaped-entities": ["error", { "forbid": [] }],
+    "prettier/prettier": [
+      "error",
+      {
+        "tabWidth": 2,
+        "printWidth": 80,
+        "singleQuote": true,
+        "jsxBracketSameLine": true,
+        "semi": false,
+        "trailingComma": "none"
+      }
+    ],
+    "import/namespace": "warning",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "extends": ["react-native-prettier"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true
+    }
+  },
+  "plugins": ["react-hooks"]
+}

@@ -1,0 +1,80 @@
+version: 2
+jobs:
+  build-job:
+    working_directory: ~/letote_app
+    docker:
+      - image: circleci/node:10
+    environment:
+      - CI: false
+    steps:
+      - checkout
+      # - restore_cache:
+      #     key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+      - run: yarn
+      # - save_cache:
+      #     key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+      #     paths:
+      #       - ~/.cache/yarn
+      - run:
+          name: npm_test
+          command: yarn test storybook/stories/totes/
+      - run:
+          name: npm test 
+          command: yarn test src/containers/
+
+      - run:
+          name: npm test
+          command: yarn test storybook/stories/account
+
+      - run:
+          name: npm test
+          command: yarn test storybook/stories/free_service
+
+      - run:
+          name: npm test
+          command: yarn test storybook/stories/home
+
+  # deploy-job:
+  #   environment:
+  #     - CI: false
+  #   docker:
+  #     - image: circleci/node:6.11
+  #   working_directory: ~/deploy-starter
+  #   steps:
+  #     - checkout
+  #     - add-ssh-keys:
+  #         fingerprints:
+  #           - '53:1f:d2:c0:88:85:c0:ae:ff:45:35:4a:d8:c6:71:5d'
+  #     - run:
+  #         name: install-rsync
+  #         command: |
+  #           echo 'deb http://us.archive.ubuntu.com/ubuntu/ xenial main restricted' | sudo tee -a /etc/apt/sources.list
+  #           echo 'deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates main restricted' | sudo tee -a /etc/apt/sources.list
+  #           echo 'deb http://us.archive.ubuntu.com/ubuntu/ xenial universe' | sudo tee -a /etc/apt/sources.list
+  #           echo 'deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates universe' | sudo tee -a /etc/apt/sources.list
+  #           echo 'deb http://us.archive.ubuntu.com/ubuntu/ xenial multiverse' | sudo tee -a /etc/apt/sources.list
+  #           echo 'deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates multiverse' | sudo tee -a /etc/apt/sources.list
+  #           echo 'deb http://us.archive.ubuntu.com/ubuntu/ xenial-backports main restricted universe multiverse' | sudo tee -a /etc/apt/sources.list
+  #           echo 'deb http://security.ubuntu.com/ubuntu xenial-security main restricted'
+  #           echo 'deb http://security.ubuntu.com/ubuntu xenial-security universe' | sudo tee -a /etc/apt/sources.list
+  #           echo 'deb http://security.ubuntu.com/ubuntu xenial-security multiverse' | sudo tee -a /etc/apt/sources.list
+  #           sudo apt update
+  #           sudo apt install rsync
+  #     - run:
+  #         name: install-npm
+  #         command: yarn install
+  #     - run:
+  #         name: build project
+  #         command: yarn build
+  #     - run:
+  #         name: upload
+  #         command: rsync -e "ssh -o StrictHostKeyChecking=no -p 11690" -az --delete --progress ./build/* ubuntu@52.83.224.191:/var/www/react/build/
+  #     - run:
+  #         name: upload to aliyun develop
+  #         command: ssh -o StrictHostKeyChecking=no -p 11690 ubuntu@52.83.224.191 '/bin/sh /usr/local/shell/sync-s3-static.sh'
+
+workflows:
+  version: 2
+  build-job:
+    jobs:
+      - build-job

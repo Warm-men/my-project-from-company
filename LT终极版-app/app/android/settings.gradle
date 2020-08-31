@@ -1,0 +1,61 @@
+rootProject.name = 'letotecn'
+include ':react-native-svg'
+project(':react-native-svg').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-svg/android')
+include ':react-native-webview'
+project(':react-native-webview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-webview/android')
+include ':react-native-view-shot'
+project(':react-native-view-shot').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-view-shot/android')
+include ':react-native-adhoc'
+project(':react-native-adhoc').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-adhoc/android')
+include ':react-native-syan-image-picker'
+project(':react-native-syan-image-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-syan-image-picker/android')
+include ':react-native-letote-jverification'
+project(':react-native-letote-jverification').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-jverification/android')
+include ':react-native-code-push'
+project(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')
+include ':react-native-gesture-handler'
+project(':react-native-gesture-handler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gesture-handler/android')
+
+include ':react-native-letote-alipay'
+project(':react-native-letote-alipay').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-alipay/android')
+include ':react-native-letote-jdpay'
+project(':react-native-letote-jdpay').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-jdpay/android')
+include ':react-native-letote-sensors'
+project(':react-native-letote-sensors').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-sensors/android')
+include ':react-native-letote-picker'
+project(':react-native-letote-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-picker/android')
+include ':react-native-appsflyer'
+project(':react-native-appsflyer').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-appsflyer/android')
+include ':react-native-letote-intent'
+project(':react-native-letote-intent').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-intent/android')
+include ':react-native-video'
+project(':react-native-video').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-video/android')
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+include ':react-native-splash-screen'
+project(':react-native-splash-screen').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-splash-screen/android')
+include ':react-native-spinkit'
+project(':react-native-spinkit').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-spinkit/android')
+include ':react-native-letote-picker'
+project(':react-native-letote-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-picker/android')
+include ':react-native-letote-xmpush'
+project(':react-native-letote-xmpush').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-xmpush/android')
+include ':react-native-letote-wechat'
+project(':react-native-letote-wechat').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-wechat/android')
+include ':react-native-letote-upgrade-android'
+project(':react-native-letote-upgrade-android').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-upgrade-android/android')
+include ':react-native-letote-udesk'
+project(':react-native-letote-udesk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-udesk/android')
+include ':react-native-letote-fast-image'
+project(':react-native-letote-fast-image').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-fast-image/android')
+include ':react-native-letote-baidumjt'
+project(':react-native-letote-baidumjt').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-baidumjt/android')
+include ':react-native-letote-android-webview'
+project(':react-native-letote-android-webview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-android-webview/android')
+include ':react-native-cookies'
+project(':react-native-cookies').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-cookies/android')
+include ':lottie-react-native'
+project(':lottie-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/lottie-react-native/src/android')
+include ':udeskSDKUI'
+project(':udeskSDKUI').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-letote-udesk/UdeskSDKUI')
+include ':app'

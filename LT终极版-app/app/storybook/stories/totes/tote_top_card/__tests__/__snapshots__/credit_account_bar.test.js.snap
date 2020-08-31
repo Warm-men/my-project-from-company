@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`credit account bar renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FEF8F2",
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "paddingHorizontal": 52,
+      "paddingVertical": 36,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#BD8846",
+        "fontSize": 14,
+      }
+    }
+  >
+    你的信用账户有待处理欠款
+  </Text>
+  <View
+    accessible={true}
+    isTVSelectable={true}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "borderColor": "#BD8846",
+        "borderRadius": 2,
+        "borderWidth": 1,
+        "opacity": 1,
+        "paddingHorizontal": 24,
+        "paddingVertical": 14,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#BD8846",
+          "fontSize": 12,
+        }
+      }
+    >
+      去查看
+    </Text>
+  </View>
+</View>
+`;

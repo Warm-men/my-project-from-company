@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tote return remind should render correctly when auto pickup 1`] = `
+<View
+  style={
+    Object {
+      "margin": 15,
+      "paddingHorizontal": 8,
+      "paddingTop": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#333",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "paddingBottom": 15,
+        "paddingTop": 5,
+      }
+    }
+  >
+    预约快递上门取件说明
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#999",
+        "fontSize": 13,
+        "fontWeight": "400",
+        "lineHeight": 24,
+      }
+    }
+  >
+    1、预约归还无需快递费用，取件时间范围以页面显示为准
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#999",
+        "fontSize": 13,
+        "fontWeight": "400",
+        "lineHeight": 24,
+      }
+    }
+  >
+    2、顺丰小哥上门时请将要归还的衣服和配饰装进袋子里交给他即可，请注意不要遗漏自己的物品在衣服里
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#999",
+        "fontSize": 13,
+        "fontWeight": "400",
+        "lineHeight": 24,
+      }
+    }
+  >
+    3、由于国家相关部门要求实施快递实名制，所以在顺丰小哥上门时可能需要登记身份证号码
+  </Text>
+</View>
+`;
+
+exports[`tote return remind should rendere correctly when self dilivere 1`] = `
+<View
+  style={
+    Object {
+      "margin": 15,
+      "paddingHorizontal": 8,
+      "paddingTop": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#333",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "paddingBottom": 15,
+        "paddingTop": 5,
+      }
+    }
+  >
+    自行寄回说明
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#999",
+        "fontSize": 13,
+        "fontWeight": "400",
+        "lineHeight": 24,
+      }
+    }
+  >
+    1、选择自寄后，可以自行联系顺丰或者使用丰巢智能柜寄回
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#999",
+        "fontSize": 13,
+        "fontWeight": "400",
+        "lineHeight": 24,
+      }
+    }
+  >
+    2、请寄回平台指定的地址并选择顺丰到付，暂不接受其他快递
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#999",
+        "fontSize": 13,
+        "fontWeight": "400",
+        "lineHeight": 24,
+      }
+    }
+  >
+    3、寄出后请务必输入顺丰单号，否则将被视为没有通过平台归还，产生20元/次的物流费用，并可能导致产生商品滞还金等费用
+  </Text>
+</View>
+`;

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`express_information page test render express_information 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "marginLeft": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#e85c40",
+        "borderRadius": 20,
+        "height": 20,
+        "justifyContent": "center",
+        "width": 20,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 11,
+        }
+      }
+    >
+      收
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#333",
+        "flex": 1,
+        "fontSize": 14,
+        "lineHeight": 20,
+        "marginLeft": 16,
+      }
+    }
+  >
+    [收货地址] 
+    北京
+    北京市
+    东城区
+    123
+     
+    何兆
+     
+    15555555555
+  </Text>
+</View>
+`;

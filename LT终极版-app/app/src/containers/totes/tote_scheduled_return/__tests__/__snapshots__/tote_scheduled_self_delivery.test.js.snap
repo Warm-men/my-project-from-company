@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tote scheduled self delivery should render correctly 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#F7F7F7",
+        "borderBottomWidth": 7,
+        "marginTop": 23,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#333",
+          "fontSize": 16,
+          "fontWeight": "600",
+          "marginLeft": 24,
+        }
+      }
+    >
+      寄回地址
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginTop": 8,
+          "paddingHorizontal": 24,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#666",
+            "flex": 1,
+            "fontSize": 14,
+            "lineHeight": 22,
+            "marginRight": 20,
+          }
+        }
+      >
+        东莞
+      </Text>
+      <View
+        accessible={true}
+        hitSlop={
+          Object {
+            "bottom": 10,
+            "left": 20,
+            "right": 20,
+            "top": 10,
+          }
+        }
+        isTVSelectable={true}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "borderColor": "#ddd",
+            "borderRadius": 3,
+            "borderWidth": 1,
+            "height": 24,
+            "justifyContent": "center",
+            "opacity": 1,
+            "width": 47,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#666666",
+              "fontSize": 13,
+            }
+          }
+        >
+          复制
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "marginHorizontal": 4,
+            "marginTop": 24,
+          },
+          Object {
+            "overflow": "hidden",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      >
+        图片
+      </Text>
+      <Image
+        defaultSource={null}
+        source={1}
+        style={Object {}}
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "margin": 15,
+        "paddingHorizontal": 8,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#333",
+          "fontSize": 16,
+          "fontWeight": "600",
+          "paddingBottom": 15,
+          "paddingTop": 5,
+        }
+      }
+    >
+      自行寄回说明
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#999",
+          "fontSize": 13,
+          "fontWeight": "400",
+          "lineHeight": 24,
+        }
+      }
+    >
+      1、选择自寄后，可以自行联系顺丰或者使用丰巢智能柜寄回
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#999",
+          "fontSize": 13,
+          "fontWeight": "400",
+          "lineHeight": 24,
+        }
+      }
+    >
+      2、请寄回平台指定的地址并选择顺丰到付，暂不接受其他快递
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#999",
+          "fontSize": 13,
+          "fontWeight": "400",
+          "lineHeight": 24,
+        }
+      }
+    >
+      3、寄出后请务必输入顺丰单号，否则将被视为没有通过平台归还，产生20元/次的物流费用，并可能导致产生商品滞还金等费用
+    </Text>
+  </View>
+</View>
+`;

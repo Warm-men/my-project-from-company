@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tote returned self delivery fc address card should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "borderBottomColor": "#F7F7F7",
+      "borderBottomWidth": 7,
+      "marginTop": 23,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#333",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "marginLeft": 24,
+      }
+    }
+  >
+    寄回地址
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginTop": 8,
+        "paddingHorizontal": 24,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#666",
+          "flex": 1,
+          "fontSize": 14,
+          "lineHeight": 22,
+          "marginRight": 20,
+        }
+      }
+    >
+      东莞市
+    </Text>
+    <View
+      accessible={true}
+      hitSlop={
+        Object {
+          "bottom": 10,
+          "left": 20,
+          "right": 20,
+          "top": 10,
+        }
+      }
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "borderColor": "#ddd",
+          "borderRadius": 3,
+          "borderWidth": 1,
+          "height": 24,
+          "justifyContent": "center",
+          "opacity": 1,
+          "width": 47,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#666666",
+            "fontSize": 13,
+          }
+        }
+      >
+        复制
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "marginHorizontal": 4,
+          "marginTop": 24,
+        },
+        Object {
+          "overflow": "hidden",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      图片
+    </Text>
+    <Image
+      defaultSource={null}
+      source={1}
+      style={Object {}}
+    />
+  </View>
+</View>
+`;
