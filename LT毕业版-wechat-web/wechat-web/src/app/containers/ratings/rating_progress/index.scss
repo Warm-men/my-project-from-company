@@ -1,0 +1,62 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+.rating-progress {
+  .rating-container {
+    display: flex;
+    .progress-item {
+      flex: 1;
+      height: 14px;
+      position: relative;
+      .progress-line {
+        height: 2px;
+        transform: translateY(9px);
+        background-color: #e4e4e4;
+      }
+      .line-active {
+        background-color: #e3b356;
+      }
+      .round {
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        width: flex_pt(14);
+        height: flex_pt(14);
+        background-color: #e4e4e4;
+        border-radius: 50%;
+      }
+      .round-active {
+        background-image: url('../images/progress_round_active.svg');
+        background-size: flex_pt(14) flex_pt(14);
+      }
+    }
+    .progress-item-end {
+      flex: 1.74;
+      .end {
+        width: flex_pt(20);
+        height: flex_pt(24);
+        background: url('../images/red_envelope.svg') no-repeat center;
+        background-size: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -4px;
+        border-radius: 0;
+      }
+      .red-envelope-active {
+        background-image: url('../images/red_envelope_opened.svg');
+      }
+    }
+  }
+  .has-accept-red-envelope {
+    font-size: 12px;
+    color: #242424;
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+    .rating-num {
+      color: #989898;
+      .red-color {
+        color: #e85c40;
+      }
+    }
+  }
+}

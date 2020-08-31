@@ -1,0 +1,63 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+.share-phote {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative; // user-select: none;
+  .share-img {
+    width: 100vw;
+    padding: 22px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 7px solid #f7f7f7;
+    .help {
+      font-size: 12px;
+      color: #0076ff;
+      display: flex;
+      align-items: flex-end;
+      i {
+        display: inline-block;
+        height: flex_pt(15);
+        width: flex_pt(14);
+        background: url('./images/help.png') no-repeat center;
+        background-size: 100%;
+        margin-right: 4px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+  .share-input {
+    margin-left: flex_pt(16);
+    width: flex_pt(82);
+    height: flex_pt(82);
+    background: url('./images/add_photo.png') no-repeat center;
+    background-size: 100%;
+  }
+  .share-progress {
+    width: flex_pt(82);
+    height: flex_pt(82);
+    .share-pro {
+      width: flex_pt(82);
+      height: flex_pt(82);
+      background-size: cover;
+      background-position-x: 50%;
+      background-position-y: 50%;
+      background-repeat: no-repeat;
+      display: inline-block;
+      position: absolute;
+      left: flex_pt(16);
+    }
+  }
+  .share-incentive {
+    padding-left: 15px;
+    font-size: 12px;
+    color: #5e5e5e;
+    letter-spacing: 0.4px;
+    line-height: 12px;
+    margin-bottom: 90px;
+    margin-top: 12px;
+    .text {
+      color: #e85c40;
+    }
+  }
+}

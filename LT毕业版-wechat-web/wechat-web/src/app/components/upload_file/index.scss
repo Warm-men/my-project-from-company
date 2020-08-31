@@ -1,0 +1,8 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+.share-input {
+  width: flex_pt(82);
+  height: flex_pt(82);
+  background: url('./images/add_photo.png') no-repeat center;
+  background-size: 100%;
+}

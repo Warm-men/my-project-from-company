@@ -1,0 +1,51 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.finish-onboarding {
+  position: relative;
+  .finish-animate {
+    width: 100vw;
+    height: 100vh;
+  }
+  .finish-tips {
+    position: absolute;
+    bottom: flex_pt(155);
+    left: 0px;
+    width: 100vw;
+    text-align: center;
+    opacity: 0;
+    &.animate {
+      animation: animate 1s;
+      opacity: 1;
+    }
+    .loading-img {
+      width: flex_pt(20);
+      margin-top: flex_pt(-20);
+    }
+    .tips-text {
+      font-size: 14px;
+      color: #242424;
+      letter-spacing: 0;
+      text-align: center;
+      margin-bottom: flex_pt(46);
+    }
+    .open-btn {
+      display: inline-block;
+      background: #ea5c39;
+      border-radius: 2px;
+      width: flex_pt(164);
+      height: flex_pt(48);
+      line-height: flex_pt(48);
+      color: #fff;
+    }
+  }
+}
+
+@keyframes animate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

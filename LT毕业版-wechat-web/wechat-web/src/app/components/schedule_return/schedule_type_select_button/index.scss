@@ -1,0 +1,39 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.lineView {
+  width: 22px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #f2be7d;
+  margin-bottom: 2px;
+}
+.lineView {
+  width: 22px;
+  height: 4px;
+  border-radius: 3px;
+  margin-bottom: 2px;
+}
+.whiteColor {
+  background-color: #f2be7d;
+}
+.yellowColor {
+  background-color: #fff;
+}
+.buttonViewWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+.buttonItem {
+  font-size: flex_pt(16);
+  font-weight: 450;
+  margin-bottom: flex_pt(8);
+}
+.selectButtonOnFocusText {
+  color: #333;
+}
+.selectButtonOnBlureText {
+  color: #ccc;
+}

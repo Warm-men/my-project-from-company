@@ -1,0 +1,98 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+.share-product-item {
+  height: flex_pt(142);
+  padding: 16px flex_pt(15);
+  position: relative;
+  border-top: 1px solid #f3f3f3;
+  display: flex;
+  align-items: center;
+  .share-img-box {
+    position: relative;
+    .stock-tips-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 50;
+      opacity: 0.6;
+      background-color: #fff;
+      -webkit-justify-content: center;
+      justify-content: center;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      .stock-tips {
+        font-size: 11px;
+        color: #ffffff;
+        background-color: #242424;
+        width: 17.06667vw;
+        text-align: center;
+        z-index: 60;
+        padding: 2px 0;
+      }
+    }
+  }
+  img.share-item {
+    display: inline-block;
+    width: flex_pt(76);
+    height: flex_pt(110);
+  }
+  .describe {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 16px;
+    div {
+      &:nth-of-type(1) {
+        font-size: 15px;
+        color: #242424;
+        letter-spacing: 0.94px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      &:nth-of-type(2) {
+        font-size: 12px;
+        color: #989898;
+        letter-spacing: 0.75px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 46vw;
+      }
+      &:nth-of-type(3) {
+        font-size: 15px;
+        font-size: 12px;
+        color: #989898;
+        letter-spacing: 0.75px;
+        margin-top: 16px;
+      }
+    }
+  }
+  button {
+    border: none;
+    outline: none;
+    width: flex_pt(75);
+    height: flex_pt(28);
+    line-height: flex_pt(28);
+    font-size: 12px;
+    color: $white;
+    text-align: center;
+    border-radius: 4px;
+    background: #ea5c39;
+    position: absolute;
+    right: flex_pt(15);
+    top: 50%;
+    transform: translateY(-50%);
+    &:active {
+      background-color: $primary-color-faded;
+    }
+  }
+  .has-share {
+    background-color: $white;
+    color: $black;
+    border: 1px solid #b2b2af;
+  }
+}

@@ -1,0 +1,129 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.container-box {
+  padding: 32px 30px 100px;
+}
+
+.onboarding-tips-text {
+  font-size: 14px;
+  color: #0076ff;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 47px;
+
+  &.small-text {
+    font-size: 12px;
+  }
+
+  .attention {
+    width: flex_pt(14);
+    height: flex_pt(14);
+    margin-right: 4px;
+  }
+}
+
+.profile-style {
+  .figure-detail-img-box {
+    flex: 1;
+
+    .img-box {
+      height: 352px;
+      width: 120px;
+    }
+  }
+
+  .figure-detail-ipuut {
+    flex: 1;
+  }
+}
+
+.shape-select-box {
+  margin-top: 18px;
+
+  .shape-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .select-icon {
+      width: 7px;
+      height: 12px;
+
+      &.next {
+        transform: rotate(180deg);
+      }
+    }
+
+    .select-text {
+      font-size: 16px;
+      color: #333333;
+      text-align: center;
+      line-height: 16px;
+      margin: 0px 24px;
+    }
+  }
+
+  .select-btn {
+    width: flex_pt(40);
+    height: flex_pt(20);
+    font-size: 12px;
+    line-height: flex_pt(20);
+    text-align: center;
+    border: 1px solid #979797;
+    border-radius: 100px;
+    display: inline-block;
+    margin-top: 15px;
+
+    &.active {
+      border: 1px solid #ea5c39;
+      color: #ea5c39;
+    }
+  }
+}
+.hint-content {
+  margin-top: flex_pt(12);
+  font-size: 14px;
+  color: #5e5e5e;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+}
+
+.hint-tips {
+  border-radius: 4px;
+  background-color: #fff5f4;
+  color: #5e5e5e;
+  font-size: 12px;
+  margin-top: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.rule-tips {
+  padding: 10px;
+  background-color: #fff5f4;
+  border-radius: 4px;
+  color: #5e5e5e;
+  font-size: 12px;
+  width: flex_pt(345);
+  margin: flex_pt(23) auto;
+}
+
+.profile-style {
+  .submiting {
+    background-color: #f8cfc4 !important;
+  }
+}
+
+.figure-detail-tips {
+  font-size: flex_pt(12);
+  color: #000000;
+  margin-bottom: flex_pt(40);
+  margin-top: flex_pt(15);
+  .tips-icon {
+    color: #e85c40;
+  }
+}

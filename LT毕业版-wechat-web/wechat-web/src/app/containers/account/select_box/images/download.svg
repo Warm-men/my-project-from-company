@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>我的-下载APPicon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="我的-下载APPicon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18,5 L21,5 C21.5522847,5 22,5.44771525 22,6 L22,20 C22,20.5522847 21.5522847,21 21,21 L3,21 C2.44771525,21 2,20.5522847 2,20 L2,6 C2,5.44771525 2.44771525,5 3,5 L6,5" id="Combined-Shape" stroke="#242424" stroke-width="1.5"></path>
+        <path d="M12,3 L12,15.2455415" id="Path-13" stroke="#E85C40" stroke-width="1.5"></path>
+        <polyline id="Rectangle" stroke="#E85C40" stroke-width="1.5" transform="translate(12.000000, 12.000000) rotate(-315.000000) translate(-12.000000, -12.000000) " points="15 9 15 15 9 15"></polyline>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.jd-credit-judge {
+  text-align: center;
+  padding-top: flex_pt(141);
+  .icon {
+    width: 75px;
+    margin-bottom: flex_pt(24);
+  }
+  .text {
+    font-size: 13px;
+    color: #242424;
+    letter-spacing: 0.54px;
+    text-align: center;
+    width: flex_pt(178);
+    margin: 0px auto flex_pt(32);
+  }
+  .go-back-btn {
+    width: flex_pt(164);
+    height: flex_pt(48);
+    text-align: center;
+    line-height: flex_pt(48);
+    border: 1px solid #b2b2af;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 14px;
+    color: #242424;
+    letter-spacing: 0;
+  }
+}

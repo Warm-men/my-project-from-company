@@ -1,0 +1,240 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+@import 'src/assets/stylesheets/variables';
+
+.confirm-totes-suc {
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  .success-icon {
+    width: 64px;
+    margin-top: 54px;
+  }
+  .success-title {
+    margin-top: 17px;
+    font-size: 18px;
+    color: #242424;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    font-weight: bold;
+  }
+  .banner-top {
+    width: flex_pt(375);
+    height: flex_pt(154);
+    background: url('./images/banner.png') no-repeat center;
+    background-size: flex_pt(375) flex_pt(154);
+    position: absolute;
+  }
+  .top-view-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 108px;
+    .success-icon {
+      width: flex_pt(24);
+      height: flex_pt(24);
+      background: url('./images/success_icon.png') no-repeat center;
+      background-size: flex_pt(24) flex_pt(24);
+      margin-right: 5px;
+    }
+
+    .top-text {
+      font-size: 20px;
+      color: #ffffff;
+      letter-spacing: 0.6px;
+      font-weight: 500;
+    }
+  }
+  .tips-text {
+    font-size: 12px;
+    color: #989898;
+    letter-spacing: 0.17px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 12px;
+
+    .tips-imp {
+      font-size: 18px;
+      color: #242424;
+      letter-spacing: 1px;
+
+      .price {
+        font-size: 22px;
+        color: $primary-color-new;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .back-totes-btn {
+    font-size: 14px;
+    color: #242424;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+  }
+
+  .referral-img {
+    margin-top: 30px;
+  }
+
+  .share-totes {
+    background: #e85c40;
+    color: #fff;
+    border: 1px solid #e85c40;
+    margin-bottom: flex_pt(117);
+    margin-top: 44px;
+    width: 200px;
+    font-weight: inherit;
+  }
+
+  .abtest-mb {
+    margin-bottom: flex_pt(32);
+  }
+  .button-view {
+    margin-top: 54px;
+  }
+  .renew-view {
+    width: flex_pt(250);
+    margin: 8px auto 0px;
+    font-size: 14px;
+    color: #5e5e5e;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    .lineHeightText {
+      color: #f2a955;
+      font-weight: 500;
+    }
+  }
+  .fix-margin-bottom {
+    margin-bottom: 30px;
+  }
+  .referral-banner {
+    width: flex_pt(335);
+    margin: 0px auto flex_pt(108);
+    display: block;
+    border-radius: 3px;
+  }
+  .referral-btn {
+    font-size: 14px;
+    font-weight: 500;
+    color: #e85c40;
+    padding-bottom: 3px;
+    border-bottom: 1px #e85c40 solid;
+  }
+  .message-div span {
+    display: block;
+  }
+}
+
+.confirm-success {
+  padding-bottom: 80px;
+  .tote-ratings-modal {
+    height: 100vh;
+
+    .bg-totes-suc {
+      margin-top: 0px;
+      background: url('~src/assets/images/plans/icon_buysuccessful.png')
+        no-repeat center;
+      width: 60px;
+      height: 60px;
+      background-size: 100%;
+    }
+
+    .textarea-box {
+      margin-bottom: 20px;
+    }
+
+    .bad-tote-rating-container {
+      margin-top: 20px;
+    }
+
+    .textarea-container {
+      height: flex_pt(65);
+      margin-top: flex_pt(14);
+      padding: 12px 12px 32px;
+    }
+
+    .rating-question {
+      padding-top: 28px;
+    }
+
+    .fix-margin-bottom {
+      margin-bottom: 16px;
+    }
+
+    .selectable-button-container {
+      .btn-selectable {
+        background-color: transparent;
+        border-color: #b2b2af;
+        width: inherit;
+        height: 50px;
+        border-radius: 100px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        line-height: 1.67;
+        letter-spacing: 1.6px;
+        text-align: center;
+        font-variant-numeric: lining-nums;
+        height: inherit;
+        width: inherit;
+        line-height: normal;
+        padding: 3.5px 5.5px;
+        color: #5e5e5e;
+        margin: 6px 5px;
+        letter-spacing: 0.2px;
+        border-radius: 100px;
+        border: 1px solid #ccc;
+        &.selected {
+          color: $white;
+          background-color: $tote-tracker-bar-orange;
+          border-color: $tote-tracker-bar-orange;
+        }
+      }
+    }
+  }
+
+  .confirm-rating-box {
+    background-color: #fff;
+    padding: 0px flex_pt(28) 60px;
+    z-index: 1;
+  }
+  .fix-select-button-ui {
+    display: block;
+    height: 32px;
+  }
+}
+
+.tote-ratings-container {
+  padding: 0px;
+  .RatingQuestion-container {
+    margin-top: 16px;
+    .select-button-ui {
+      width: flex_pt(288);
+      height: flex_pt(40);
+      display: block;
+      margin: auto;
+      font-size: 13px;
+      color: #5e5e5e;
+      border: 1px solid #cccccc;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .selected {
+      border: 1px solid #e85c40;
+      background: #fdede9;
+      color: #e85c40;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import '~styles/flex_box';
+.city-input {
+  margin-top: 35px;
+  border-bottom: 1px solid #f3f3f3;
+
+  .city-title {
+    font-size: 16px;
+    color: #242424;
+    letter-spacing: 0;
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 13px;
+  }
+  .input-box {
+    height: 40px;
+    background-image: url('~src/assets/images/up-down-arrows.svg');
+    background-repeat: no-repeat;
+    background-size: 9px 5px;
+    background-position: center right;
+
+    .input-value {
+      line-height: 40px;
+      font-size: 13px;
+      color: #242424;
+    }
+    .input-placeholder {
+      line-height: 40px;
+      font-size: 13px;
+      color: #ccc;
+    }
+  }
+}

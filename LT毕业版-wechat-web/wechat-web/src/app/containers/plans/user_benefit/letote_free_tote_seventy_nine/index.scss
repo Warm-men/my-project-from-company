@@ -1,0 +1,57 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+.letote-free-tote {
+  height: 164px;
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  .bnefit-item {
+    display: inline-block;
+    height: 73.5px;
+    padding-left: flex_pt(15);
+    padding-top: 24px;
+    &:nth-of-type(2n-1) {
+      width: 56%;
+    }
+    &:nth-of-type(2n) {
+      width: 44%;
+    }
+    .four-add-three {
+      background: url('./img/four_three.png') no-repeat center;
+    }
+    .wash-clothing {
+      background: url('./img/wash.png') no-repeat center;
+    }
+    .selected_clothing {
+      background: url('./img/select_clothe.png') no-repeat center;
+    }
+    .shunfeng {
+      background: url('./img/shunfen.png') no-repeat center;
+    }
+    .icon {
+      display: inline-block;
+      width: flex_pt(40);
+      height: flex_pt(40);
+      background-size: 100%;
+    }
+    .desc {
+      padding-left: flex_pt(4);
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 4px;
+      span {
+        display: block;
+      }
+      .title {
+        font-size: flex_pt(14);
+        color: #242424;
+        letter-spacing: 0;
+        font-weight: bold;
+      }
+      .detail {
+        font-size: flex_pt(12);
+        color: #989898;
+        letter-spacing: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.apply-fail {
+  width: 100vw;
+  min-height: 100vh;
+  img {
+    &:nth-of-type(1) {
+      display: block;
+      width: flex_pt(64);
+      height: flex_pt(64);
+      margin: 36px auto 10px;
+    }
+    &:nth-of-type(2) {
+      display: block;
+      width: 220px;
+      height: 15px;
+      margin: 48px auto 10px;
+    }
+  }
+  span {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    color: $dark-gray;
+    font-size: 13px;
+  }
+  p {
+    width: 100vw;
+    text-align: center;
+    margin-top: 14px;
+    color: $darkest-gray;
+    font-size: 27px;
+    font-weight: bold;
+  }
+  .result {
+    width: 100vw;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .detail {
+    width: flex_pt(320);
+    margin: 0 auto;
+    color: $dark-gray;
+  }
+  button {
+    display: block;
+    width: flex_pt(200);
+    height: 48px;
+    border: 1px solid $mid-gray;
+    outline: none;
+    border-radius: 4px;
+    background-color: $white;
+    color: $darkest-gray;
+    margin: 48px auto 50px;
+  }
+}

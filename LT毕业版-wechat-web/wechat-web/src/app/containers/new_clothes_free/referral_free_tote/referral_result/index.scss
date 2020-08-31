@@ -1,0 +1,28 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.referral-success {
+  img.refer-suc {
+    display: block;
+    margin: 60px auto 24px;
+    width: flex_pt(77);
+    height: flex_pt(77);
+  }
+  .desc {
+    width: 100%;
+    text-align: center;
+    font-size: flex_pt(18);
+    font-weight: bold;
+  }
+  .details {
+    width: 100%;
+    text-align: center;
+    font-size: flex_pt(12);
+    color: #989898;
+  }
+  img.referral-code {
+    display: block;
+    width: flex_pt(250);
+    height: flex_pt(250);
+  }
+}

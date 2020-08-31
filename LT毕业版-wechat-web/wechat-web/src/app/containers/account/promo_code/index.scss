@@ -1,0 +1,69 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.promo-code {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $body-background-color;
+  padding-bottom: 72px;
+  &.tote {
+    padding-top: 1px;
+  }
+  .nav-bar {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 flex_pt(45);
+    background-color: $white;
+    nav {
+      display: inline-block;
+      text-align: center;
+      width: 33%;
+      color: $font-not-active;
+      font-size: 13px;
+    }
+    nav.pre-page-is-plans {
+      width: 50%;
+    }
+    .active {
+      color: $darkest-gray;
+      position: relative;
+      &:after {
+        content: '';
+        width: 12px;
+        height: 3px;
+        background-color: $active-border-bottom;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .not-promo-code {
+    width: flex_pt(100);
+    height: 140px;
+    margin-top: 160px;
+    .warn-bg {
+      display: block;
+      width: flex_pt(82);
+      margin: 0 auto;
+      height: 85px;
+      background: url('./images/icon_coupons_no.svg') no-repeat center;
+      background-size: 100%;
+    }
+    p.warn-text {
+      font-size: 16px;
+      color: $dark-gray;
+      text-align: center;
+    }
+    &.unshow {
+      margin-top: 0px;
+      padding-top: 160px;
+      text-align: center;
+      width: inherit;
+      .warn-bg {
+        margin: 0px auto;
+      }
+    }
+  }
+}

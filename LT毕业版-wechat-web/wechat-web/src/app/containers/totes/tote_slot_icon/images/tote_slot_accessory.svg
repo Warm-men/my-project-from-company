@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="14px" viewBox="0 0 30 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>配饰位-带数字</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="配饰位">
+            <g id="配饰位-带数字">
+                <g id="衣位个数-带数字">
+                    <rect id="Rectangle-4" fill="#D67D6B" opacity="0.600000024" x="0" y="0" width="30" height="14" rx="7"></rect>
+                    <circle id="Oval-18" stroke="#FFFFFF" cx="8" cy="8" r="3.5"></circle>
+                    <polygon id="Rectangle-25" fill="#FFFFFF" points="7 2 9 2 10 3 8 5 6 2.99688721"></polygon>
+                    <polygon id="Combined-Shape" fill="#FFFFFF" points="15.7930995 5.98666885 16.5862822 4.61283619 17.4270741 5.09826764 16.3536275 6.95753175 17.4270741 8.81679587 16.5862822 9.30222732 15.7930995 7.92839466 14.9999168 9.30222732 14.1591249 8.81679587 15.2325716 6.95753175 14.1591249 5.09826764 14.9999168 4.61283619 15.7930995 5.98666885"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

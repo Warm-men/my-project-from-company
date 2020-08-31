@@ -1,0 +1,194 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.credit-container {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .empty-container {
+    display: flex;
+    margin-top: flex_pt(86);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .empty {
+      padding: 15%;
+      width: flex_pt(115);
+      height: flex_pt(115);
+    }
+    .empty-text {
+      font-size: 14px;
+      color: #d1d1d1;
+      letter-spacing: 0;
+      line-height: 14px;
+    }
+  }
+  .header-container {
+    width: flex_pt(335);
+
+    .credit-banner {
+      background-image: url('~src/assets/images/credit_account/credit_account.png');
+      background-size: 100% 100%;
+      display: flex;
+      width: flex_pt(335);
+      height: flex_pt(134);
+      justify-content: space-between;
+      .text-balance-container {
+        margin-top: 33px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        .text-balance {
+          font-family: PingFang-SC-Bold;
+          font-size: 13px;
+          color: #ffffff;
+          letter-spacing: 0;
+          line-height: 16px;
+        }
+        .price {
+          font-family: PingFang-SC-Bold;
+          font-size: 32px;
+          color: #ffffff;
+          letter-spacing: 0;
+          line-height: 32px;
+          margin-top: 19px;
+        }
+      }
+      .contract-refund-container {
+        margin-right: 16px;
+        margin-top: 34px;
+        .contract-container {
+          display: flex;
+          align-items: center;
+        }
+        .text-contract {
+          opacity: 0.5;
+          font-size: 12px;
+          color: #ffffff;
+          letter-spacing: 0;
+          text-align: right;
+          line-height: 14px;
+          margin-left: 6px;
+        }
+        .refund-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #f2be7d;
+          border-radius: 2px;
+          width: flex_pt(80);
+          height: flex_pt(26);
+          margin-top: 23px;
+          .refund-text {
+            font-family: PingFang-SC-Bold;
+            font-size: 13px;
+            color: #ffffff;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+  }
+  .account-details-container {
+    margin-top: 20px;
+    height: flex_pt(44);
+    width: flex_pt(335);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    .account-details {
+      font-family: PingFang-SC-Bold;
+      font-size: 16px;
+      color: #242424;
+      letter-spacing: 0;
+      text-align: center;
+    }
+  }
+  .credit-account-item-container {
+    padding: 0px 10px;
+    width: flex_pt(335);
+    .credit-account-item-box {
+      display: flex;
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      align-items: center;
+      justify-content: center;
+      .credit-account-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .credit-account-title {
+          font-size: 13px;
+          color: #333333;
+          letter-spacing: 0;
+          line-height: 13px;
+          margin-bottom: 8px;
+        }
+        .credit-account-time {
+          font-size: 12px;
+          color: #999999;
+          letter-spacing: 0;
+          line-height: 12px;
+        }
+      }
+      .credit-account-right {
+        &.credit-account-income {
+          color: #ea5c39;
+        }
+        font-size: 16px;
+        color: #999999;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 16px;
+        margin-right: 16px;
+      }
+    }
+  }
+  .referral-banner-container {
+    margin-top: 20px;
+    justify-content: space-between;
+    width: flex_pt(335);
+    height: flex_pt(64);
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    .referral-text {
+      width: flex_pt(201);
+      margin-left: 16px;
+      font-size: 14px;
+      color: #242424;
+      letter-spacing: 0.4px;
+      line-height: 22px;
+    }
+    .total-bonus {
+      font-family: PingFang-SC-Bold;
+      font-size: 14px;
+      color: #e8a540;
+      letter-spacing: 0.4px;
+      line-height: 22px;
+    }
+    .referral-button-container {
+      margin-right: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 2px;
+      width: flex_pt(80);
+      height: flex_pt(26);
+      .referral-button {
+        font-family: PingFang-SC-Bold;
+        font-size: 13px;
+        color: #5e5e5e;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 14px;
+      }
+    }
+  }
+}

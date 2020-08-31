@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>提示icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="买衣" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="待付款-提示1（1个衣箱）" transform="translate(-16.000000, -543.000000)">
+            <g id="提示" transform="translate(16.000000, 543.000000)">
+                <g id="提示icon">
+                    <path d="M8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 Z" id="Oval-13" fill="#E85C40" fill-rule="nonzero"></path>
+                    <polygon id="Rectangle-19" fill="#FFFFFF" points="7 3 9 3 9 9 7 9"></polygon>
+                    <polygon id="Rectangle-19-Copy" fill="#FFFFFF" points="7 11 9 11 9 13 7 13"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

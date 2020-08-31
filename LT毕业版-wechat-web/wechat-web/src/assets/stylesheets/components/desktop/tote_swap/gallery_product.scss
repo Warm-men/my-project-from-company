@@ -1,0 +1,244 @@
+@import '../../../variables';
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.gallery-swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform, -webkit-transform;
+  box-sizing: content-box;
+}
+
+.gallery-swiper-slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.tote-swap-gallery-product {
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  display: inline-block;
+  padding: 0;
+  font-size: 12px;
+  line-height: 17px;
+  font-family: $raleway;
+  letter-spacing: 0.9px;
+  position: relative;
+  margin-right: 5px;
+  // removes undesirable blue image highlight when adding to closet
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  background-color: #fff;
+  color: $black;
+
+  a,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $black;
+    text-decoration: none;
+  }
+
+  .products-both-slot {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+  }
+
+  .add-to-closet-redux-button-heart {
+    position: absolute;
+    right: 16px; //compensate for padding between images
+    z-index: 1;
+    top: 8px;
+  }
+
+  .title {
+    font-family: 'San Francisco';
+    font-weight: bold;
+    text-align: left;
+    margin-top: 7px;
+  }
+
+  .brand {
+    text-align: left;
+    margin-bottom: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .gallery-image img {
+    width: 100%;
+    max-width: 296px;
+    margin: 0px;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .custom-collection-image-placeholder {
+    background-color: $product-bg-gray;
+    // animation: pulse .65s alternate;
+    // width: flex_pt(168);
+    height: auto;
+  }
+
+  .action {
+    height: 45px;
+    border-radius: 100px;
+    color: $white;
+    padding: 15px;
+    position: absolute;
+    bottom: 100px;
+    opacity: 0;
+    transition: all 0.25s ease-out;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    font-size: 32px;
+    font-weight: lighter;
+    background-color: $tote-swap-yellow;
+    background-position: 65% center;
+    background-size: auto 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 130px;
+    left: calc(50% - 65px);
+    text-align: center;
+
+    img {
+      position: relative;
+      top: -4px;
+    }
+
+    .size {
+      text-transform: uppercase;
+      font-size: 12px;
+      top: -7px;
+      position: relative;
+      margin-left: 10px;
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      background-color: lighten($tote-swap-yellow, 7.5%);
+    }
+
+    .in-tote {
+      text-transform: uppercase;
+      font-size: 12px;
+      top: -7px;
+      position: relative;
+    }
+  }
+
+  &.accessory {
+    .action {
+      width: 90px;
+      left: calc(50% - 45px);
+
+      &.disabled {
+        width: 150px;
+        left: calc(50% - 75px);
+      }
+    }
+  }
+
+  &:hover {
+    .action {
+      opacity: 1;
+    }
+  }
+}
+
+body.tote-swap-mobile {
+  .tote-swap-gallery-product {
+    .tote-swap-gallery-unstock {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.3);
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 84%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 106;
+
+      .unstock-icon {
+        width: flex_pt(80);
+        height: flex_pt(40);
+        background-size: 100%;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url('~src/assets/images/unstock.png');
+      }
+    }
+
+    i.new-product-mark {
+      &:before {
+        content: '上新';
+        width: 32px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        color: #c8a052;
+        border: 1px solid #c8a052;
+        font-size: 10px;
+        font-style: normal;
+      }
+    }
+
+    .not-show-mark {
+      display: none;
+    }
+
+    .action {
+      display: none;
+    }
+
+    &:hover {
+      .action {
+        display: none;
+      }
+    }
+
+    .title {
+      font-size: 14px;
+      margin-top: 12px;
+      margin-left: 16px;
+      color: #242424;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 40vw;
+      display: inline-block;
+    }
+
+    .brand {
+      font-size: 12px;
+      color: #989898;
+      margin-left: 16px;
+    }
+  }
+}

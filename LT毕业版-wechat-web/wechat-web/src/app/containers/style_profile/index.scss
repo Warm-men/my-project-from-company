@@ -1,0 +1,19 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.quiz {
+  .tips-text {
+    margin: flex_pt(16) 0 flex_pt(50);
+    padding: 0 34px;
+    font-size: 14px;
+    color: #999999;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+
+    &.padding-both {
+      padding: 0px 31px;
+      margin: flex_pt(16) 0px flex_pt(0);
+    }
+  }
+}

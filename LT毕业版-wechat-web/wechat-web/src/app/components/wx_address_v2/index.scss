@@ -1,0 +1,108 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+@import 'src/assets/stylesheets/variables';
+
+.wx-address-info {
+  width: 100%;
+  margin-top: 40px;
+  padding: 0 flex_pt(24) 0 flex_pt(16);
+  position: relative;
+  margin-bottom: 24px;
+  &::before {
+    content: '';
+    width: 100vw;
+    height: 5px;
+    background: url('./images/divider.svg') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+  }
+
+  .username-tips {
+    width: 100%;
+    display: inline-block;
+    font-size: 3.2vw;
+    color: #e85c40;
+    letter-spacing: -0.29px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 12px;
+
+    .icon {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      background-image: url('./images/icon.svg');
+      background-size: 100%;
+      margin-right: 8px;
+      vertical-align: middle;
+      transform: translateY(-1px);
+    }
+  }
+
+  .bg-color {
+    position: relative;
+
+    .full-name-tel {
+      font-size: 14px;
+      color: #333333;
+      line-height: 28px;
+      font-weight: 450;
+    }
+
+    .detail-adress-info {
+      font-size: 13px;
+      color: #989898;
+      line-height: 22px;
+      width: 90%;
+    }
+  }
+
+  .send-title {
+    font-size: 15px;
+    color: #242424;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .tips-text {
+    float: right;
+    font-size: 14px;
+    color: #cccccc;
+    transform: translateY(4px);
+  }
+
+  .address-icon {
+    position: absolute;
+    right: flex_pt(10);
+    display: inline-block;
+    color: $mid-gray;
+    top: 50%;
+    transform: translateY(-30%);
+    width: flex_pt(5);
+    height: flex_pt(8);
+    background: url('~src/assets/images/account/next.svg') no-repeat center;
+    background-size: flex_pt(5) flex_pt(8);
+  }
+
+  .address-icon-fix-right {
+    right: flex_pt(-8);
+  }
+
+  .bg-color-no-info {
+    position: relative;
+    height: 48px;
+
+    div {
+      position: relative;
+      top: -18px;
+      left: 0;
+      padding-left: flex_pt(16);
+      font-size: 14px;
+    }
+
+    span {
+      top: 10px;
+    }
+  }
+}

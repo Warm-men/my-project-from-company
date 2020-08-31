@@ -1,0 +1,130 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+*,:after,:before {
+  box-sizing: border-box
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color:transparent;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color:transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  background-color: #fff;
+}
+
+body.mobile {
+  min-width: 100%;
+  padding-top: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+form,input {background:none;border:none;}
+ul,dl,ol {list-style-type:none;}
+a { text-decoration:none; }
+a:hover,a:focus { outline:none; }
+table { border-collapse:collapse;border-spacing:0; }
+img { border:none; }
+strong,b { font-weight:normal; }
+em,i,var { font-style:normal; }
+p { text-indent:0; }
+
+div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color:transparent;
+}
+
+input,
+select {
+  outline: none !important;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+html.modal-open {
+  body {
+    overflow: hidden;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+.btn {
+  outline: none !important;
+}
+
+img {
+  max-width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none !important;
+  user-select: none !important;
+}
+
+.mid {
+  margin: 0 auto;
+}
+
+.btn-primary {
+  border-color: #fff !important;
+  background-color: #e85c40 !important;
+}
+
+.clear {
+  clear: both;
+}
+
+@import 'colors';
+@import 'bootstrap/bootstrap';
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border-color: #b2b2af;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: $black;
+}
+
+.btn-md {
+  height: 60px;
+	font-family: "Raleway", sans-serif;
+	font-size: 12px;
+	line-height: 1.7;
+	letter-spacing: 1.6px;
+	text-align: center;
+	color: $white;
+  border-radius: 2px;
+}
+.btn-sm {
+  font-size: 12px;
+  padding: 0.8rem;
+  border-radius: .14rem;
+  width: 116px;
+  height: 38px;
+}

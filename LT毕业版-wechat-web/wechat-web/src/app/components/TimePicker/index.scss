@@ -1,0 +1,15 @@
+.ui-picker-address {
+  .ui-picker-wrapper {
+    width: 50%;
+    float: left;
+  }
+  .modal-overlay {
+    z-index: 1000000001;
+  }
+  .ui-picker-wrapper:nth-child(2) {
+    width: 34%;
+  }
+  .modal {
+    display: block;
+  }
+}

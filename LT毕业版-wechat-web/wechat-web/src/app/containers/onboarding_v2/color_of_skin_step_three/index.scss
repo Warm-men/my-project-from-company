@@ -1,0 +1,43 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.color-of-skin {
+  .images-goups {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+
+    .skin-image {
+      width: flex_pt(90);
+      height: flex_pt(154);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+  }
+
+  .skin-button-goups {
+    display: flex;
+    justify-content: space-around;
+
+    .button-skin {
+      border: 1px solid #cccccc;
+      border-radius: 2px;
+      font-size: 13px;
+      letter-spacing: 0.43px;
+      width: flex_pt(70);
+      height: flex_pt(32);
+      text-align: center;
+      line-height: flex_pt(32);
+      margin-top: 28px;
+
+      &:first-child {
+        transform: translateX(-6px);
+      }
+
+      &:last-child {
+        transform: translateX(6px);
+      }
+    }
+  }
+}

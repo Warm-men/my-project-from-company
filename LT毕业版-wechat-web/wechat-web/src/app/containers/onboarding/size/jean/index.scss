@@ -1,0 +1,52 @@
+.size-jean-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #242424;
+  letter-spacing: 0.4px;
+  padding: 36px 10px 4px;
+}
+
+.size-jean-size-info {
+  display: block;
+  background: #f7f7f7;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #5e5e5e;
+  margin: 0px 10px;
+  padding: 4px 12px;
+  line-height: 22px;
+}
+
+.size-jean-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-top: 24px;
+
+  .size-jean-item {
+    height: 32px;
+    border-radius: 16px;
+    padding: 0px 14px;
+    border: 1px solid #ccc;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .size-jean-item-title {
+      font-size: 14px;
+      color: #242424;
+      letter-spacing: 0.4px;
+    }
+    .size-jean-item-title-active {
+      font-size: 14px;
+      color: #e85c40;
+      letter-spacing: 0.4px;
+    }
+  }
+  .active {
+    background: #fff5f4;
+    border: 1px solid #e85c40;
+  }
+}

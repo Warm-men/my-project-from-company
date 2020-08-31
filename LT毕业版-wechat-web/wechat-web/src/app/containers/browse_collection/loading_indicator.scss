@@ -1,0 +1,11 @@
+@import '~styles/flex_box.scss';
+
+.browse-collection-row {
+  display: flex;
+  .browse-collection-placeholder {
+    flex: 1;
+    max-width: 50%;
+    border-bottom: 1px solid #f7f7f7;
+    border-right: 1px solid #f7f7f7;
+  }
+}

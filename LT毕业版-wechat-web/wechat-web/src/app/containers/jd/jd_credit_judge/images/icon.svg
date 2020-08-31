@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>信用分不够</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="小白信用分不够" transform="translate(-150.000000, -205.000000)">
+            <g id="信用分不够" transform="translate(150.000000, 205.000000)">
+                <path d="M38,6.5 C55.1205,6.5 69,20.379 69,37.5 C69,54.6205 55.1205,68.5 38,68.5 C20.879,68.5 7,54.6205 7,37.5 C7,20.379 20.879,6.5 38,6.5" id="Fill-1" fill="#EAB97A"></path>
+                <path d="M37.5,72 C18.4465,72 3,56.5535 3,37.5 C3,18.4465 18.4465,3 37.5,3 C56.5535,3 72,18.4465 72,37.5 C72,56.5535 56.5535,72 37.5,72 M37.5,0 C16.7895,0 0,16.7895 0,37.5 C0,58.211 16.7895,75 37.5,75 C58.2105,75 75,58.211 75,37.5 C75,16.7895 58.2105,0 37.5,0" id="Fill-3" fill="#323E5A"></path>
+                <path d="M38,49 C36.3435,49 35,50.3435 35,52 C35,53.6565 36.3435,55 38,55 C39.6565,55 41,53.6565 41,52 C41,50.3435 39.6565,49 38,49 Z M39.5,44.5 L41.5,20.5 L34.5,20.5 L36.5,44.5 L39.5,44.5 Z" id="Fill-5" fill="#333E5B"></path>
+            </g>
+        </g>
+    </g>
+</svg>

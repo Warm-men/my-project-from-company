@@ -1,0 +1,18 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+.share-list {
+  p {
+    height: flex_pt(58);
+    line-height: flex_pt(58);
+    padding-left: flex_pt(15);
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  .newest-totes-list {
+    border-bottom: 12px solid #f7f7f7;
+  }
+}
+
+.loading {
+  padding-bottom: 20px;
+}

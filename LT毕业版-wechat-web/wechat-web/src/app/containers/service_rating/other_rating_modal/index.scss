@@ -1,0 +1,65 @@
+@import '~styles/flex_box.scss';
+
+.rating-other-modal-container {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 105;
+  width: 100vw;
+  .shadow {
+    height: 100vh;
+    background-color: #00000099;
+  }
+  .comment-box {
+    padding: 0px 16px;
+    .textarea-container {
+      height: 234px;
+      .textarea {
+        font-size: 14px;
+        color: #5e5e5e;
+        letter-spacing: 0.2px;
+        line-height: 22px;
+      }
+    }
+  }
+  .rating-modal-box {
+    border-top: 1px solid #f3f3f3;
+    background-color: #fff;
+    max-height: calc(100vh - 88px);
+    // padding-bottom: flex_pt(64);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    .modal-title {
+      padding: 20px 16px 0;
+      font-size: 16px;
+      color: #242424;
+      letter-spacing: 0;
+      line-height: 16px;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 0 0 0 #f3f3f3;
+    }
+    .bottom-border {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f3f3f3;
+    }
+    .rating-modal-btn-box {
+      width: 100vw;
+      padding: 8px 16px;
+      border-top: 1px solid #f0f0f0;
+      margin-top: 24px;
+      background: #fff;
+      // position: fixed;
+      // bottom: 0;
+      .rating-modal-btn {
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #ea5c39;
+        border-radius: 2px;
+      }
+    }
+  }
+}

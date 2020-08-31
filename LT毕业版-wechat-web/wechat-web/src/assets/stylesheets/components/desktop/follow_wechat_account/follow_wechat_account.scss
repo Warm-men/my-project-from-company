@@ -1,0 +1,29 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+@import 'src/assets/stylesheets/_variables.scss';
+
+.qr-container {
+  text-align: center;
+  padding-bottom: 60px;
+
+  .qr-icon {
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 21px;
+    color: #242424;
+    margin: 0;
+  }
+
+  span {
+    margin: 0 flex_pt(55);
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 17px;
+    color: #989898;
+    display: block;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,36 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+.reason-container {
+  margin-top: 16px;
+  width: 80%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fdede9;
+  border: 1px solid #e85c40;
+  border-radius: 91px;
+  .reason-text {
+    font-size: 14px;
+    color: #e85c40;
+    letter-spacing: 0.4px;
+    text-align: center;
+  }
+}
+.reason-container-unselect {
+  margin-top: 16px;
+  width: 80%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcfcfc;
+  border: 1px solid #d9d9d9;
+  border-radius: 91px;
+  .reason-text {
+    font-size: 14px;
+    color: #5e5e5e;
+    letter-spacing: 0.4px;
+    text-align: center;
+  }
+}

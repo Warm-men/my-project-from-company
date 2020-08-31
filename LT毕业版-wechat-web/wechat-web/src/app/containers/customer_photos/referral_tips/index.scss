@@ -1,0 +1,62 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.customer-photo-referral-tips {
+  width: 92.6vw;
+  height: flex_pt(48);
+  background-image: url('~src/app/containers/customer_photos/referral_tips/images/bg.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px 0px 13px;
+  z-index: 1000;
+  box-shadow: 0px 2px 4px 0px #e1d4d478;
+  color: #635d63;
+  &.fadein {
+    animation: living 0.2s linear;
+  }
+  .tips-box {
+    display: flex;
+    align-items: center;
+  }
+  .avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+  }
+  .text {
+    margin-left: 6px;
+    font-size: 16px;
+    color: #635d63;
+    letter-spacing: 0.2px;
+    max-width: 85px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .price {
+    margin-left: 2px;
+    font-size: 18px;
+    color: #f76345;
+    letter-spacing: 0.6px;
+    font-weight: bold;
+  }
+  .btn-img {
+    height: flex_pt(36);
+  }
+}
+
+@keyframes living {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

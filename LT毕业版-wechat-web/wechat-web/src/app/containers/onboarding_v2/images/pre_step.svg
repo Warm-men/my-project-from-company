@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>风格-上一步-可点击</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="第2-2步简约" transform="translate(-126.000000, -479.000000)">
+            <g id="风格-上一步-可点击" transform="translate(126.000000, 479.000000)">
+                <g id="风格-上一步" transform="translate(10.000000, 10.000000) rotate(-180.000000) translate(-10.000000, -10.000000) ">
+                    <path d="M10,0.5 C4.75349532,0.5 0.5,4.75349532 0.5,10 C0.5,15.2465047 4.75349532,19.5 10,19.5 C15.2465047,19.5 19.5,15.2465047 19.5,10 C19.5,4.75349532 15.2465047,0.5 10,0.5 Z" id="Stroke-1" stroke="#CCCCCC"></path>
+                    <path d="M6,10 L13.115942,10" id="Stroke-3" stroke="#333333" stroke-linejoin="round"></path>
+                    <polyline id="Stroke-5" stroke="#333333" points="10.5 13.09 13.545 10.045 10.5 7"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

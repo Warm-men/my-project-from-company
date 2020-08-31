@@ -1,0 +1,66 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.couple-gift {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  background: url('../images/abtest/alert.png') no-repeat 50% 50%;
+  background-size: 222px 304px;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .right-away-use {
+    width: 112px;
+    height: 70px;
+    position: relative;
+    top: flex_pt(380);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .iphoneX {
+    top: flex_pt(400);
+  }
+}
+
+.loading-submiting-box {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+
+  .loading-gift {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 142px;
+    padding: 0 12px 16px;
+    background-color: $black;
+    opacity: 0.8;
+    border-radius: 4px;
+    z-index: 999999;
+
+    .loading {
+      width: 24px;
+      height: 24px;
+      margin: 14px auto 4px;
+      background: url('~src/app/containers/ratings/images/Dual_Ring_loading.svg')
+        no-repeat center;
+      background-size: 100%;
+    }
+
+    .use-cash {
+      display: block;
+      font-size: 14px;
+      color: $white;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

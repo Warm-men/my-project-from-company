@@ -1,0 +1,18 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+.none-share {
+  i {
+    display: block;
+    width: flex_pt(98);
+    height: flex_pt(100);
+    background: url('./img/no-share.png') no-repeat center;
+    background-size: 100%;
+    margin: 193px auto 24px;
+  }
+  p {
+    width: 100vw;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+  }
+}

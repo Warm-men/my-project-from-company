@@ -1,0 +1,43 @@
+.onboarding-size-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #242424;
+  letter-spacing: 0.4px;
+  padding: 36px 10px 24px;
+}
+
+.size-select {
+  margin-bottom: 40px;
+  padding-left: 10px;
+
+  .size-select-title {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  .size-select-box {
+    display: flex;
+    flex-wrap: wrap;
+
+    .btn-selectable {
+      width: 64px;
+      height: 32px;
+      line-height: 30px;
+      font-size: 12px;
+      color: #000;
+      background-color: initial;
+      border-color: #ccc;
+      border-radius: 100px;
+      margin-bottom: 15px;
+      margin-left: 0px;
+      margin-right: 12px;
+
+      &.active {
+        background: #fff5f4;
+        border: 1px solid #e85c40;
+        border-radius: 16px;
+        color: #e85c40;
+      }
+    }
+  }
+}

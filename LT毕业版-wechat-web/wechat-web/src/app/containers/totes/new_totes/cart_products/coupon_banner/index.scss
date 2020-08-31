@@ -1,0 +1,66 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.clothing-promo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: flex_box(4);
+  margin-bottom: flex_pt(8.5);
+  justify-content: space-between;
+  padding: flex_pt(13) flex_pt(12);
+
+  .promo-info {
+    z-index: 2;
+    color: #242424;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+  }
+
+  .clothing-promo-background {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .promo-btn-area {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .promo-btn {
+    z-index: 2;
+    color: #e85c40;
+    font-size: 14px;
+    text-align: right;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    margin-right: flex_pt(13);
+    font-weight: 500;
+    // 已使用
+    &.-status-1 {
+      color: #5e5e5e;
+    }
+
+    // 即将过期
+    &.-status-2 {
+      color: #e85c40;
+    }
+
+    // 正常有效
+    &.-status-3 {
+      color: #e85c40;
+    }
+  }
+
+  .handler-icon {
+    z-index: 2;
+    width: flex_pt(6);
+    height: flex_pt(12);
+  }
+}

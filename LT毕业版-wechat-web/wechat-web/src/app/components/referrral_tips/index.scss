@@ -1,0 +1,55 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.referral-tips {
+  background: rgba($color: #000000, $alpha: 0.6);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .referral-tips-box {
+    position: relative;
+    .referral-tips-close {
+      background: url('~src/app/components/HOC/Popups/close.png') no-repeat top
+        right;
+      right: 0;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-size: 34px 34px;
+      position: absolute;
+      right: -25px;
+      top: -35px;
+    }
+    .referral-text {
+      position: absolute;
+      bottom: flex_pt(82);
+      left: 0px;
+      width: 100%;
+      font-size: flex_pt(22);
+      letter-spacing: flex_pt(1.5);
+      p {
+        margin-bottom: 0px;
+      }
+      .prize-text {
+        font-size: flex_pt(23);
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+    width: 70vw;
+  }
+}
+
+.fadeIn8 {
+  opacity: 1;
+  transition: all 0.3 ease-in-out; // -webkit-animation-name: fadeIn8;
+  // animation-name: fadeIn8;
+}

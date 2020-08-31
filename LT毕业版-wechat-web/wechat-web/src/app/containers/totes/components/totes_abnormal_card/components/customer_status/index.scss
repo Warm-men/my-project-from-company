@@ -1,0 +1,39 @@
+.totes-abnormal-card-customer-status {
+  background: #ffffff;
+  box-shadow: 0 0 16px 0 rgba(204, 204, 204, 0.4);
+  border-radius: 4px;
+  margin-bottom: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+
+  .content-view {
+    flex: 1;
+    padding-right: 10px;
+
+    .title {
+      font-weight: 500;
+      font-size: 14px;
+      color: #242424;
+      letter-spacing: 0.4px;
+      line-height: 24px;
+      margin-bottom: 4px;
+    }
+
+    .message {
+      font-size: 12px;
+      color: #989898;
+      letter-spacing: 0.2px;
+      line-height: 18px;
+    }
+  }
+
+  .button {
+    background: #e85c40;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0.4px;
+    padding: 6px 11px;
+  }
+}

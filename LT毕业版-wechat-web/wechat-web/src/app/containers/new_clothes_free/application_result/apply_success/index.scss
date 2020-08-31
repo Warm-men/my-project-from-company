@@ -1,0 +1,58 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.apply-success {
+  width: 100vw;
+  img.zhima-credit-bg {
+    display: block;
+    width: flex_pt(64);
+    height: flex_pt(64);
+    margin: 54px auto 10px;
+  }
+  img.apply-flow {
+    display: block;
+    width: flex_pt(306);
+    margin: 0 auto;
+    margin-top: 56px;
+  }
+  span {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    color: $dark-gray;
+    font-size: 13px;
+  }
+  p {
+    width: 100vw;
+    text-align: center;
+    margin: 14px 0;
+    color: $darkest-gray;
+    font-size: 27px;
+    font-weight: bold;
+  }
+  div {
+    width: 100vw;
+    text-align: center;
+    color: $darkest-gray;
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 14px;
+    color: $dark-gray;
+    width: flex_pt(306);
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+  button {
+    display: block;
+    width: flex_pt(200);
+    height: 48px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: $primary-color-new;
+    color: $white;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}

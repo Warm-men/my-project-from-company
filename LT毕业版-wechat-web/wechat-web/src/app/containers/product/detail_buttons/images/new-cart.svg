@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>新衣箱</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="新衣箱" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-16-Copy">
+            <rect id="Rectangle-16-Copy-2" fill="#D8D8D8" opacity="0" x="0" y="0" width="24" height="24"></rect>
+            <path d="M3,9 L21,9 L21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,9 Z" id="Rectangle-2" stroke="#242424" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12,4 L12,9.1316898" id="Path-2" stroke="#242424"></path>
+            <path d="M8,13 L16,13" id="Path-6" stroke="#242424" stroke-linecap="round"></path>
+        </g>
+        <path d="M6.56619038,4 L17.4338096,4 C17.7850725,4 18.1105793,4.18429883 18.2913025,4.48550424 L21,9 L3,9 L5.70869745,4.48550424 C5.8894207,4.18429883 6.21492753,4 6.56619038,4 Z" id="Rectangle-16" stroke="#242424" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+</svg>

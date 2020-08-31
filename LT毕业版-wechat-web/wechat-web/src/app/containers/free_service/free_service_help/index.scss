@@ -1,0 +1,49 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.free-service-help-container {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.free-service-help-button-container {
+  width: 100vw;
+  height: 56px;
+  background-color: white;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.5px solid rgb(247, 244, 244);
+  z-index: 1000;
+  overflow: hidden;
+}
+.free-service-help-button {
+  width: 90vw;
+  height: 44px;
+  background-color: #e85c40;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.clothes-clean-flow-text-container-complete {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  bottom: -4px;
+  left: 15%;
+  flex-direction: column;
+}
+.clothes-clean-flow-text {
+  font-size: 14px;
+  color: #70aaef;
+  letter-spacing: 0.4px;
+  line-height: 26px;
+}
+.card-container {
+  position: relative;
+}

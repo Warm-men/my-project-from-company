@@ -1,0 +1,31 @@
+$widthScale: 100/375;
+$styleFontColor: #777777;
+@import 'src/assets/stylesheets/flex_box.scss';
+.types-ul {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+  margin-top: 30px;
+  text-align: left;
+
+  .types-item {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.types-cell {
+  width: flex_pt(60);
+  img {
+    height: flex_pt(60);
+    width: flex_pt(60);
+    margin-bottom: flex_pt(7);
+  }
+  p {
+    font-size: flex_pt(12);
+    line-height: flex_pt(12);
+    color: $styleFontColor;
+    margin-bottom: flex_pt(20);
+  }
+}

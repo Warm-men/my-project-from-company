@@ -1,0 +1,56 @@
+@import '~styles/flex_box';
+@import '~styles/variables';
+
+.membership-card {
+  padding-top: 30px;
+  height: 100vh;
+
+  .padding-left20 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .title {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(36, 36, 36, 1);
+    line-height: 21px;
+  }
+
+  .card-text {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    width: flex_pt(336);
+    margin: 10px 20px 36px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(243, 243, 243, 1);
+  }
+
+  .contents {
+    height: 21px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(36, 36, 36, 1);
+    line-height: 21px;
+
+    .description {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(94, 94, 94, 1);
+      line-height: 26px;
+      span.serial-num {
+        width: 20px;
+        display: inline-block;
+      }
+      .serial-blue {
+        color: #83adeb;
+      }
+    }
+  }
+
+  .exchange-btn {
+    width: flex_pt(346);
+  }
+}

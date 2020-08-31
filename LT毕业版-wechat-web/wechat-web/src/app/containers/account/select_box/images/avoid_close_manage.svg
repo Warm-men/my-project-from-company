@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>我的-会员兑换icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="我的-会员兑换icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle-16-Copy-6" opacity="0.361979167" x="0" y="0" width="24" height="24"></rect>
+            <rect id="Rectangle-5-Copy" stroke="#242424" stroke-width="1.5" x="1" y="4" width="22" height="17" rx="1"></rect>
+            <rect id="Rectangle-5" fill="#242424" x="1" y="7" width="22" height="1.5"></rect>
+        </g>
+        <polyline id="Path-3" stroke="#EA5C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" points="8 13.1819047 16.0008956 13.1819047 14.0008956 11"></polyline>
+        <polyline id="Path-3-Copy" stroke="#EA5C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.000448, 17.090952) scale(-1, -1) translate(-12.000448, -17.090952) " points="8 18.1819047 16.0008956 18.1819047 14.0008956 16"></polyline>
+    </g>
+</svg>

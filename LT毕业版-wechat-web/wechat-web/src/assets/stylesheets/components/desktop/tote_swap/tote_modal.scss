@@ -1,0 +1,613 @@
+@import '../../../colors';
+@import '../../../variables';
+@import 'src/assets/stylesheets/flex_box.scss';
+
+$tote-modal-height: 400px;
+
+.confirmation-modal {
+  align-items: center;
+  background: $totes-background-color;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  max-height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+  z-index: 25;
+
+  .profile-modal-header {
+    display: none;
+  }
+
+  .tote-modal-close {
+    display: none;
+  }
+
+  .profile-modal-header {
+    padding-top: 220px;
+  }
+
+  .profile-modal-body {
+    font-family: $raleway;
+    font-size: 21px;
+    letter-spacing: 1.8px;
+    text-align: center;
+  }
+
+  .confirmation-modal-lock-tote {
+    background-color: $brand-primary;
+    border-radius: 2px;
+    color: $white;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1.67px;
+    margin: 15% 10% 0 10%;
+    padding: 5% 0;
+    text-transform: uppercase;
+  }
+
+  .confirmation-modal-dismiss {
+    color: $brand-primary;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 1.67px;
+    margin-top: 7%;
+  }
+}
+
+#tote-swap-tote-modal {
+  background-color: $totes-background-color;
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  .swap-overlay-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .swap-overlay {
+    opacity: 0.15;
+  }
+
+  .swap-overlay-text {
+    font-family: $playfair;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 34%;
+  }
+
+  // beginning state for enter animation
+  &.tote-modal-enter {
+    .tote-modal-background {
+      opacity: 0;
+    }
+  }
+
+  // end state for enter animation
+  &.tote-modal-enter-active {
+    .tote-modal-background {
+      opacity: 0.6;
+      transition: all 0.2s ease-out;
+    }
+
+    .tote-modal-body {
+      top: 0;
+      transition: all 0.25s ease-out;
+    }
+  }
+
+  // beginning state for leave animation
+  &.tote-modal-leave {
+    .tote-modal-background {
+      opacity: 0.6;
+    }
+
+    .tote-modal-body {
+      top: 0;
+    }
+  }
+
+  // end state for leave animation
+  &.tote-modal-leave-active {
+    .tote-modal-background {
+      opacity: 0;
+      transition: all 0.2s ease-in;
+    }
+
+    .tote-modal-body {
+      top: -$tote-modal-height;
+      transition: all 0.25s ease-in;
+    }
+  }
+
+  .tote-modal-swap-message {
+    display: none;
+    font-weight: lighter;
+    font: $raleway;
+    letter-spacing: 0.8px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  &.swapping {
+    .tote-modal-swap-message {
+      display: block;
+    }
+  }
+
+  .tote-modal-close {
+    background-image: url('~src/assets/images/x-close-black.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 33%;
+    cursor: pointer;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45px;
+  }
+
+  .tote-modal-time-left {
+    color: $black;
+    font-family: $raleway;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1.6px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+
+  .tote-modal-buttons {
+    text-align: center;
+    .btn-gotoswap {
+      border: 1px solid #e85c40;
+      line-height: 34px;
+    }
+    div {
+      font-family: $raleway;
+      font-size: 12px;
+      font-size: 12px;
+      font-weight: bold;
+      height: 46px;
+      letter-spacing: 1.6px;
+      line-height: 28px;
+      text-align: center;
+      width: 163px;
+    }
+
+    .btn-transparent {
+      color: $black;
+    }
+
+    .btn-primary {
+      background-color: $tote-swap-red;
+      border-color: $tote-swap-red;
+      color: $white;
+    }
+
+    .confirm {
+      margin-right: 9px;
+    }
+  }
+
+  .tote-modal-message {
+    font-family: $raleway;
+    letter-spacing: 0.3px;
+    margin: 0 auto 10px auto;
+    text-align: center;
+  }
+
+  .tote-modal-background {
+    background-color: $black;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .disable-text {
+    margin-top: 10px;
+  }
+
+  .tote-modal-product {
+    display: inline-block;
+    font-family: $raleway;
+    margin-right: 5px;
+    text-align: center;
+    width: 100%;
+
+    .card {
+      background-color: $white;
+      box-shadow: 0 7px 28px rgba(0, 0, 0, 0.07);
+      padding: 20px;
+      position: relative;
+      text-align: left;
+      &.adding-item {
+        cursor: pointer;
+      }
+    }
+
+    .brand {
+      font-size: flex_pt(12);
+      letter-spacing: 0.9px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #9f9da6;
+    }
+
+    .title {
+      display: inline-block;
+      letter-spacing: 0.8px;
+      margin-bottom: flex_pt(6);
+      margin-top: flex_pt(10);
+      .desc {
+        font-size: flex_pt(14);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: inline-block;
+        width: 65%;
+      }
+      .size {
+        color: $gray-light;
+        font-size: 12px;
+        letter-spacing: 0.9px;
+        float: right;
+        text-align: center;
+        line-height: flex_pt(24);
+      }
+    }
+
+    .image img {
+      width: 100%;
+    }
+
+    @keyframes pulse {
+      0% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .swapped-in-check {
+      background-image: url('~src/assets/images/orange-circle-check.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      bottom: 0;
+      height: 85%;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+    .swap-button {
+      background-color: $tote-swap-red;
+      border-radius: 2px;
+      color: $white;
+      cursor: pointer;
+      display: table;
+      font-size: 12px;
+      letter-spacing: 1.6px;
+      margin: 21px auto 0;
+      padding: 15px flex_pt(40);
+      text-align: center;
+      text-transform: uppercase;
+      font-variant-numeric: lining-nums;
+
+      &.swapping {
+        background-color: lighten($tote-swap-red, 7.5%);
+        cursor: not-allowed;
+        transition: all 250ms ease;
+      }
+
+      &.not-swapping {
+        cursor: not-allowed;
+        opacity: 0;
+        transition: all 250ms ease;
+      }
+      &.disable-btn {
+        background-color: #f8cec5;
+      }
+    }
+
+    .swap-button-placeholder {
+      font-size: 12px;
+      color: #ffffff;
+      letter-spacing: 0;
+      text-align: center;
+      opacity: 0.8;
+      background: #000000;
+      border-radius: 4px;
+      display: inline-block;
+      padding: 5px 12px;
+      position: relative;
+      .placeholder-icon {
+        position: absolute;
+        top: -11px;
+        left: calc(50% - 6px);
+        border: 6px solid transparent;
+        border-bottom-color: #000;
+      }
+    }
+
+    .remove-button {
+      color: $tote-swap-red;
+      cursor: pointer;
+      font-family: $raleway;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1.6px;
+      margin-bottom: 15px;
+      margin-top: 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .remove-button-placeholder {
+      height: 60px;
+    }
+
+    .cta {
+      color: $tote-swap-yellow;
+      font-family: $playfair;
+      font-size: 35px;
+      font-style: italic;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &.not-swappable {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+
+  a {
+    color: $black;
+    text-decoration: none !important;
+  }
+}
+
+body.tote-swap-mobile {
+  .confirmation-modal {
+    height: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+
+    .confirmation-modal-lock-tote {
+      padding: 6% 0;
+      margin: 21% 0 0 0;
+    }
+
+    .profile-modal-body {
+      font-size: 14px;
+    }
+
+    .tote-modal-close {
+      height: 45px;
+      right: 0;
+      width: 45px;
+    }
+  }
+
+  .tote-swap {
+    max-width: 100vw;
+    min-width: 0;
+  }
+
+  #tote-swap-tote-modal {
+    .tote-modal-body {
+      // height: 100%;
+      // min-height: 100vh;
+      min-width: 10vw;
+      max-width: 100vw;
+      padding: 0px;
+    }
+
+    .tote-modal-buttons {
+      font-weight: 200;
+      text-align: center;
+      position: absolute;
+      left: 0px;
+      bottom: flex_pt(16);
+      padding-right: 0px;
+      padding-left: 0px;
+      &.has-added-items {
+        margin-top: -123%;
+        padding-top: 0;
+      }
+
+      div {
+        width: 375px;
+      }
+
+      .swap-tip-text {
+        color: #5e5e5e;
+        height: flex_pt(12);
+        line-height: flex_pt(12);
+        margin-bottom: flex_pt(16);
+      }
+
+      .btn-transparent {
+        color: $black;
+        // float: left;
+        max-width: 38%;
+        transform: translateX(16%);
+      }
+
+      .btn-primary {
+        background-color: $tote-swap-red;
+        border-color: $tote-swap-red;
+        border-radius: 2px;
+        color: $white;
+        // float: right;
+        max-width: 38%;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      .confirm {
+        margin-right: 9px;
+      }
+    }
+
+    .carousel-wrapper {
+      left: 0;
+      position: relative;
+      width: 66%;
+      min-height: 50vh;
+      position: relative;
+      .tote-swap-downJackets {
+        position: fixed;
+        bottom: 12px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        font-size: 12px;
+        color: #999999;
+        letter-spacing: 0.2px;
+        line-height: 20px;
+        background: #f0f0f0;
+        width: flex_pt(345);
+        padding: flex_pt(9) flex_pt(12);
+      }
+      &.has-added-items {
+        top: 7vh;
+        z-index: 1;
+      }
+      .slider-list {
+        will-change: transform;
+      }
+    }
+
+    .slider-frame {
+      // we are overriding the default behavior of the nuka-carousel
+      // to show the next and previous slide and adjust the width of the cards
+      left: calc(25.5% + 12px);
+      overflow: visible !important;
+    }
+
+    .tote-modal-product {
+      // transform: scale(0.90);
+      transition: transform 0.4s ease-out;
+      transition-delay: 0.1s;
+      width: 95%;
+      &.active {
+        will-change: transform;
+        transform: translateZ(0) scale(1.05);
+        transition: transform 0.5s ease-in;
+        transition-delay: 0s;
+      }
+    }
+
+    .btn {
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    .btn-transparent {
+      background-color: transparent;
+      border-color: $mid-gray;
+      border-radius: 2px;
+      color: $black;
+      font-family: $raleway;
+      font-size: 12px !important;
+      font-weight: bold;
+      letter-spacing: 1.6px;
+      line-height: 34px !important;
+      text-align: center;
+      width: calc(50% - 5px) !important;
+    }
+
+    .tote-modal-time-left {
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+
+      .time {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 3px;
+      }
+
+      .message {
+        display: block;
+        font-size: 12px;
+      }
+    }
+
+    .tote-modal-swap-message {
+      width: 245px;
+      margin: 20px auto 35px auto;
+    }
+
+    .tote-modal-message {
+      font-size: flex_pt(16);
+      padding: 05vh 5px 0px;
+      margin-bottom: flex_pt(32);
+
+      &.has-added-items {
+        display: none;
+      }
+    }
+
+    @media (max-width: $tiny-mobile-breakpoint) {
+      .tote-modal-buttons {
+        margin-top: -13vh;
+
+        &.has-added-items {
+          margin-top: -73vh;
+        }
+      }
+      .carousel-wrapper {
+        margin-top: -3vh;
+
+        &.has-added-items {
+          top: 8vh;
+        }
+      }
+
+      .tote-modal-body {
+        padding: 38px 5px 0 5px;
+      }
+
+      .tote-modal-product {
+        transform: scale(0.84);
+
+        &.active {
+          transform: scale(0.89);
+        }
+
+        .swap-button {
+          margin-top: 12px;
+        }
+      }
+
+      .btn-transparent {
+        font-size: 11px !important;
+      }
+    }
+  }
+}

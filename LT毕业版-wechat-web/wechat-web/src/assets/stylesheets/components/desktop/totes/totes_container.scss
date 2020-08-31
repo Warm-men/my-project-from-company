@@ -1,0 +1,49 @@
+@import 'src/assets/stylesheets/variables';
+@import '~styles/flex_box.scss';
+
+#my-totes {
+  .totes-container {
+    min-height: 100vh;
+    background-color: $totes-background-color;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .my-totes-section-header {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+    letter-spacing: 0.6px;
+    padding: 30px 16px 16px 24px;
+  }
+}
+
+#tote-ratings {
+  // position: fixed;
+  // width: 100vw;
+  // height: 100vh;
+  // top: 0;
+  // left: 0;
+  // background-color: $white;
+  &.tote-ratings-modal-enter {
+    bottom: -1000px;
+    top: 1000px;
+
+    &.tote-ratings-modal-enter-active {
+      bottom: 0;
+      top: 0;
+      transition: all 500ms ease;
+    }
+  }
+
+  &.tote-ratings-modal-exit {
+    bottom: 0;
+    top: 0;
+
+    &.tote-ratings-modal-exit-active {
+      bottom: -1000px;
+      top: 1000px;
+      transition: all 500ms ease;
+    }
+  }
+}

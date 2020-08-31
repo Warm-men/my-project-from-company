@@ -1,0 +1,110 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+@import 'src/assets/stylesheets/variables';
+.selectButtonView {
+  border-top: flex_pt(7) solid #f7f7f7;
+  padding: 0 16px;
+  display: flex;
+  padding-top: flex_pt(28);
+}
+
+.time-box {
+  position: relative;
+  height: 65px;
+  line-height: 65px;
+  margin: 0 flex_pt(16);
+  border-top: 1px solid #f2f2f2;
+  &::before {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    content: '';
+    width: flex_pt(346);
+    height: 1px;
+    background-color: #f7f7f7;
+  }
+  div.fetch-time-title {
+    font-size: 15px;
+    display: inline-block;
+    // font-weight: 400;
+  }
+  div.fetch-time-picker {
+    font-size: 14px;
+    color: #cccccc;
+    letter-spacing: 0;
+    text-align: right;
+    position: absolute;
+    font-weight: 300;
+    width: flex_pt(150);
+    right: 0;
+    top: 0;
+    .timePicker {
+      margin-right: flex_pt(20);
+    }
+    .fetch-time-icon {
+      position: absolute;
+      top: 51%;
+      transform: translateY(-50%);
+      right: flex_pt(4);
+      display: inline-block;
+      color: $mid-gray;
+      width: flex_pt(5);
+      height: flex_pt(8);
+      background: url('~src/assets/images/account/next.svg') no-repeat center;
+      background-size: flex_pt(5) flex_pt(8);
+    }
+  }
+
+  div.add-fontsize {
+    color: #666666;
+  }
+
+  span.to {
+    font-size: flex_box_width(28);
+    display: inline-block;
+  }
+}
+
+.selfDeliveryWrapperView {
+  margin: 0 flex_pt(16);
+  border-top: 1px solid #f2f2f2;
+  position: relative;
+  padding-bottom: 20px;
+  &::after {
+    content: '';
+    width: 100vw;
+    height: 5px;
+    background: url('../../../components/wx_address_v2/images/divider.svg')
+      no-repeat center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: -16px;
+  }
+  .titleWrapperView {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 19px;
+    .title {
+      font-size: 16px;
+      color: #333333;
+      font-weight: 500;
+    }
+    .copyButton {
+      font-size: 13px;
+      color: #666666;
+      padding: 2px flex_pt(10);
+      border-radius: 3px;
+      border: 1px solid #b2b2af;
+    }
+  }
+  .fcView {
+    margin-top: 20px;
+    .fcAddress {
+      font-size: 13px;
+      color: #999999;
+      line-height: 24px;
+    }
+  }
+}

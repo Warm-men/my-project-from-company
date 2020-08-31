@@ -1,0 +1,209 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.experience-container {
+  .text-box {
+    margin: 20px 15px;
+    position: relative;
+    .sign {
+      position: absolute;
+      left: 15px;
+      top: 13px;
+      color: #e85c40;
+    }
+    .text-view {
+      height: 160px;
+      width: 100%;
+      outline-color: transparent;
+      outline: none;
+      padding: 12px;
+      background: #fcfcfc;
+      border: 1px solid #efefef;
+      resize: none;
+      font-size: 14px;
+      color: #333;
+      border: none;
+      // &::placeholder{
+      //   font-size: 14px;
+      //   color: #CCCCCC;
+      //   letter-spacing: 0.4px;
+      //   line-height: 24px;
+      // }
+      .sign-text {
+        font-size: 14px;
+        color: #e85c40;
+        letter-spacing: 0.4px;
+        line-height: 24px;
+      }
+    }
+    .textLength {
+      margin-top: -36px;
+      text-align: right;
+      padding-right: 10px;
+      font-size: 14px;
+      color: #cccccc;
+      letter-spacing: 0.23px;
+    }
+  }
+  .sign-box {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px 0;
+    .sign-giude {
+      font-size: 12px;
+      color: #242424;
+      letter-spacing: 0.4px;
+    }
+    .sign-button {
+      border-radius: 13px;
+      height: 26px;
+      padding: 6px 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      margin-left: 10px;
+      box-sizing: border-box;
+    }
+    .sign-button-off {
+      border: 1px solid #b2b2af;
+      color: #5e5e5e;
+    }
+    .sign-button-on {
+      border: 1px solid #e85c40;
+      color: #e85c40;
+      background-color: #fff2ef;
+    }
+  }
+}
+
+.add-related-container {
+  padding-top: 24px;
+  .title-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    .title {
+      font-size: 14px;
+      color: #333333;
+      font-weight: 500;
+      margin-right: 12px;
+      margin-left: 15px;
+    }
+    .sub-title {
+      font-size: 12px;
+      color: #cccccc;
+      letter-spacing: 0.4px;
+    }
+  }
+  .related-product-box {
+    padding-top: 15px;
+    padding-left: 15px;
+
+    .product-view {
+      width: 60px;
+      position: relative;
+      margin-right: 12px;
+      .product {
+        position: relative;
+        margin-right: 12px;
+        .item-img {
+          width: 60px;
+        }
+        .delete-icon {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 15px;
+          z-index: 1;
+          margin: 0 0 10px 10px;
+        }
+      }
+    }
+  }
+}
+
+.related-list-container {
+  margin-bottom: 65px;
+  .title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    padding: 24px 0 16px 0;
+    margin: 0 15px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .product-item {
+    .related-item-container {
+      margin: 0 15px;
+      border-bottom: 1px solid #f2f2f2;
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+      .select-button-view {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        .button-img {
+          width: 18px;
+        }
+      }
+      .related-item-img {
+        width: 76px;
+        margin-right: 28px;
+      }
+      .product-details {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .name {
+          font-size: 15px;
+          color: #242424;
+          letter-spacing: 0.94px;
+        }
+        .product-title {
+          font-size: 12px;
+          color: #989898;
+          letter-spacing: 0.75px;
+          line-height: 22px;
+        }
+        .size {
+          font-size: 12px;
+          color: #989898;
+        }
+      }
+    }
+  }
+}
+
+.style-tags-container {
+  .title {
+    font-weight: 500;
+    font-size: 14px;
+    color: #242424;
+    margin: 24px 0 16px 15px;
+  }
+  .tags-box {
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    .tag-item {
+      width: flex_pt(80);
+      height: 26px;
+      box-sizing: border-box;
+      border: 1px solid #b2b2af;
+      border-radius: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: flex_pt(8);
+      margin-bottom: 12px;
+      font-size: 12px;
+      color: #5e5e5e;
+    }
+    .tag-item-on {
+      border: 1px solid #e85c40;
+      color: #e85c40;
+      background: #fff2ef;
+    }
+  }
+}

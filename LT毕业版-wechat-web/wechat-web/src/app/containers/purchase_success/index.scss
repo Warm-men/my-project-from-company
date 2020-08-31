@@ -1,0 +1,112 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.purchase-success {
+  padding: flex_pt(30) flex_pt(20) 0px;
+  min-height: 100vh;
+  &.not-follow {
+    padding-bottom: flex_pt(40);
+  }
+  img.refer-suc {
+    display: block;
+    margin: 0px auto flex_pt(13);
+    width: flex_pt(75);
+    height: flex_pt(75);
+  }
+  .desc {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #242424;
+    letter-spacing: 0.6px;
+    text-align: center;
+  }
+  .desc-container {
+    padding: flex_pt(0) flex_pt(32) flex_pt(11);
+    background-color: #fff;
+    text-align: center;
+    .follow-tips {
+      font-size: 12px;
+      color: #5e5e5e;
+      letter-spacing: 0.2px;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    .other-btn {
+      background: #e85c40;
+      border-radius: 2px;
+      font-size: 14px;
+      color: #ffffff;
+      letter-spacing: 0.4px;
+      padding: 14px 71px;
+      margin-bottom: 34px;
+      margin-top: 54px;
+      display: inline-block;
+    }
+    .other-text {
+      font-size: 12px;
+      color: #5e5e5e;
+      letter-spacing: 0px;
+      text-align: center;
+      line-height: 20px;
+    }
+  }
+  .download-box {
+    background: #ffffff;
+    border: 1px solid #eee;
+    padding: flex_pt(17) flex_pt(14);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .box-left {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      margin-right: 10px;
+    }
+    .text-box {
+      p {
+        margin-bottom: 0px;
+      }
+      .large {
+        font-size: 12px;
+        color: #242424;
+        letter-spacing: 0.2px;
+        margin-bottom: 5px;
+      }
+      .middle {
+        font-size: 12px;
+        color: #989898;
+        letter-spacing: -0.29px;
+      }
+    }
+    .app-btn {
+      border: 1px solid #b2b2af;
+      border-radius: 2px;
+      padding: flex_pt(9) flex_pt(22);
+      font-size: 12px;
+      color: #242424;
+      letter-spacing: 0px;
+      display: inline-block;
+    }
+  }
+  .details {
+    text-align: center;
+    font-size: 12px;
+    color: #5e5e5e;
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  img.referral-code {
+    width: flex_pt(250);
+    height: flex_pt(250);
+  }
+  .tips-text {
+    text-align: center;
+    font-size: 12px;
+    color: #989898;
+    padding: 0px flex_pt(48);
+  }
+}

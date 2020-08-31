@@ -1,0 +1,20 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.purchase-products-guide {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 120;
+  background-color: #00000099;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  .guide-img {
+    width: 140px;
+    margin-left: 110px;
+  }
+  .had-hint {
+    margin-top: 43px;
+  }
+}

@@ -1,0 +1,57 @@
+@import '~styles/flex_box';
+
+.shape-waist-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #242424;
+  letter-spacing: 0.4px;
+  padding: 36px 10px 24px;
+}
+
+.shape-waist-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .shape-waist-item {
+    width: flex_pt(136);
+    height: flex_pt(164);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .shape-waist-icon {
+      width: flex_pt(120);
+      height: flex_pt(90);
+      margin-top: 8px;
+    }
+    .shape-waist-item-title {
+      font-size: 14px;
+      color: #242424;
+      letter-spacing: 0.4px;
+      line-height: 30px;
+    }
+    .shape-waist-item-content {
+      font-size: 12px;
+      color: #989898;
+    }
+    .active-icon {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .active {
+    border: 1px solid #e85c40;
+    box-shadow: 0 0 4px 0 rgba(214, 125, 107, 0.3);
+  }
+}

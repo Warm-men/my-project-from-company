@@ -1,0 +1,71 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.sticker-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sticker-icon {
+    position: relative;
+    .sticker-radius {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: living 1s linear infinite;
+      animation-direction: alternate;
+    }
+    .sticker-circle {
+      background-color: #fff;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+    }
+  }
+  .sticker-border {
+    height: 1px;
+    width: 16px;
+    background-color: #fff;
+  }
+  .sticker-title {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #ffffff;
+    border-radius: 10.5px;
+    font-size: 12px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 12px;
+    padding: 4px 6px 4px;
+    display: flex;
+    align-items: center;
+    .text {
+      max-width: 108px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+@keyframes living {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.4; /*圆形放大的同时，透明度逐渐减小为0*/
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

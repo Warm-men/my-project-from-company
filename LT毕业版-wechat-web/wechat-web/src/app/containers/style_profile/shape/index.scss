@@ -1,0 +1,38 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.shape-container {
+  text-align: center;
+  margin-top: 80px;
+
+  .shape-box {
+    display: inline-block;
+    width: flex_pt(64);
+    text-align: center;
+    margin: 0px flex_pt(15) flex_pt(32);
+    .shape-img {
+      width: flex_pt(72);
+      height: flex_pt(90);
+      margin-bottom: flex_pt(16);
+    }
+
+    .shape-display {
+      font-size: 13px;
+      color: #5e5e5e;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 14px;
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid #cccccc;
+      border-radius: 2px;
+      &.select {
+        color: #fff;
+        background: #f2be7d;
+        border: 1px solid #f2be7d;
+      }
+    }
+  }
+}

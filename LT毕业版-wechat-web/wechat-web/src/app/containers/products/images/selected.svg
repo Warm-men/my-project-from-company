@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>已选</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="服饰列表" transform="translate(-339.000000, -82.000000)">
+            <g id="table" transform="translate(0.000000, 64.000000)">
+                <g id="智能选码" transform="translate(275.000000, 14.000000)">
+                    <g id="已选" transform="translate(64.000000, 4.000000)">
+                        <path d="M1,0.5 C0.723857625,0.5 0.5,0.723857625 0.5,1 L0.5,11 C0.5,11.2761424 0.723857625,11.5 1,11.5 L11,11.5 C11.2761424,11.5 11.5,11.2761424 11.5,11 L11.5,1 C11.5,0.723857625 11.2761424,0.5 11,0.5 L1,0.5 Z M1,0 L11,0 C11.5522847,0 12,0.44771525 12,1 L12,11 C12,11.5522847 11.5522847,12 11,12 L1,12 C0.44771525,12 0,11.5522847 0,11 L0,1 C0,0.44771525 0.44771525,0 1,0 Z" id="未选" fill="#979797" fill-rule="nonzero"></path>
+                        <polygon id="Combined-Shape" fill="#5E5E5E" points="5.49632034 7.27665043 8.67830086 4.09466991 9.38540764 4.8017767 5.49632034 8.69086399 3.02144661 6.21599026 3.72855339 5.50888348"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

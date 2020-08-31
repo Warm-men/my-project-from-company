@@ -1,0 +1,43 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.about-detail {
+  .letote-desc {
+    font-size: 15px;
+    color: #5e5e5e;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+  .about-letote {
+    padding: 0 flex_pt(20) 30px;
+    img.letote-logo {
+      display: block;
+      width: flex_pt(97);
+      height: flex_pt(130);
+      margin: 32px auto 12px;
+    }
+    .letote-descrition {
+      font-size: 13px;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 4px;
+    }
+    .letote-area {
+      .main {
+        font-size: 18px;
+        margin-top: 42px;
+        font-weight: bold;
+      }
+      .letote-info {
+        font-size: 15px;
+        color: #5e5e5e;
+        letter-spacing: 0.3px;
+        line-height: 24px;
+      }
+      .letote-red {
+        color: $primary-color-new;
+      }
+    }
+  }
+}

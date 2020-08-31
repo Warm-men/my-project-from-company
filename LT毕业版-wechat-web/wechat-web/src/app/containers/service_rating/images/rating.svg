@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>评价</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="评价" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.评价服饰" transform="translate(-47.000000, -236.000000)">
+            <g id="评价" transform="translate(49.000000, 238.000000)">
+                <g id="Oval-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M13.8284271,16 L12,17.8284271 L10.1715729,16 L7,16 C6.44771525,16 6,15.5522847 6,15 L6,8 C6,7.44771525 6.44771525,7 7,7 L17,7 C17.5522847,7 18,7.44771525 18,8 L18,15 C18,15.5522847 17.5522847,16 17,16 L13.8284271,16 Z" id="Combined-Shape" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round"></path>
+                <rect id="Rectangle-2-Copy" fill="#CCCCCC" x="9" y="11" width="6" height="1" rx="0.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

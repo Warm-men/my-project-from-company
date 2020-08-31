@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="utf-8">
+  <!-- 基础设置 -->
+  <meta name="theme-color" content="#000000">
+  <meta name="renderer" content="webkit">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="browsermode" content="application">
+  <meta name="x5-page-mode" content="app">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="format-detection" content="telephone=no, email=no">
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!-- adhoc sdk -->
+  <script src=https://sdk.appadhoc.com/ab.plus.js> </script> <script>
+    function generateUUID() {
+      var d = new Date().getTime();
+      var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        var r = (d + Math.random() * 16) % 16 | 0;
+        d = Math.floor(d / 16);
+        return (c == 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+      });
+      return uuid;
+    }
+
+    function getCount(str, character) {
+      const regex = new RegExp(character, 'g')
+      const result = str.match(regex)
+      return !result ? 0 : result.length
+    }
+
+    let CLIENT_ID = null
+    for (let i = 0; i < localStorage.length; i++) {
+      localKey = localStorage.key(i)
+      if (localKey.length === 36 && localKey.indexOf('-') === 8 && getCount(localKey, '-') === 4) {
+        CLIENT_ID = localStorage.getItem(localKey)
+      }
+    }
+
+    if (!CLIENT_ID) {
+      const UUID = generateUUID()
+      CLIENT_ID = UUID
+      localStorage.setItem(UUID, UUID)
+    }
+    let appKey = ''
+    const locationHref = window.location.href
+    if (locationHref && locationHref.match('wechat.letote.cn')) {
+      appKey = 'ADHOC_946d1d52-5f6e-4282-8c0e-be7e346bf244'
+    } else if (locationHref && locationHref.match('wechat-dev.letote.cn')) {
+      appKey = 'ADHOC_1646cb7c-872d-438c-b52c-d9ec6e6960ea'
+    } else if (locationHref && locationHref.match('wechat-staging1.letote.cn')) {
+      appKey = 'ADHOC_a85fb758-f82d-44ce-845e-20f89af56b3f'
+    } else {
+      appKey = 'ADHOC_1646cb7c-872d-438c-b52c-d9ec6e6960ea'
+    }
+
+    //init ab test
+    window.adhoc('init', {
+      appKey,
+      clientId: CLIENT_ID,
+      defaultFlags: {
+        USE_CREDIT_OR_MOBILE: false
+      }
+    })
+  </script>
+  <!-- adhoc sdk end -->
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+</body>
+
+</html>

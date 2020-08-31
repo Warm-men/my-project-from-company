@@ -1,0 +1,16 @@
+@import 'src/assets/stylesheets/variables';
+.product-modal-inner {
+  .add-to-cart {
+    float: right;
+    width: 48%;
+  }
+}
+body.mobile {
+  .product-modal-inner {
+    .add-to-cart {
+      position: relative;
+      bottom: 50px;
+      z-index: 2;
+    }
+  }
+}

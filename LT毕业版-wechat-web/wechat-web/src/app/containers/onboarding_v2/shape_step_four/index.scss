@@ -1,0 +1,48 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.shape-v2 {
+  .images-goups {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 55px;
+
+    .wraper {
+      .shape-image {
+        display: inline-block;
+        width: flex_pt(64);
+        height: flex_pt(88);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        margin-right: flex_pt(15);
+        margin-left: flex_pt(15);
+      }
+
+      .button-shape {
+        border: 1px solid #cccccc;
+        border-radius: 2px;
+        font-size: 13px;
+        letter-spacing: 0.43px;
+        width: flex_pt(70);
+        height: flex_pt(32);
+        text-align: center;
+        line-height: flex_pt(32);
+        margin-top: 28px;
+        margin-right: flex_pt(15);
+        margin-left: flex_pt(15);
+      }
+
+      &:nth-child(4) {
+        margin-top: 32px;
+        margin-left: 30px;
+      }
+
+      &:nth-child(5) {
+        margin-top: 32px;
+        margin-right: 30px;
+      }
+    }
+  }
+}

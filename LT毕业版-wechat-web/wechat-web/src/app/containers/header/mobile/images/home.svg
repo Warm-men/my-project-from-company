@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>首页-默认</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wechat-底部导航栏" transform="translate(-81.000000, -28.000000)">
+            <g id="750_navBar_默认" transform="translate(30.000000, 22.000000)">
+                <g id="首页-默认" transform="translate(50.000000, 4.000000)">
+                    <rect id="Rectangle-18" fill="#FFFFFF" opacity="0" x="0" y="0" width="25" height="25"></rect>
+                    <g stroke-width="1" transform="translate(1.000000, 2.000000)" fill="#B2B2AF">
+                        <path d="M19,20 L20,20 L19,21 L19,20 Z M19,20 L19,9.25344669 L20,9.25344669 L20,21 L13,21 L13,15 L10,15 L10,21 L3,21 L3,9.19192505 L4,9.19192505 L4,20 L9,20 L9,14 L14,14 L14,20 L19,20 Z M14,20 L14,21 L13,20 L14,20 Z M9,20 L10,20 L9,21 L9,20 Z M4,20 L4,21 L3,20 L4,20 Z M4,20 L4,21 L3,20 L4,20 Z M4,20 L9,20 L9,14 L14,14 L14,20 L19,20 L19,9.25344669 L20,9.25344669 L20,21 L13,21 L13,15 L10,15 L10,21 L3,21 L3,9.19192505 L4,9.19192505 L4,20 Z M9,20 L10,20 L9,21 L9,20 Z M14,20 L14,21 L13,20 L14,20 Z M19,20 L20,20 L19,21 L19,20 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+                        <g id="Group" fill-rule="nonzero">
+                            <polygon id="Rectangle-6" transform="translate(11.480078, 11.750000) rotate(-315.000000) translate(-11.480078, -11.750000) " points="4.56384117 4.83376362 4.56384117 19.690864 3.53921356 19.690864 3.53921356 3.80913601 19.4209415 3.80913601 19.4209415 4.83376362"></polygon>
+                        </g>
+                        <rect id="Rectangle-7" x="4" y="1" width="1" height="7"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

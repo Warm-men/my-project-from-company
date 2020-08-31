@@ -1,0 +1,51 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.read {
+  vertical-align: middle;
+  margin: 20px 0px;
+  text-align: left;
+  .icon {
+    width: flex_pt(15);
+    height: flex_pt(15);
+    margin-right: flex_pt(5);
+    background: url('./../images/instruction.png') no-repeat center;
+    background-size: flex_pt(15) flex_pt(15);
+  }
+
+  b {
+    color: #000;
+    display: inline-block;
+  }
+
+  i {
+    margin-top: 3.8vw;
+    display: inline-block;
+    width: 4.8vw;
+    height: 4.8vw;
+  }
+
+  .no-selected {
+    background: url('~src/assets/images/plans/bg.png') no-repeat center;
+    background-size: 4.8vw 4.8vw;
+  }
+
+  .select {
+    background: url('~src/assets/images/plans/select.png') no-repeat center;
+    background-size: 4.8vw 4.8vw;
+  }
+
+  span {
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #9f9da6;
+    line-height: 16px;
+  }
+
+  .agreement-text {
+    color: #83adeb;
+  }
+}

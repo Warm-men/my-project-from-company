@@ -1,0 +1,136 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.mplans {
+  padding-top: 10px;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f7f7f7;
+
+  .mplans-agreement {
+    width: 100vw;
+    position: fixed;
+    bottom: flex_pt(70);
+  }
+
+  .mplans-agree {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .jd-credit {
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+    display: flex;
+    width: 100%;
+    height: 11.73333vw;
+    line-height: 11.73333vw;
+    padding: 0px 10.66667vw;
+    margin-top: 25px;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+
+    .referral-amount {
+      font-size: 14px;
+      color: #242424;
+    }
+  }
+
+  .referral-code {
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    display: flex;
+    width: 100%;
+    height: 11.73333vw;
+    line-height: 11.73333vw;
+    padding: 0px 10.66667vw;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    .referral-amount {
+      font-size: 14px;
+
+      span {
+        color: $primary-color-new;
+      }
+    }
+  }
+
+  .card-type {
+    border: 1px solid #e85c40;
+    box-shadow: 0 6px 8px 0 rgba(154, 47, 25, 0.11);
+    margin-top: 20px;
+    position: relative;
+    padding: 22px 20px 26px;
+    width: flex_pt(335);
+    height: 128px;
+    background: rgba(255, 255, 255, 0.39);
+    border: 1px solid #ebeaea;
+    box-shadow: 0 6px 8px 0 rgba(172, 172, 172, 0.11);
+    border-radius: 6px;
+
+    .vacation-type {
+      font-size: 18px;
+      color: #242424;
+      letter-spacing: 0.68px;
+      font-weight: bold;
+    }
+
+    .vacation-content {
+      font-size: 13px;
+      color: #5e5e5e;
+      letter-spacing: 0.4px;
+      line-height: 22px;
+      margin-top: 4px;
+
+      .num {
+        font-size: 16px;
+        color: #242424;
+      }
+    }
+
+    .send-code {
+      width: 128px;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      font-size: 11px;
+      color: $white;
+      letter-spacing: 0.41px;
+      background-image: linear-gradient(-123deg, #e85c40 0%, #e66a6a 100%);
+      box-shadow: 0 2px 4px 0 rgba(175, 45, 24, 0.15);
+      border-top-left-radius: 11px;
+      border-bottom-right-radius: 11px;
+      margin-top: 8px;
+    }
+
+    .mplans-price {
+      position: absolute;
+      right: 20px;
+      top: 48px;
+      font-size: 28px;
+      color: #e85c40;
+      font-weight: bold;
+
+      .yen {
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .activedCard {
+    border: 1px solid #e85c40;
+    background-color: rgba(232, 92, 64, 0.08);
+    background-image: url('../images/selected.svg');
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-position: 101% 101%;
+    box-shadow: 0 6px 8px 0 rgba(154, 47, 25, 0.11);
+  }
+}

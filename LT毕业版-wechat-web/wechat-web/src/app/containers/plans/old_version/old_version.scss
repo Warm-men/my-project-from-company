@@ -1,0 +1,540 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.plans {
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 20vw;
+  overflow: hidden;
+  background-color: #f0f0f0;
+
+  img.annual-card-banner {
+    display: block;
+    width: 100vw;
+    height: flex_pt(210);
+    margin-bottom: flex_pt(12);
+
+    &.seventy-nite {
+      padding: 2vw 3.2vw 0px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .fundement-vip-text {
+    background-color: #f7f0e8;
+    color: #bd8846;
+    font-size: flex_pt(13);
+    padding: flex_pt(16) flex_pt(30);
+    margin-bottom: flex_pt(13);
+    margin-top: flex_pt(13);
+    width: 100vw;
+    margin-left: -4vw;
+  }
+
+  .plans-summer-add-a {
+    width: 100%;
+    height: 44px;
+    line-height: 40px;
+    background-color: $white;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+
+    .plans-summer {
+      width: 96%;
+      height: 100%;
+      line-height: 44px;
+      text-align: left;
+      padding-left: flex_pt(36);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block;
+      margin: 0 auto;
+      font-size: 12px;
+      color: $summer-add-a-color;
+      background: url('~src/assets/images/totes/gift.png') no-repeat;
+      background-size: flex_pt(20) flex_pt(18);
+      background-position-x: 8px;
+      background-position-y: 12px;
+    }
+
+    .plans-summer-subsciber {
+      padding-left: flex_pt(40);
+    }
+  }
+
+  .mid {
+    margin: 0 auto;
+    padding: 0px flex_pt(15);
+
+    .sub-activity {
+      margin-top: flex_pt(10);
+      margin-bottom: flex_pt(10);
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #d9d9d9;
+    }
+
+    .read {
+      text-align: center;
+    }
+
+    .jd-credit {
+      background-color: #fff;
+      border: 1px solid #d9d9d9;
+      border-bottom: none;
+      display: flex;
+      width: 100%;
+      height: 11.73333vw;
+      line-height: 11.73333vw;
+      padding: 0px flex_pt(20);
+      font-size: 14px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      border-radius: 4px;
+
+      .referral-amount {
+        font-size: 12px;
+        color: #242424;
+      }
+
+      .jd-payment-icon {
+        width: 78px;
+        height: 44px;
+        background: url('./../images/jd-payment-icon.svg') no-repeat center;
+        background-size: 100%;
+      }
+    }
+
+    .border-buttom {
+      border-bottom: 1px solid #d9d9d9;
+    }
+
+    span.vip {
+      position: relative;
+      border: 1px solid #d9d9d9;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: flex_pt(20);
+      padding-right: 5px;
+      div {
+        display: inline-block;
+        height: flex_pt(44);
+        line-height: flex_pt(44);
+        font-size: 14px;
+      }
+
+      .vip-promo-code {
+        font-size: 13px;
+        color: $primary-color-new;
+        display: flex;
+        align-items: center;
+      }
+
+      .not-has-promo-code {
+        color: $font-not-active;
+        font-size: 13px;
+      }
+
+      i {
+        display: inline-block;
+        width: 5.5vw;
+        height: 5.5vw;
+        vertical-align: middle;
+      }
+
+      &:nth-of-type(1) {
+        border-bottom: none;
+        i {
+          background: url('~src/assets/images/plans/next.png') no-repeat center;
+          background-size: flex_pt(7) flex_pt(12);
+        }
+      }
+    }
+
+    .referral-code {
+      background-color: $white;
+      border: 1px solid #d9d9d9;
+      display: inline-block;
+      width: 100%;
+      height: 48px;
+      line-height: 48px;
+      padding-left: flex_pt(20);
+      font-size: 14px;
+      position: relative;
+      // border-radius: 4px;
+
+      .referral-amount {
+        position: absolute;
+        right: flex_pt(20);
+        font-size: 13px;
+
+        span {
+          color: $primary-color-new;
+        }
+      }
+
+      .referral-save {
+        font-size: 14px;
+        position: absolute;
+        right: flex_pt(20);
+        color: $primary-color-new;
+      }
+
+      .discount-amount {
+        position: absolute;
+        right: flex_pt(20);
+        font-size: 14px;
+        text-decoration: line-through;
+      }
+    }
+
+    .vip-benefits {
+      background-color: #fff;
+      margin-top: flex_pt(10);
+      border-radius: 4px;
+
+      .benefits-title {
+        font-size: flex_pt(14);
+        color: #242424;
+        padding-top: flex_pt(15);
+        padding-left: flex_pt(21);
+        padding-bottom: flex_pt(11);
+        border: 1px solid #d9d9d9;
+        border-bottom: 1px solid #f3f3f3;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+
+      .benefits {
+        width: 100%;
+        height: 228px;
+        border: 1px solid #d9d9d9;
+        border-top: none;
+      }
+
+      .benefits-list {
+        color: #5e5e5e;
+        font-size: flex_pt(12);
+        border-bottom: 1px solid #f0f0f0;
+
+        .list-left {
+          display: inline-block;
+          width: 50%;
+          text-align: center;
+          border-right: 1px solid #f0f0f0;
+          height: flex_pt(76);
+          line-height: flex_pt(76);
+        }
+
+        .list-right {
+          display: inline-block;
+          width: 50%;
+          text-align: center;
+          height: flex_pt(76);
+          line-height: flex_pt(76);
+        }
+
+        .benefits-text {
+          margin-left: flex_pt(10);
+        }
+
+        .benefits-img {
+          background-size: 100%;
+          display: inline-block;
+          background-repeat: no-repeat;
+          vertical-align: middle;
+          height: flex_pt(36);
+          width: flex_pt(36);
+        }
+      }
+    }
+
+    div.card {
+      display: block;
+      // width: flex_pt(340);
+      width: 100%;
+      height: flex_pt(194);
+      border: none;
+      margin-top: 5.3vw;
+      margin-bottom: flex_pt(19);
+      border-radius: 0.54vw;
+      background: url('./../images/pay_card.png') no-repeat center;
+      background-size: 100%;
+      position: relative;
+
+      .couple-gift-logo {
+        position: absolute;
+        right: 3px;
+        top: 4px;
+        width: 80px;
+        height: 78px;
+        background: url('~src/app/containers/plans/images/abtest/couple_gift.png')
+          no-repeat center;
+        background-size: 100%;
+      }
+
+      .pre-price {
+        position: absolute;
+        top: flex_pt(102);
+        right: flex_pt(20);
+        font-size: 12px;
+        text-decoration: line-through;
+        color: #f9f2e4;
+      }
+
+      .card-tips {
+        position: absolute;
+        left: flex_pt(20);
+        bottom: flex_pt(34);
+        padding: 6px;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        font-size: 14px;
+        color: #e6dbc1;
+        text-align: center;
+        background-image: url('./../images/tips.png');
+      }
+
+      .bg-card-title {
+        color: #f8efdd;
+        font-weight: bold;
+        position: absolute;
+        left: flex_pt(20);
+        top: flex_pt(25);
+        font-size: flex_pt(21);
+        letter-spacing: flex_pt(1.5);
+        display: flex;
+        align-items: center;
+
+        .icon {
+          width: flex_pt(27);
+          height: flex_pt(16);
+          margin-left: flex_pt(98);
+        }
+      }
+
+      .card-bg-price {
+        color: #f9f2e4;
+        font-size: flex_pt(32);
+        display: inline-block;
+        position: absolute;
+        right: flex_pt(20);
+        bottom: flex_pt(28);
+
+        div.date {
+          font-size: 12px;
+          color: #f9f2e4;
+          display: inline-block;
+        }
+      }
+    }
+
+    div.title {
+      margin-top: 12vw;
+      font-size: 4.3vw;
+      color: #2e2e2e;
+    }
+  }
+}
+
+.plans-success {
+  padding-top: flex_pt(120);
+  text-align: center;
+  min-height: 100vh;
+  width: 100vw;
+
+  .plans-image {
+    background-image: url('~src/assets/images/plans/icon_buysuccessful.png');
+    width: 76px;
+    height: 76px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto flex_pt(20);
+  }
+
+  .plans-title {
+    font-size: 16px;
+    color: #242424;
+    letter-spacing: 5px;
+    line-height: 16px;
+    border-bottom: 1px solid #ea5c39;
+    padding-bottom: 12px;
+    width: 203px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .plans-text {
+    margin-bottom: 33px;
+    text-align: center;
+    font-size: 14px;
+    color: #989898;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+
+    &.clear-margin {
+      margin-bottom: 12px;
+    }
+  }
+
+  .plans-success-btn {
+    color: #fff;
+    display: inline-block;
+    width: flex_pt(200);
+    height: flex_pt(48);
+    line-height: flex_pt(48);
+    border-radius: 2px;
+    background-color: #e85c40;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .plans-renew-btn {
+    border: 1px solid #b2b2af;
+    color: #000;
+    display: inline-block;
+    width: flex_pt(200);
+    height: flex_pt(48);
+    line-height: flex_pt(48);
+    border-radius: flex_pt(4);
+  }
+}
+
+.not-follow-user {
+  .icon {
+    display: block;
+    width: flex_pt(80);
+    height: flex_pt(80);
+    background: url('~src/assets/images/plans/icon_buysuccessful.png') no-repeat
+      center;
+    background-size: flex_pt(80) flex_pt(80);
+    margin-top: 70px;
+  }
+
+  p.not-follow-suc {
+    width: 100vw;
+    text-align: center;
+    font-size: 16px;
+    line-height: 38px;
+    height: 16px;
+    color: rgb(36, 36, 36);
+  }
+
+  .qr-code {
+    display: block;
+    width: flex_pt(200);
+    height: flex_pt(200);
+    margin-top: 24px;
+  }
+
+  .follow-me {
+    width: 100vw;
+    font-size: 12px;
+    color: '#5e5e5e';
+    text-align: center;
+  }
+}
+
+.plans-handle {
+  margin-top: flex_pt(189);
+  text-align: center;
+
+  p {
+    margin-top: flex_pt(29);
+    color: #5f5f5f;
+    font-size: flex_pt(13);
+  }
+}
+
+.top-boby {
+  padding-bottom: 60px;
+}
+
+.bottom-body {
+  height: 60px;
+  width: 100%;
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  background-color: #f5f5f5;
+  box-shadow: 0px -1px 0px 0px #c8c8c8;
+
+  p {
+    font-size: 12px;
+    line-height: 60px;
+    color: #001f41;
+    margin: 0px 0px 0px 25px;
+    width: 47vw;
+
+    font {
+      font-size: 18px;
+      font-weight: bold;
+      color: #001f41;
+    }
+  }
+
+  button {
+    position: absolute;
+    bottom: 6px;
+    right: 25px;
+    width: 37vw;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    background-color: #ea5b39;
+    color: #ffffff;
+  }
+}
+
+.unbunded-tel {
+  width: 100vw;
+  min-height: 100vh;
+
+  .not-bind-tel {
+    display: block;
+    width: flex_pt(76);
+    height: flex_pt(76);
+    background: url('./../images/sucsess.png') no-repeat center;
+    background-size: 100%;
+    margin: 118px auto 16px;
+  }
+
+  .payment-state {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #242424;
+    margin-bottom: 10px;
+  }
+
+  .unbunded-desc {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #5e5e5e;
+    letter-spacing: 0.4px;
+  }
+
+  .unbunded-tel-btn {
+    display: block;
+    margin: 32px auto 0;
+    color: #fff;
+    width: flex_pt(200);
+    height: flex_pt(48);
+    text-align: center;
+    line-height: flex_pt(48);
+    border-radius: 2px;
+    background-color: #e85c40;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

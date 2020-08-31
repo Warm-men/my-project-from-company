@@ -1,0 +1,70 @@
+@import '../variables';
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.title-divider-content-header {
+  padding: flex_pt(20) 0vw flex_pt(20);
+  background-color: #fff;
+  text-align: center;
+  .header-title-placeholder {
+    .header-title {
+      position: relative;
+      padding: 1.4vh 0 1.2vh;
+      // background-color: #fff;
+      font-size: flex_pt(16);
+      color: #242424;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border: none;
+      z-index: 100;
+      &.fixed {
+        position: fixed;
+        top: $nav-bar-height;
+        left: 0;
+        right: 0;
+        padding: 1.2vh 0;
+        border-bottom: 1px solid #eee;
+        &.nav-bar-hidden {
+          top: 0;
+        }
+      }
+    }
+  }
+  .header-subtitle-placeholder {
+    margin: 10px 0px 0;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 0.82rem;
+  }
+  .header-divider {
+    width: flex_pt(48);
+    height: flex_pt(1);
+    margin: 0 auto flex_pt(12);
+    border-bottom: 1px solid $black;
+  }
+  .header-body {
+    font-size: flex_pt(12);
+    line-height: flex_pt(12);
+    color:#989898;
+    a {
+      font-size: 0.82rem;
+      font-family: $proxima;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+    p {
+      margin-bottom: 0px;
+      // font-size: 0.82rem;
+    }
+  }
+  a.button {
+    color: $coral;
+    border-radius: 2px;
+    border: 1px solid $coral;
+    font-family: $proxima-bold;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    background-color: #fff;
+    padding: 0 12px 12px 12px;
+  }
+}

@@ -1,0 +1,42 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.closet-tips-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.58);
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  z-index: 1005;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px flex_pt(20);
+  .closet-tips {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: flex_pt(16.5) flex_pt(30) flex_pt(24.5);
+    text-align: center;
+    .closet-tips-icon {
+      background-image: url('~src/assets/images/collectionsuccessful_guide.png');
+      display: inline-block;
+      width: flex_pt(65);
+      height: flex_pt(71.5);
+      background-size: 100%;
+    }
+    .closet-tips-title {
+      font-size: flex_pt(18);
+      color: #242424;
+      margin-top: flex_pt(15);
+      margin-bottom: flex_pt(14);
+    }
+    .closet-tips-text {
+      font-size: flex_pt(14);
+      color: #5e5e5e;
+      margin-bottom: flex_pt(20);
+    }
+  }
+}

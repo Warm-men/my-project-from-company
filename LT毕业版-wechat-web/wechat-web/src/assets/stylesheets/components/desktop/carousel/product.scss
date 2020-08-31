@@ -1,0 +1,10 @@
+@import 'src/assets/stylesheets/variables';
+
+.mobile {
+  #tote-swap-product,
+  #product {
+    .product-catalogue-photo:after {
+      width: 100%;
+    }
+  }
+}

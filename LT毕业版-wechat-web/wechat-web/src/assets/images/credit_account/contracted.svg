@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>开通icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="5.2.3信用账户-已开通免密-空" transform="translate(-235.000000, -110.000000)" fill="#FFFFFF">
+            <path d="M242,124 C238.134007,124 235,120.865993 235,117 C235,113.134007 238.134007,110 242,110 C245.865993,110 249,113.134007 249,117 C249,120.865993 245.865993,124 242,124 Z M240.828427,118.242641 L238.707107,116.12132 L238,116.828427 L240.828427,119.656854 L245.778175,114.707107 L245.071068,114 L240.828427,118.242641 Z" id="开通icon"></path>
+        </g>
+    </g>
+</svg>

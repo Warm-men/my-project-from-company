@@ -1,0 +1,40 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+@import 'src/assets/stylesheets/variables';
+
+.schedule-fail {
+  text-align: center;
+  .fail-img {
+    margin-top: flex_pt(115);
+    width: flex_pt(75);
+    height: flex_pt(75);
+    display: inline-block;
+    background-image: url('~src/assets/images/fail.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: flex_pt(20);
+  }
+  .fail-title-large {
+    color: #242424;
+    font-size: flex_pt(16);
+    margin-bottom: flex_pt(15);
+  }
+  .fail-title-middle {
+    color: #5e5e5e;
+    font-size: flex_pt(14);
+    margin-bottom: flex_pt(40);
+  }
+  .fail-title-small {
+    font-size: flex_pt(12);
+    color: #5e5e5e;
+    margin-bottom: flex_pt(40);
+  }
+  .fail-btn {
+    width: flex_pt(200);
+    height: flex_pt(48);
+    line-height: flex_pt(48);
+    text-align: center;
+    border: 1px solid #b2b2af;
+    color: $black;
+    display: inline-block;
+  }
+}

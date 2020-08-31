@@ -1,0 +1,30 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.memvbership {
+  transform: translateY(-64px);
+  img {
+    display: block;
+    width: flex_pt(75);
+    height: flex_pt(75);
+    margin: 0 auto;
+    margin-top: 218px;
+    margin-bottom: flex_pt(20);
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  p.sorry-text-large {
+    width: 100vw;
+    text-align: center;
+    font-size: flex_pt(14);
+    color: #989898;
+  }
+  p.sorry-text-middle {
+    width: 100vw;
+    text-align: center;
+    font-size: flex_pt(12);
+    margin-top: 10px;
+    color: #989898;
+  }
+}

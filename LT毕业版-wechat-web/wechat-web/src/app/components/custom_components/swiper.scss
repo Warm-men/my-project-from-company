@@ -1,0 +1,19 @@
+.custom-swiper-slide {
+  // flex-negative: 0;
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.custom-swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  /* autoprefixer: off */
+  display: box;
+  transition-property: transform, -webkit-transform;
+  box-sizing: content-box;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="249px" height="291px" viewBox="0 0 249 291" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M228.331023,3.41138229e-11 C231.118178,7.02923982 237.978597,12 246,12 C247.020803,12 248.022804,11.9194981 249,11.7644965 L249,283 C249,287.418278 245.418278,291 241,291 L8,291 C3.581722,291 5.41083001e-16,287.418278 0,283 L-1.77635684e-15,8 C-2.31743984e-15,3.581722 3.581722,8.11624501e-16 8,0 L228.331023,0 Z" id="path-1"></path>
+    </defs>
+    <g id="邀请好友提示" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="referral会员领取提示优化" transform="translate(-63.000000, -192.000000)">
+            <g id="Group-2" transform="translate(63.000000, 172.000000)">
+                <g id="Group" transform="translate(0.000000, 20.000000)">
+                    <g id="Bitmap">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

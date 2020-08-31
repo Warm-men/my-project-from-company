@@ -1,0 +1,45 @@
+@import '~styles/flex_box.scss';
+
+.rating-middle-page {
+  .middle-page-text {
+    padding: 56px 56px 0px;
+    .title {
+      font-size: 16px;
+      color: #333333;
+      letter-spacing: 0;
+      line-height: 14px;
+    }
+    .text {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #333333;
+      letter-spacing: 0.2px;
+      line-height: 24px;
+    }
+    .sign {
+      margin-top: 18px;
+      font-size: 12px;
+      color: #333333;
+      letter-spacing: 0.17px;
+      line-height: 12px;
+      text-align: right;
+    }
+    .middle-page-btn {
+      margin-top: 44px;
+      background: #e85c40;
+      border-radius: 2px;
+      font-size: 14px;
+      color: #ffffff;
+      padding: 12px 0px 12px;
+      text-align: center;
+    }
+  }
+  .border-raius {
+    background: #fff;
+    margin-top: -20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    width: 100vw;
+  }
+}

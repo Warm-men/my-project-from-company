@@ -1,0 +1,50 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+table.progress-table {
+  width: 100vw;
+  margin-top: 20px;
+  tbody {
+    display: inline-block;
+    width: 100%;
+    padding: 0px flex_pt(20);
+    tr {
+      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 10px;
+      &:nth-of-type(2n + 1) {
+        background-color: #f9f9f9;
+      }
+      td {
+        font-size: flex_pt(14);
+        color: $dark-gray;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &:nth-of-type(1) {
+          span {
+            display: flex;
+            img {
+              display: inline-block;
+              width: 44px;
+              height: 44px;
+              border-radius: 50%;
+            }
+            &:nth-of-type(2) {
+              display: inline-block;
+              padding-left: flex_pt(10);
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          text-align: left;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

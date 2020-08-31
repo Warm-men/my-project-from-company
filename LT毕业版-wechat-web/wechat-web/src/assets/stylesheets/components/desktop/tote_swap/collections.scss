@@ -1,0 +1,80 @@
+@import '../../../variables';
+@import 'src/assets/stylesheets/flex_box.scss';
+
+#tote-swap-collections {
+  @keyframes pulse {
+    0% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .collection-title {
+    font-family: $playfair;
+    font-size: 15px;
+    color: #242424;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+
+  .closet-wrapper {
+    box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.12);
+    padding: 15px;
+  }
+
+  .closet-top-row {
+    display: flex;
+  }
+
+  .closet-button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid $mid-gray;
+    font-family: $raleway;
+    font-size: 12px !important;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    text-align: center;
+    color: $black;
+    border-radius: 2px;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    margin: 30px 0 0 30px;
+    display: inline-block;
+  }
+
+  .container {
+    &:last-of-type {
+      margin-bottom: 100px
+    }
+  }
+}
+
+body.tote-swap-mobile {
+  .hide-tote-swap {
+    opacity: 0;
+  }
+
+  #tote-swap-collections {
+    overflow-x: hidden;
+    width: 100vw;
+
+    &.collections-loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loading-box {
+      margin-top: 30vh;
+      margin-bottom: 30vh;
+    }
+
+    .container:last-of-type {
+      margin-bottom: 50px;
+    }
+  }
+}

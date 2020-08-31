@@ -1,0 +1,523 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+@import 'src/assets/stylesheets/_variables.scss';
+
+.AccountContainerBox {
+  min-height: calc(100vh - 80px);
+  overflow: hidden;
+  position: relative;
+  background-color: #f7f7f7;
+
+  .pending-hold-box {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #fef8f2;
+    align-items: center;
+  }
+
+  img {
+    line-height: 0px;
+  }
+
+  .AccountContainer {
+    width: 100vw;
+    background-color: #fff;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    &.border-none {
+      border-bottom: none;
+    }
+
+    .AccountBackground {
+      width: 100%;
+    }
+
+    .AccountBox {
+      flex: 1;
+      padding-left: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 15px;
+
+      .AvatorBox {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        .avator {
+          width: 64px;
+          height: 64px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        .vip-icon {
+          position: absolute;
+          width: 20px;
+          right: 0px;
+          bottom: 5px;
+        }
+      }
+
+      .UserInfoBox {
+        display: inline-block;
+        vertical-align: middle;
+        flex: 1;
+        padding-left: 10px;
+
+        .UserName {
+          white-space: pre;
+          display: inline-block;
+          margin-bottom: 4px;
+          font-size: 16px;
+          color: #333333;
+          letter-spacing: 0;
+          line-height: 16px;
+          width: 45vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .gold {
+          color: #e8a046;
+        }
+
+        .new-user-info {
+          .sub-type,
+          .totes-left {
+            font-size: 12px;
+            color: #333333;
+            letter-spacing: 0.75px;
+            height: 19px;
+            line-height: 19px;
+          }
+        }
+
+        .UserTime {
+          font-size: 12px;
+          color: #333333;
+          letter-spacing: 0.75px;
+          line-height: 12px;
+          display: flex;
+          align-items: center;
+        }
+
+        .type-icon {
+          background-image: url('~src/app/containers/account/images/card.svg');
+          background-repeat: no-repeat;
+          background-size: 100%;
+          font-size: 10px;
+          color: #ffffff;
+          letter-spacing: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 2px 3px;
+          margin-left: 4px;
+
+          &.isAndroid {
+            margin-top: 2.5px;
+          }
+        }
+      }
+
+      .BtnBox {
+        display: inline-block;
+        vertical-align: middle;
+        height: 8vw;
+        text-align: right;
+
+        .tips-text {
+          font-size: 12px;
+          color: #666666;
+          letter-spacing: 0;
+          text-align: right;
+        }
+
+        img {
+          height: flex_pt(16);
+        }
+      }
+    }
+
+    .join-btn {
+      background: #ea5c39;
+      border-radius: 2px;
+      font-size: 13px;
+      color: #ffffff;
+      letter-spacing: 0;
+      padding: 6px 10px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .NotVipBox {
+      top: flex_box(70);
+    }
+  }
+
+  .border-box {
+    padding: 0px 15px;
+    background-color: #fff;
+    .account-border {
+      margin: 0px auto;
+      border-bottom: 1px solid #f3f3f3;
+    }
+  }
+
+  .NotInfo {
+    height: flex_box(250);
+  }
+
+  .non-memerships {
+    width: 100vw;
+    height: flex_pt(64);
+    background-color: $white;
+    margin-top: 1px;
+    margin-bottom: 12px;
+    position: relative;
+
+    i.bg {
+      display: inline-block;
+      width: 100%;
+      height: flex_pt(64);
+      background: url('~src/app/containers/account/images/joinmember_banner.png')
+        no-repeat center;
+      background-size: 100%;
+    }
+
+    .account-join-us {
+      width: flex_pt(84);
+      height: flex_pt(30);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: flex_pt(20);
+      background-color: $primary-color;
+      color: $white;
+      text-align: center;
+      line-height: flex_pt(30);
+      border-radius: flex_pt(4);
+      font-size: flex_pt(13);
+    }
+  }
+
+  .user-subscriber {
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .user-subscriber-left {
+      display: inline-block;
+      flex: 2.5;
+      font-size: flex_pt(13);
+      color: #333333;
+      letter-spacing: 0;
+      line-height: flex_pt(20);
+
+      &.extending {
+        padding: 5px 0px;
+      }
+    }
+
+    .user-subscriber-right {
+      display: inline-block;
+      flex: 1;
+      text-align: right;
+
+      .notvip-RenewBtn {
+        background-color: $brand-primary;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        font-size: 3.2vw;
+        // width: 24vw;
+        // height: 8vw;
+        // line-height: 8vw;
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 13px;
+        display: inline-block;
+      }
+
+      .vip-RenewBtn {
+        color: #fff;
+        text-align: center;
+        border-radius: flex_box(4);
+        display: inline-block;
+        background: #ea5c39;
+        padding: 4px 10px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .join-letote {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    background-color: $white;
+  }
+
+  .referral-entry-box {
+    padding-top: 15px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    border-top: 7px solid #f7f7f7;
+
+    .referral-des {
+      display: flex;
+
+      .des {
+        position: relative;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child {
+          border-right: 1px solid #f3f3f3;
+        }
+
+        .number {
+          font-size: 16px;
+          color: #333333;
+          letter-spacing: 0.6px;
+          text-align: center;
+          line-height: 16px;
+          margin-bottom: 6px;
+        }
+
+        .text {
+          font-size: 12px;
+          color: #666666;
+          letter-spacing: 0.45px;
+          text-align: center;
+          line-height: 12px;
+        }
+      }
+      .overdraft-container {
+        position: absolute;
+        right: 35px;
+        top: -5px;
+        background: #e85c40;
+        border-radius: 75px;
+        height: flex_pt(16);
+        padding-left: 5px;
+        padding-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .overdraft-text {
+          font-size: 9px;
+          color: #ffffff;
+          letter-spacing: 0;
+          text-align: center;
+          line-height: 14px;
+        }
+      }
+    }
+
+    .referral-entry {
+      display: block;
+      margin: 22px auto 0px;
+      width: flex_pt(335);
+    }
+  }
+
+  .NavListBox {
+    width: 100%;
+    padding-bottom: 40px;
+    .NavList {
+      background-color: #fff;
+      width: 100%;
+
+      .HeaderNav {
+        padding: 6.667vw 0px;
+        box-shadow: flex_box(0) flex_box(5) flex_box(15) flex_box(5)
+          rgba(42, 42, 42, 0.08);
+
+        .NavLink {
+          text-align: center;
+          font-size: 3.4666vw;
+          color: rgb(159, 157, 166);
+          position: relative;
+          display: inline-block;
+          width: 25%;
+
+          img {
+            height: 6.4vw;
+            display: block;
+            margin: 0px auto 3.2vw;
+          }
+
+          .nav-link-text {
+            line-height: 0px;
+          }
+
+          .hadMoreInfo {
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            right: flex_box(50);
+            width: flex_box(10);
+            height: flex_box(10);
+            background-color: rgb(230, 72, 57);
+          }
+        }
+      }
+    }
+
+    .SelectList {
+      border-top: 12px solid #f7f7f7;
+
+      &.border-none {
+        border-top: none;
+      }
+
+      &:last-child {
+        margin-bottom: flex_pt(150);
+      }
+
+      &.avatar {
+        text-align: center;
+        padding: 24px 0px;
+
+        .avatar-img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+        }
+      }
+
+      .SelectBox {
+        border-bottom: 1px solid #f0f0f0;
+        padding: 0px flex_pt(20);
+        height: flex_pt(46);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        background-color: #fff;
+
+        .SelectLeft {
+          flex: 3;
+          color: rgb(98, 97, 102);
+          font-size: 3.733vw;
+          position: relative;
+
+          img {
+            width: flex_pt(20); // height: flex_pt(19);
+            margin-right: 2.4vw;
+          }
+
+          .red-point {
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            background-color: #e85c40;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+          }
+        }
+
+        .SelectRight {
+          font-size: flex_pt(13);
+          color: #666;
+          line-height: flex_pt(13);
+          flex: 7;
+          text-align: right;
+
+          &.text-left {
+            text-align: left;
+          }
+
+          &.had-credit {
+            color: #d7d7d7;
+          }
+
+          .right-text {
+            white-space: pre;
+          }
+
+          img {
+            width: flex_pt(16);
+            margin-left: flex_pt(8);
+          }
+
+          .avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            position: relative;
+            top: 0px;
+            right: 0px;
+          }
+
+          .tipcolor {
+            color: #9e9e9e;
+            font-size: 3.4vw;
+          }
+        }
+      }
+
+      .vip-mt {
+        &:nth-of-type(4n + 0) {
+          border-bottom: none;
+        }
+
+        &:nth-of-type(5) {
+          // margin-top: 12px;
+          border-top: 12px solid #f7f7f7;
+          height: flex_pt(58);
+        }
+      }
+    }
+  }
+
+  .NotVipListBox {
+    position: relative;
+    top: 0px;
+  }
+
+  .pending-hold-warn {
+    color: #bd8846;
+    font-size: 12px;
+    color: #bd8846;
+    letter-spacing: 0.2px;
+    margin-left: 7px;
+  }
+
+  .service-phone {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: flex_pt(82);
+    color: #989898;
+
+    .text-list {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0px;
+      font-size: flex_pt(12);
+    }
+
+    .phone {
+      color: $brand-primary;
+      text-decoration: none;
+    }
+  }
+}
+
+.fixHeight {
+  min-height: 100vh;
+  padding-bottom: 22vh;
+}

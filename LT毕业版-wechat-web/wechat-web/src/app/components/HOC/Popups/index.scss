@@ -1,0 +1,37 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.popups {
+  .popups-alert {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 999999;
+
+    .image-popups {
+      position: relative;
+      display: block;
+      margin: flex_pt(136) auto;
+
+      .btn-popups {
+        position: absolute;
+        bottom: 0;
+        width: 296px;
+        height: 90px;
+      }
+
+      .close-popups {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: url('./close.png') no-repeat top right;
+        background-size: 34px 34px;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}

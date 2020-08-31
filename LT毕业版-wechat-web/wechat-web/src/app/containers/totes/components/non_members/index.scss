@@ -1,0 +1,69 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+@import '~styles/variables';
+
+.non-members {
+  height: 100vh;
+  position: relative;
+  img {
+    margin: 0 auto;
+    display: block;
+    width: flex_pt(168);
+    height: 168px;
+    margin-top: flex_pt(98);
+  }
+  .non-members-title {
+    width: 100vw;
+    text-align: center;
+    color: $black;
+    font-size: 18px;
+    margin: 30px 0 10px;
+  }
+  .non-members-text {
+    padding-left: flex_pt(110);
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #5e5e5e;
+    letter-spacing: 0.8px;
+    line-height: 26px;
+    .non-members-icon {
+      background-image: url('./images/tote_tick.png');
+      width: flex_pt(9);
+      height: flex_pt(12);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: flex_pt(7);
+    }
+  }
+  .waiting-list-alert {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 38px;
+    color: #242424;
+    text-align: center;
+    font {
+      color: #e85d40;
+    }
+  }
+  button {
+    width: flex_pt(180);
+    height: flex_pt(48);
+    font-size: flex_pt(14);
+    margin: 0 auto;
+    border-radius: flex_pt(4);
+    border: 1px solid $primary-color-new;
+    color: $white;
+    background-color: $primary-color-new;
+    display: inherit;
+    margin-top: flex_pt(40);
+    &:active {
+      background-color: $primary-color-new-hover;
+      color: $white;
+    }
+
+    &.no-margin-top {
+      margin-top: flex_pt(0);
+    }
+  }
+}

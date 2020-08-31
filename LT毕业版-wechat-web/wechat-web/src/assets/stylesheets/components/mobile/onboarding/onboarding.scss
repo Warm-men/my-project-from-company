@@ -1,0 +1,156 @@
+@import '../../../variables';
+@import '../../../mobile/questions_section';
+.onboarding-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  .measurement-answer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin: 20px 35px;
+  }
+  .measurement-title {
+    display: inline-block;
+    font-family: $proxima-semibold;
+    font-size: 0.73rem;
+    letter-spacing: 0.4px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 10;
+  }
+  .measurement-required {
+    font-weight: 100;
+    margin-top: 6px;
+  }
+}
+
+.down-caret {
+  position: relative;
+  width: 22px;
+  height: 12px;
+  border-top: 12px solid #333;
+  border-left: 11px solid white;
+  border-right: 11px solid white;
+  &:after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -11px;
+    border-top: 12px solid white;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+  }
+}
+
+.progress-bar {
+  height: 55px;
+  border-bottom: solid 0.5px $light-gray;
+  color: $light-gray;
+  .progress-module {
+    margin: 10px 0;
+    padding: 10px 5px;
+    width: 25vw;
+    float: left;
+    text-align: center;
+    font-size: 11px;
+    &.active {
+      color: $darkest-gray;
+      .progress-line {
+        border: solid 2px $darkest-gray
+      }
+    }
+    .progress-line {
+      border: solid 2px $light-gray;
+      border-radius: 4px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+#onboarding-react-group {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  .quiz-wrapper,
+  .occasion-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    padding-bottom: 10vh;
+    text-align: center;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .onboarding-swiper-container {
+    .swiper-pagination-switch {
+      height: 7px;
+      width: 7px;
+    }
+  }
+  .weather-wrapper {
+    text-align: center;
+    .zip-code {
+      margin-top: 50px;
+    }
+    label {
+      font-size: 11px;
+      font-family: $proxima-semibold;
+      width: 100%;
+    }
+    input {
+      width: 96px;
+      height: 40px;
+      font-size: 24px;
+      line-height: 24px;
+      border: 0;
+      border-bottom: 1px solid $light-gray;
+      margin-top: 20px;
+      &::-webkit-input-placeholder {
+        color: $medium-gray;
+      }
+    }
+    .city-state {
+      color: $medium-gray;
+      margin-top: 10px;
+    }
+    .error {
+      color: $error-invalid-red;
+    }
+    #onboard-skip {
+      float: right;
+      text-align: center;
+      line-height: 50px;
+      font-family: $proxima;
+      color: $medium-gray;
+      padding-right: 2.5vw;
+    }
+    .header-title-placeholder {
+      .header-title {
+        background-color: transparent;
+      }
+    }
+  }
+  .onboarding-sign-in {
+    #fb-authenticate-button,
+    #fb-button-image {
+      height: 9 * $vh-to-px;
+      width: 9 * $vh-to-px;
+    }
+    #sign-up-button {
+      padding-top: 3 * $vh-to-px;
+      padding-bottom: 2.75 * $vh-to-px;
+      height: 57px;
+    }
+  }
+}
+
+.onboarding-carousel {
+  .fit-quiz-pagination-onboard-carousel {
+    display: block;
+  }
+}

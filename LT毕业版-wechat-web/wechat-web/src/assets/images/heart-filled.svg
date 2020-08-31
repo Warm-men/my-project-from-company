@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.3.2选衣-愿望衣橱" transform="translate(-150.000000, -259.000000)">
+            <g id="服饰列表" transform="translate(0.000000, 247.000000)">
+                <g id="Group-2">
+                    <g id="Bitmap">
+                        <g id="Fill-1" transform="translate(147.000000, 8.000000)">
+                            <rect id="Bounds" fill-opacity="0" fill="#BD10E0" fill-rule="evenodd" x="0" y="0" width="24" height="24"></rect>
+                            <path d="M12,5.96069523 L12.5028075,5.45788775 C14.4466578,3.51403742 17.5982619,3.51403742 19.5421122,5.45788775 C21.4859626,7.40173809 21.4859626,10.5533422 19.5421122,12.4971925 L12.7071068,19.332198 C12.3165825,19.7227223 11.6834175,19.7227223 11.2928932,19.332198 L4.45788775,12.4971925 C2.51403742,10.5533422 2.51403742,7.40173809 4.45788775,5.45788775 C6.40173809,3.51403742 9.55334218,3.51403742 11.4971925,5.45788775 L12,5.96069523 Z" id="Path-2" fill="#E85C40" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,123 @@
+@import '../_colors.scss';
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.questions-section {
+  width: 100%;
+  padding: 0 flex_pt(40) flex_pt(20);
+  clear: both;
+  .section-heading-wrapper {
+    margin-bottom: flex_pt(11);
+    .head-icon{
+      height: flex_pt(48);
+    }
+    .section-heading {
+      color: #333333;
+      position: relative;
+      font-size: flex_pt(15);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      z-index: 10;
+      text-align: left;
+      font-weight: bold;
+    }
+    .divider {
+      position: relative;
+      top: -0.72rem;
+      width: 100%;
+      border-bottom: 1px solid #c3c3c3;
+    }
+    .subheading {
+      color: #b2b2af;
+      font-size: flex_pt(12);
+      text-align: left;
+    }
+  }
+  .selectors-wrapper {
+    overflow: auto;
+    &.tops {
+      width: 60vw;
+      margin: 0 auto;
+    }
+    .selector-option{
+      display: inline-block;
+      width:flex_pt(44);
+      margin:flex_pt(0) flex_pt(8) flex_pt(12);
+      height:flex_pt(44);
+      line-height: flex_pt(44);
+      font-size: flex_pt(13);
+      border-radius: 50%;
+      border:1px solid #b2b2af;
+      text-align: center;
+      &.select{
+        border:1px solid #f2be7d;
+        background-color: #f2be7d;
+        color:#fff;
+      }
+    }
+    .selector-option-box{
+      &:nth-child(3n+0){
+        margin-right: flex_pt(0);
+      }
+      &.clear-margin{
+        margin-right: 0px;
+      }
+      &.select{
+        border: 1px solid #fd6c53;
+        background-color: rgba(232,92,64,0.08);
+        color:#ea684f;
+      }
+      float: left;
+      position: relative;
+      width: flex_pt(95);
+      height: flex_pt(33);
+      line-height: flex_pt(30);
+      text-align: center;
+      margin-bottom: flex_pt(12);
+      margin-right: flex_pt(3);
+      background-color: #fff;
+      font-size: flex_pt(12);
+      border: 1px solid #999999;
+      color: #999999;
+      border-radius: 30px;
+      overflow: hidden;
+      .selector-option-color{
+        width: flex_pt(25);
+        height: flex_pt(25);
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+      }
+      .selector-option-icon{
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        text-align: center;
+        img{
+          width: flex_pt(25);
+          height: flex_pt(25);
+          max-width: 100%;
+        }
+      }
+      .selector-option-text{
+        display: inline-block;
+        text-align: left;
+        // width: 50%;
+      }
+      .text-center{
+        text-align: center;
+      }
+    }
+    .generic-diagonal-strike{
+      display: block;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      left: 0px;
+      border-bottom: 1px solid #fd6c53;
+      transform: rotate(-18deg);
+    }
+  }
+  &.hidden {
+    display: none;
+  }
+}

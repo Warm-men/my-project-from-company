@@ -1,0 +1,589 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+@import 'src/assets/stylesheets/_variables.scss';
+
+body.tote-swap-modal-open {
+  min-height: 100vh;
+}
+
+#tote-swap-product {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+  .tote-swap-product-header {
+    display: none;
+  }
+
+  .tote-swap-product-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 1;
+  }
+
+  .tote-swap-product-inner {
+    background-color: #fff;
+    padding-bottom: flex_pt(64);
+    width: 100%;
+    height: 100%;
+
+    .swiper-product-carousel-container {
+      position: relative;
+      width: 100%;
+      // background-color: #e5e5e5;
+    }
+
+    .swiper-product-carousel {
+      width: flex_pt(375);
+      height: flex_pt(375);
+      margin: 0 auto;
+      overflow-x: hidden;
+      position: relative;
+
+      .swiper-image-container {
+        padding: 0px flex_pt(63);
+      }
+
+      .swiper-product-carousel-pagination {
+        position: absolute;
+        z-index: 8;
+        text-align: right;
+
+        span {
+          background: #000;
+        }
+      }
+
+      .product-catalogue-photo {
+        padding-bottom: 0px;
+        height: flex_pt(375);
+        max-width: 100%;
+      }
+    }
+  }
+
+  .not-have-similar-product {
+    padding-bottom: 0;
+  }
+
+  // beginning state for enter animation
+  .product-modal-appear {
+    .tote-swap-product-inner {
+      bottom: -1000px;
+    }
+
+    .tote-swap-product-background {
+      opacity: 0;
+    }
+
+    // end state for appear animation
+    &.product-modal-appear-active {
+      .tote-swap-product-inner {
+        bottom: 0px;
+        transition: all 0.5s ease;
+      }
+
+      .tote-swap-product-background {
+        opacity: 0.6;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+
+  // beginning state for leave animation
+  .product-modal-exit {
+    .tote-swap-product-inner {
+      bottom: 0;
+    }
+
+    .tote-swap-product-background {
+      opacity: 0.6;
+    }
+
+    // end state for leave animation
+    &.product-modal-exit-active {
+      .tote-swap-product-inner {
+        bottom: -1000px;
+        transition: all 0.5s ease;
+      }
+
+      .tote-swap-product-background {
+        opacity: 0;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+
+  .tote-swap-product-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    width: 45px;
+    background-image: url('~src/assets/images/x-close-black.svg');
+    background-repeat: no-repeat;
+    background-size: auto 33%;
+    background-position: center center;
+    cursor: pointer;
+    z-index: 1;
+
+    &:before {
+      content: 'Close';
+      text-transform: uppercase;
+      content: 'Close';
+      font-size: 12px;
+      letter-spacing: 1.6px;
+      position: relative;
+      left: -44px;
+      top: 10px;
+    }
+  }
+
+  .price {
+    font-variant-numeric: lining-nums;
+  }
+
+  img.new-product-detail-mark {
+    width: flex_pt(77);
+    height: flex_pt(26);
+    position: absolute;
+    z-index: 9;
+    left: 0;
+  }
+
+  .not-show-mark {
+    display: none;
+  }
+
+  .tote-swap-product-info-container {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: flex_pt(64);
+    border-top: 1px solid #f0f0f0;
+    width: 100%;
+    padding: flex_pt(8) flex_pt(15) flex_pt(8);
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+  }
+
+  .style-share {
+    .style-share-image {
+      width: 100%;
+    }
+  }
+
+  .pdp-line {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .style-share-count {
+    font-size: flex_pt(16);
+    font-weight: bold;
+    line-height: 1.67;
+    letter-spacing: 1.6px;
+    color: #242424;
+    margin-bottom: 15px;
+  }
+
+  .product-attributes {
+    padding-top: 25px;
+  }
+
+  .tote-swap-product-right-col {
+    display: inline-block;
+    height: 100%;
+    text-align: -webkit-center;
+
+    .add-to-closet {
+      width: 90%;
+      height: 100%;
+      font-size: flex_pt(16);
+      border-radius: 2px;
+      padding: 0px;
+    }
+
+    .add-to-tote {
+      width: 100%;
+      height: 100%;
+      font-size: flex_pt(14);
+      font-weight: bold;
+      border-radius: 2px;
+      line-height: 100%;
+    }
+
+    .browse-similar {
+      width: 100%;
+      height: 100%;
+      font-size: flex_pt(14);
+      font-weight: bold;
+      letter-spacing: 1.6px;
+      position: relative;
+    }
+  }
+
+  .tote-swap-product-left-col {
+    height: 100%;
+    text-align: -webkit-center;
+
+    .text {
+      font-size: 21px;
+      line-height: 1.33;
+      letter-spacing: 0.3px;
+      color: #000;
+      margin: 15px 0;
+      font-weight: 300;
+    }
+
+    .add-to-closet {
+      border: 1px solid rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .tote-swap-product-bottom-col {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    .add-to-closet {
+      background-color: $brand-primary;
+      border: none;
+      color: $white;
+
+      .heart-empty {
+        path {
+          fill: $white;
+        }
+      }
+
+      .heart-filled {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  .size-name {
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .size-attribute-name {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    padding: 30px 0 3px 0;
+    text-transform: uppercase;
+  }
+
+  .description-and-sizing {
+    .description-container {
+      padding-top: flex_pt(20);
+      padding-bottom: flex_pt(20);
+      border-bottom: 1px solid rgb(240, 240, 240);
+
+      .description-text {
+        font-size: flex_pt(13);
+        color: rgb(98, 97, 102);
+      }
+    }
+
+    .product-details {
+      text-align: left;
+      color: #5e5e5e;
+      font-weight: 400;
+      font-size: flex_pt(13);
+
+      .product-details-title {
+        color: #242424;
+        font-size: flex_pt(16);
+      }
+
+      .product-details-text {
+        color: #626166;
+        font-size: flex_pt(13);
+      }
+    }
+  }
+
+  .description {
+    .active {
+      opacity: 1;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      opacity: 0.33;
+      display: inline-block;
+      margin-right: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1.6px;
+      text-align: center;
+      color: #000000;
+      text-transform: uppercase;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.active {
+        a {
+          opacity: 1;
+        }
+
+        // border-bottom: 2px solid $tote-swap-yellow;
+      }
+    }
+
+  }
+
+  // hack for accessory without enough product photos
+  .slider {
+    // background-color: $product-bg-gray;
+
+    &.slides-1 {
+      .slider-frame {
+        left: 33%;
+      }
+    }
+
+    &.slides-2 {
+      .slider-frame {
+        left: 16.5%;
+      }
+    }
+  }
+}
+
+body.mobile.tote-swap-modal-open.tote-swap.tote-swap-mobile {
+  .tote-swap-product-right-col {
+    .browse-similar {
+      background-color: #e85c40;
+      border: none;
+      color: #fff;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding: 0px;
+    }
+  }
+
+  .in-your-tote {
+    border: none;
+    color: #5f5f5f;
+    font-weight: bold;
+    height: 100%;
+    font-size: flex_pt(14);
+    position: relative;
+    width: 100%;
+    background-color: #ddd;
+    margin-top: 0px;
+  }
+
+  #tote-swap-product {
+    overflow-x: hidden;
+    width: 100vw;
+
+    .tote-swap-product-header {
+      background-color: #fff;
+      display: flex;
+      padding: 20px 15px;
+      position: relative;
+      border-bottom: 1px solid #f3f3f3;
+
+      .info-parts {
+        span {
+          border-radius: 1px;
+          font-size: 12px;
+          display: inline-block;
+          letter-spacing: 0.34px;
+          text-align: center;
+          padding: flex_pt(3) flex_pt(6);
+          margin-right: flex_pt(8);
+
+          &:last-child {
+            margin-right: 0px;
+          }
+
+        }
+      }
+
+      .back-button {
+        position: inherit;
+      }
+
+      .product-details {
+
+        .brand,
+        .price {
+          font-family: 'San Francisco';
+          color: #5e5e5e;
+          font-size: flex_pt(12);
+          line-height: flex_pt(12);
+
+          span {
+            font-size: 12px;
+
+            .full-price {
+              font-size: 14px;
+              color: #242424;
+            }
+          }
+        }
+
+        .position-right {
+          position: absolute;
+          right: 15px;
+          top: 22px;
+        }
+
+        .brand {
+          font-size: 12px;
+        }
+
+        .title {
+          font-family: 'San Francisco';
+          color: #242424;
+          font-size: flex_pt(16);
+          line-height: flex_pt(16);
+          margin-bottom: flex_pt(12);
+          font-weight: bold;
+        }
+      }
+    }
+
+    .add-to-closet-redux-button-heart {
+      bottom: -2px;
+      float: left;
+      margin-left: 5px;
+      margin-right: 0px;
+    }
+
+    .add-to-closet {
+      margin: 0 auto;
+      border-radius: 2px;
+      padding: 0px;
+      font-size: flex_pt(14);
+      font-weight: bold;
+      height: 100%;
+      width: 100%;
+    }
+
+    div.tote-swap-product-close {
+      background-size: 44%;
+      left: 3%;
+      position: inherit;
+      top: 1%;
+
+      &:before {
+        content: '';
+      }
+    }
+
+    .pdp-line {
+      width: 90%;
+      margin-left: 5%;
+    }
+
+    .product-catalogue-photo:after {
+      width: 100%;
+    }
+
+    .share-person-description {
+      margin-left: 30px;
+      font-family: 'Playfair', 'PlayfairDisplay', serif;
+      font-size: 12px;
+    }
+
+    .slider {
+      //   margin-top: 19px;
+      padding: 0 18% 0 18%;
+
+      &.slides-1 {
+        .slider-frame {
+          left: 0%;
+        }
+      }
+
+      &.slides-2 {
+        .slider-frame {
+          left: 0%;
+        }
+      }
+    }
+
+    .slider.customer-photo-slider {
+      padding-left: 0;
+      padding-right: 0;
+
+      .slider-frame {
+        .slider-list {
+          margin-left: -30px;
+        }
+      }
+    }
+
+    .tote-swap-product-right-col {
+      display: inline-block;
+      width: 48.5%;
+      height: 100%;
+
+      .add-to-tote {
+        &.disable {
+          background-color: #f8cfc4;
+          border: 1px solid #f8cfc4;
+        }
+
+        background-color: #e85c40;
+        border-radius: 0.53333vw;
+        border: 1px solid #e85c40;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        color: #fff;
+        outline: none;
+      }
+    }
+
+    .tote-swap-product-left-col {
+      display: inline-block;
+      width: 48.5%;
+      height: 100%;
+      margin-right: 3%;
+
+      .brand {
+        font-family: 'Playfair', 'PlayfairDisplay', serif;
+        font-size: 12px;
+        padding-left: 0;
+        margin-bottom: 5px;
+      }
+
+      .price {
+        .msrp {
+          font-size: 10px;
+        }
+      }
+
+      .title {
+        font-family: 'Playfair', 'PlayfairDisplay', serif;
+        font-size: 10px;
+      }
+
+      .title,
+      .price {
+        font-size: 10px;
+      }
+    }
+  }
+}

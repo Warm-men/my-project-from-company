@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="21px" viewBox="0 0 17 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>托特衣箱-默认</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wechat-底部导航栏" transform="translate(-209.000000, -28.000000)">
+            <g id="750_navBar_默认" transform="translate(30.000000, 22.000000)">
+                <g id="托特衣箱-默认" transform="translate(175.000000, 4.000000)">
+                    <rect id="Rectangle-18" fill="#FFFFFF" opacity="0" x="0" y="0" width="25" height="25"></rect>
+                    <g stroke-width="1" transform="translate(4.000000, 3.000000)" fill="#B2B2AF">
+                        <path d="M1,4 L1,16.6972244 L2.53518376,19 L14.4648162,19 L16,16.6972244 L16,4 L1,4 Z M0,3 L17,3 L17,17 L15,20 L2,20 L0,17 L0,3 Z" id="Rectangle-2" fill-rule="nonzero"></path>
+                        <polygon id="Rectangle-3" fill-rule="nonzero" points="5.5 2.20710678 5.5 9 4.5 9 4.5 1.79289322 6.79289322 -0.5 10.2071068 -0.5 12.5 1.79289322 12.5 9 11.5 9 11.5 2.20710678 9.79289322 0.5 7.20710678 0.5"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

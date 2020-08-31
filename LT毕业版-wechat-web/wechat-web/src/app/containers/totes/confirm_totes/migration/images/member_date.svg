@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>升级-会员期</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Ω" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="会员升级" transform="translate(-65.000000, -298.000000)">
+            <g id="card" transform="translate(16.000000, 219.000000)">
+                <g id="升级-会员期" transform="translate(49.000000, 79.000000)">
+                    <g id="Group-3">
+                        <circle id="Oval-33" stroke="#242424" cx="6.5" cy="6.5" r="6"></circle>
+                        <polygon id="Rectangle-5" fill="#E85C40" points="6 3.22668457 7 3.22668457 7 7 6 7"></polygon>
+                        <polygon id="Rectangle-5-Copy" fill="#E85C40" transform="translate(7.549038, 7.316987) rotate(-240.000000) translate(-7.549038, -7.316987) " points="7.04903811 5.8169873 8.04903811 5.8169873 8.04903811 8.8169873 7.04903811 8.8169873"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

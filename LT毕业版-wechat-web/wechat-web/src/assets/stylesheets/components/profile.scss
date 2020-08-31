@@ -1,0 +1,469 @@
+@import '../variables';
+
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.membership-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: flex_pt(48);
+  background-color: #f7f7f7;
+}
+
+.profile-container {
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 144px;
+
+  .header {
+    padding: 40px 0 20px 0;
+    text-align: center;
+
+    h1 {
+      display: inline-block;
+      color: $black;
+      font-family: $raleway;
+      font-weight: 700;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid $black;
+    }
+  }
+
+  .actions {
+    text-align: right;
+  }
+
+  .description {
+    width: 70%;
+  }
+}
+
+.profile-page-row {
+  padding: 40px 0;
+  border-bottom: 1px solid $faint-gray;
+  font-family: $raleway;
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    font-size: 18px;
+    font-weight: medium;
+    margin-bottom: 4px;
+    color: $black;
+  }
+
+  p {
+    letter-spacing: 1.1px;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: lighter;
+  }
+
+  a.secondary {
+    color: $black;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 2.5px;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // TODO include shorter (not just narrower) button in component.
+  a.action-button-component {
+    font-size: 12px;
+    padding: 14px 0;
+  }
+}
+
+.bad-card-message {
+  font-style: italic;
+  font-size: 12px;
+  color: $error-invalid-red;
+}
+
+.mobile {
+  .profile-container {
+    width: 100%;
+    margin-top: 14px;
+    padding-bottom: 0;
+
+    .header {
+      padding: 10px 0;
+    }
+
+    .profile-page-row {
+      flex-direction: column;
+      padding: 24px 16px;
+
+      a.secondary {
+        color: $primary-color-new;
+      }
+    }
+
+    .actions {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .description {
+      text-align: left;
+      width: 100%;
+    }
+  }
+}
+
+.profile-onhold-tip {
+  padding: flex_pt(15) flex_pt(15) flex_pt(15);
+  margin-bottom: flex_pt(12);
+  background-color: #fff;
+  color: #bd8846;
+  .hold-tip-container {
+    background-color: #f7f0e8;
+    padding: flex_pt(11) flex_pt(10);
+    position: relative;
+    p {
+      margin-bottom: 0px;
+    }
+    .hold-tip-icon {
+      display: inline-block;
+      position: absolute;
+      left: flex_pt(50);
+      top: -8px;
+      width: 0;
+      height: 0;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #f7f0e8;
+      border-left: 8px solid transparent;
+    }
+    .onhold-tip-title {
+      font-size: flex_pt(14);
+      margin-bottom: flex_pt(6);
+    }
+    .onhold-tip-text {
+      font-size: flex_pt(12);
+      font-weight: 300;
+    }
+  }
+}
+
+.profile-card-container {
+  .profile-card {
+    position: relative;
+    width: 100%;
+    height: flex_pt(189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-image: url('~src/assets/images/profile/card_background_csmember.png');
+    .profile-user-avator {
+      margin-bottom: flex_pt(60);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .user-avator-box {
+        background-image: url('~src/assets/images/profile/touxiang.png');
+        width: 51px;
+        height: 53px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        .avator {
+          width: 47px;
+          height: 47px;
+          border: 1px solid #e3b05d;
+          border-radius: 50%;
+          margin-left: 1px;
+          margin-top: 5px;
+        }
+      }
+      .user-nickname {
+        color: #d9d8d5;
+        margin-top: flex_pt(8);
+        font-size: flex_pt(14);
+        height: flex_pt(14);
+        line-height: flex_pt(14);
+      }
+      .user-vip-title {
+        background-image: url('~src/assets/images/profile/csmenber.png');
+        width: flex_pt(94);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+        margin-top: flex_pt(12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .user-vip-title-text {
+          color: #e3b356;
+          font-size: flex_pt(13);
+        }
+      }
+    }
+    .profile-info-bottom {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: flex_pt(45);
+      line-height: flex_pt(45);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .info-date {
+        color: #b1b0ae;
+        font-size: flex_pt(12);
+        margin-left: flex_pt(15);
+      }
+      .profile-btn {
+        border: 1px solid #b1b0ae;
+        color: #dad9d7;
+        margin-right: flex_pt(15);
+      }
+    }
+    .profile-introduce {
+      position: absolute;
+      top: flex_pt(28);
+      left: flex_pt(21);
+      text-align: left;
+      p {
+        margin-bottom: 0px;
+      }
+      .title {
+        font-size: flex_pt(21);
+        color: #ebdec2;
+        margin-bottom: flex_pt(18);
+      }
+      .profile-border {
+        height: flex_pt(2);
+        width: flex_pt(40);
+        background-color: #ebdec2;
+        margin-bottom: flex_pt(34);
+      }
+      .text {
+        color: #fff;
+        font-size: flex_pt(12);
+        line-height: flex_pt(20);
+      }
+    }
+  }
+  .profile-btn {
+    font-size: flex_pt(12);
+    color: #fff;
+    border: 1px solid #fff;
+    height: flex_pt(28);
+    width: flex_pt(77);
+    line-height: flex_pt(28);
+    text-align: center;
+    display: inline-block;
+    border-radius: flex_pt(4);
+  }
+}
+.profile-vip-benefits {
+  .benefits-title {
+    background-color: #fff;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    font-size: flex_pt(14);
+    color: $black;
+    padding: flex_pt(15) flex_pt(0) flex_pt(15) flex_pt(15);
+  }
+  .membership-benefit {
+    width: 100vw;
+    height: flex_pt(224);
+    background-color: $white;
+  }
+  .benefits-tip {
+    font-size: flex_pt(12);
+    background-color: #fff;
+    padding-left: flex_pt(12);
+    padding-top: flex_pt(11);
+    padding-bottom: flex_pt(11);
+    padding-right: flex_pt(12);
+    border-top: 1px solid #f0f0f0;
+    .benefits-tip-text {
+      color: #989898;
+    }
+  }
+}
+.profile-operate-list {
+  .hold {
+    display: block;
+    width: flex_pt(345);
+    height: 85px;
+    background-color: #fef8f2;
+    padding-left: flex_pt(16);
+    color: #bd8846;
+    p {
+      font-size: 15px;
+      padding-top: 16px;
+    }
+    div {
+      font-size: 12px;
+      margin-top: -8px;
+    }
+  }
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: flex_pt(24);
+  }
+  background-color: #fff;
+  padding: flex_pt(12) flex_pt(13) flex_pt(12) flex_pt(17);
+  margin-top: flex_pt(12);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-between;
+  .icon-img {
+    background-image: url('~src/assets/images/account/next.png');
+    width: 18px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 100%;
+  }
+}
+
+.membership-expired {
+  margin-top: flex_pt(113);
+  text-align: center;
+  .membership-image {
+    width: flex_pt(158);
+    height: flex_pt(120);
+    background-image: url('~src/assets/images/profile/shopping_waitpay.png');
+    background-size: 100%;
+    margin: 0 auto flex_pt(20);
+  }
+  .expired-introduce {
+    font-size: flex_pt(14);
+    line-height: flex_pt(14);
+    color: #5e5e5e;
+  }
+  .expired-btn {
+    margin: flex_pt(40) auto;
+  }
+  .expired-btn-text {
+    font-size: flex_pt(14);
+  }
+}
+.membership-onhold {
+  margin-top: flex_pt(152);
+  text-align: center;
+  .membership-image {
+    height: flex_pt(66);
+    width: flex_pt(91);
+    margin: 0 auto;
+    background-image: url('~src/assets/images/profile/mine_membercenter_hold.png');
+    background-size: 100%;
+  }
+  .onhold-introduce {
+    margin-top: flex_pt(46);
+    margin-bottom: flex_pt(15);
+    font-size: flex_pt(16);
+    color: #242424;
+  }
+  .onhold-date {
+    font-size: flex_pt(13);
+    padding-left: flex_pt(56);
+    padding-right: flex_pt(57);
+    color: #b2b2af;
+  }
+}
+
+.profile-hold-container {
+  padding: flex_pt(19) flex_pt(15) flex_pt(76);
+  .title {
+    text-align: left;
+    font-size: flex_pt(16);
+    color: #242424;
+  }
+  .comments-section {
+    display: inline-block;
+    .section-button {
+      // height: 38px;
+      line-height: 38px;
+      display: inline-block;
+      padding: 0 flex_pt(22);
+      border-radius: 22px;
+      border: 1px solid $mid-gray;
+      margin-bottom: 10px;
+      margin-right: flex_pt(8);
+      font-size: 13px;
+      color: $darkest-gray;
+      &.select {
+        background-color: $tote-tracker-bar-orange;
+        color: $white;
+        border: 1px solid $tote-tracker-bar-orange;
+      }
+    }
+  }
+  .select-days {
+    margin-top: flex_pt(20);
+    margin-bottom: flex_pt(20);
+  }
+  .hold-date-select {
+    width: 180px;
+    height: 44px;
+    padding-right: 16px;
+    line-height: 44px;
+    border-radius: 22px;
+    text-align: center;
+    background: url('~src/assets/images/profile/xiala.png') no-repeat 154px 50%;
+    background-size: 12px 20px;
+    background-color: #f5f5f2;
+  }
+  .prompt-info {
+    width: 196px;
+    height: 28px;
+    background-color: $black;
+    color: $white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 4px;
+    margin-top: 10px;
+    position: relative;
+    .arrow {
+      width: 8px;
+      transform: rotate(45deg);
+      background-color: $black;
+      position: absolute;
+      height: 8px;
+      top: -4px;
+      left: 50%;
+      margin-left: -7.5px;
+    }
+  }
+  .profile-hole-description {
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: flex_pt(16) flex_pt(20) flex_pt(15) flex_pt(16);
+    margin-bottom: flex_pt(21);
+    .description-title {
+      font-size: flex_pt(13);
+      color: #242424;
+      margin-bottom: 0px;
+      font-weight: bold;
+    }
+    .description-text {
+      font-size: flex_pt(12);
+      color: #5e5e5e;
+      margin-bottom: 0px;
+    }
+  }
+  .profile-hold-btn {
+    text-align: -webkit-center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: flex_pt(8) 0px;
+    border-top: 1px solid #f0f0f0;
+    width: 100%;
+    background-color: #fff;
+  }
+}

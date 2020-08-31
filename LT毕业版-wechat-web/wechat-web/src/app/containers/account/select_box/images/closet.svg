@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>我的-愿望衣橱icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="我的-愿望衣橱icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle-16-Copy-10" opacity="0.361979167" x="0" y="0" width="24" height="24"></rect>
+            <path d="M11.75,20.5949314 L20.1252615,12.2196699 C22.2915795,10.0533519 22.2915795,6.54105649 20.1252615,4.37473849 C17.9589435,2.2084205 14.4466481,2.2084205 12.2803301,4.37473849 L11.75,4.90506858 L11.2196699,4.37473849 C9.05335192,2.2084205 5.54105649,2.2084205 3.37473849,4.37473849 C1.2084205,6.54105649 1.2084205,10.0533519 3.37473849,12.2196699 L11.75,20.5949314 Z" id="Combined-Shape" stroke="#242424" stroke-width="1.5"></path>
+        </g>
+        <path d="M17.7220249,10.5786265 C18.3124887,9.85399271 18.6198843,9.03845796 18.7352539,8.30825195 C18.9583222,6.89639197 17.8914762,5.625 16.4117242,5.625" id="Oval-16" stroke="#EA5C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+</svg>

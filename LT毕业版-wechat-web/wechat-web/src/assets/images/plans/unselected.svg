@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>未选中</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-67.000000, -63.000000)" fill="#979797" fill-rule="nonzero">
+            <path d="M77,82.5 C82.2467051,82.5 86.5,78.2467051 86.5,73 C86.5,67.7532949 82.2467051,63.5 77,63.5 C71.7532949,63.5 67.5,67.7532949 67.5,73 C67.5,78.2467051 71.7532949,82.5 77,82.5 Z M77,83 C71.4771525,83 67,78.5228475 67,73 C67,67.4771525 71.4771525,63 77,63 C82.5228475,63 87,67.4771525 87,73 C87,78.5228475 82.5228475,83 77,83 Z" id="未选中"></path>
+        </g>
+    </g>
+</svg>

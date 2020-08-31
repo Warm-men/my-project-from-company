@@ -1,0 +1,66 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.new-totes-free-service-guide {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 120;
+  background-color: #00000099;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+
+  .lock-button {
+    position: fixed;
+    bottom: 6px;
+    left: flex_pt(15);
+    width: flex_pt(345);
+    z-index: 100;
+  }
+}
+.free-service-title-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .free-service-title-img {
+    width: 13px;
+    margin-left: 5px;
+  }
+  .title-tips-modal {
+    position: absolute;
+    top: 35px;
+    left: -16px;
+    background-color: #fff;
+    z-index: 110;
+    padding: 15px;
+    width: flex_pt(312.5);
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px 1px #ccc;
+    .tips-modal-text {
+      font-size: 12px;
+      color: #5e5e5e;
+      letter-spacing: 0.34px;
+      line-height: 20px;
+      position: relative;
+      .tips-modal-icon {
+        border-top: 10px transparent dashed;
+        border-left: 10px transparent dashed;
+        border-bottom: 10px #fff dashed;
+        border-right: 10px transparent solid;
+        position: absolute;
+        top: -35px;
+      }
+    }
+    .tips-modal-close {
+      color: #dddddd;
+      position: absolute;
+      right: -9px;
+      top: -12px;
+      font-size: 14px;
+      transform: scale(1.2);
+      font-weight: 200;
+      padding: 0px 5px;
+    }
+  }
+}

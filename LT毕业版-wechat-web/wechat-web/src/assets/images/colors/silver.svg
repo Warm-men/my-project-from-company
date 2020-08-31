@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>银色系</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="4.45533751%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#7F7F7F" offset="0%"></stop>
+            <stop stop-color="#D4D1DD" offset="39.1437861%"></stop>
+            <stop stop-color="#847F85" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="服饰列表-筛选-连衣裙" transform="translate(-244.000000, -772.000000)" fill="url(#linearGradient-1)">
+            <g id="颜色" transform="translate(13.000000, 574.000000)">
+                <g id="银色系" transform="translate(246.213203, 213.213203) rotate(-45.000000) translate(-246.213203, -213.213203) translate(224.213203, 191.213203)">
+                    <circle id="Oval-31-Copy-8" transform="translate(22.000000, 22.000000) rotate(-315.000000) translate(-22.000000, -22.000000) " cx="22" cy="22" r="15"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

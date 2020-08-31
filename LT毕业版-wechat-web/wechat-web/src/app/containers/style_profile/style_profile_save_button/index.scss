@@ -1,0 +1,21 @@
+.save-button-wrapper {
+  width: 100%;
+  z-index: 20;
+  text-align: center;
+  button {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 15px 5%;
+    background-color: #fd6c53;
+    color: #fff;
+    font-size: 0.85rem;
+    letter-spacing: 0.1rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+}

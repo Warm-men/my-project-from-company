@@ -1,0 +1,54 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.defects {
+  width: 100%;
+
+  .defects-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .col-one {
+      width: flex_pt(74);
+      display: inline-block;
+      vertical-align: top;
+      margin-top: flex_pt(42);
+    }
+
+    .col-two {
+      width: flex_pt(74);
+      display: inline-block;
+      vertical-align: top;
+      margin-top: flex_pt(46);
+    }
+
+    .check-box {
+      margin-top: flex_pt(28);
+      font-size: 13px;
+      color: #5e5e5e;
+      letter-spacing: 0.6px;
+      height: flex_pt(20);
+      line-height: flex_pt(20);
+
+      .selected {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid #cccccc;
+        margin-right: 8px;
+        transform: translateY(3px);
+      }
+    }
+
+    .defects-image {
+      display: inline-block;
+      width: flex_pt(154);
+      height: flex_pt(308);
+      background: url('../images/model.svg') no-repeat center;
+      background-size: flex_pt(154) flex_pt(308);
+      margin-top: 26px;
+      margin-right: 14px;
+    }
+  }
+}

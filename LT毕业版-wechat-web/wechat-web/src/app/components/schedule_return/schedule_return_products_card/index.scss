@@ -1,0 +1,43 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.productsCard {
+  .heardTitleView {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: flex_pt(16) flex_pt(16) 0;
+  }
+  .freeServiceDetailsViewWrapper {
+    padding: 0 16px;
+  }
+  .line {
+    height: 1px;
+    width: flex_pt(78);
+    background-color: #ccc;
+  }
+  .heardTitleText {
+    font-size: 16px;
+    color: #242424;
+    font-weight: 500;
+    margin: 0 flex_pt(8);
+    letter-spacing: 0.46px;
+  }
+  .subTitleVeiw {
+    padding: flet_pt(32) flex_pt(16) 0;
+  }
+  .subTitleText {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+  }
+  .productsTitleText {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin: flex_pt(32) 0 flex_pt(24) 0;
+  }
+  .productsViewWrapper {
+    margin: 0 flex_pt(16);
+  }
+}

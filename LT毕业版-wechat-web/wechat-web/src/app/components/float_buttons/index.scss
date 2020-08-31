@@ -1,0 +1,25 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.float-buttons-container {
+  position: fixed;
+  right: 16px;
+  bottom: 66px;
+  z-index: 105;
+  .float-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c8c8c8;
+    font-size: flex_pt(11);
+    color: #242424;
+    letter-spacing: 0;
+    background-color: #fff;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}

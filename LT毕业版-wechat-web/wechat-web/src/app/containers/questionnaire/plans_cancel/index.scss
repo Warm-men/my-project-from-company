@@ -1,0 +1,99 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.questionnaire-box {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  top: 0px;
+  left: 0px;
+  .shade {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0.7;
+    display: inline-block;
+  }
+  .questionnaire-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    border-radius: 6px;
+    width: flex_pt(250);
+    padding-bottom: flex_pt(24);
+    .questionnaire-container-box {
+      position: relative;
+    }
+    .questionnaire-close {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      z-index: 100;
+      padding: 10px 15px;
+      .questionnaire-close-icon {
+        background-image: url('./images/close.png');
+        height: flex_pt(16);
+        width: flex_pt(16);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: inline-block;
+      }
+    }
+
+    .title-wrapper-view {
+      position: relative;
+      padding-bottom: 20px;
+      .questionnaire-backgroundImage {
+        margin-bottom: flex_pt(8);
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        height: 100%;
+        width: 100%;
+      }
+      .questionnaire-title {
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 0.27px;
+        text-align: center;
+        padding-top: 20px;
+      }
+      .questionnaire-title-sub {
+        color: #fff;
+        font-size: 12px;
+        letter-spacing: 0.27px;
+        text-align: center;
+        padding-top: 4px;
+      }
+    }
+
+    .question-select {
+      width: flex_pt(190);
+      height: flex_pt(40);
+      line-height: flex_pt(40);
+      margin: 0px auto 0px;
+      font-size: 14px;
+      color: #5e5e5e;
+      text-align: center;
+      background: #fcfcfc;
+      border: 1px solid #d9d9d9;
+      border-radius: flex_pt(20);
+      margin-top: flex_pt(12);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: flex_pt(16);
+      padding-left: flex_pt(16);
+      .select-icon {
+        width: flex_pt(20);
+        margin-right: flex_pt(10);
+      }
+      .select-next {
+        height: flex_pt(16);
+      }
+    }
+  }
+}

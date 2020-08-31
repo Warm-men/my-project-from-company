@@ -1,0 +1,52 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.tote-popups {
+  .tote-popups-float {
+    position: fixed;
+    bottom: flex_pt(75);
+    right: flex_pt(17);
+    z-index: 999999;
+    .float-image {
+      width: flex_pt(60);
+      height: flex_pt(60);
+    }
+  }
+  .tote-popups-alert {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 999999;
+
+    .tote-image-popups {
+      position: relative;
+      display: block;
+      margin: flex_pt(136) auto;
+      width: flex_pt(296);
+      height: flex_pt(348);
+      .tote-btn-popups {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 90px;
+      }
+      .tote-image {
+        width: flex_pt(296);
+        height: flex_pt(348);
+      }
+      .tote-close-popups {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: url('~src/app/components/HOC/Popups/close.png') no-repeat
+          top right;
+        background-size: 34px 34px;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}

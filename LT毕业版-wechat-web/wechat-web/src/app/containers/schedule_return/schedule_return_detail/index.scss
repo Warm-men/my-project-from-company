@@ -1,0 +1,206 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.schedule-return-detail {
+  .toteReturnDetailAutoPickupComponent {
+    margin-bottom: 100px;
+    .fixUiWrapper {
+      margin: flex_pt(16);
+    }
+    .title {
+      margin: 29px 16px 24px;
+      font-size: 16px;
+      color: #333333;
+      font-weight: '500';
+    }
+    .infoView {
+      margin: 0 15px;
+    }
+    .infobox {
+      padding: 16px 15px 2px;
+      background-color: #f7f7f7;
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+    .infocolumn {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+    }
+    .leftrow {
+      width: 60px;
+      text-align: left;
+      font-size: 14px;
+      margin-right: 24px;
+      color: #999999;
+    }
+    .rightrow {
+      font-size: 14px;
+      color: #333;
+      flex: 1;
+    }
+    .redColor {
+      color: #ea5c39;
+    }
+    .marginBottom {
+      margin-bottom: 15px;
+      display: flex;
+    }
+    .navigationBar {
+      border-bottom-width: 0;
+    }
+    .returnBtn {
+      margin: 0 15px;
+      height: 40px;
+      border-radius: 2px;
+      border: 1px solid #b2b2af;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 12px;
+    }
+    .disabledView {
+      border-top: 7px solid #f7f7f7;
+      display: flex;
+      justify-content: center;
+      padding: 24px 0;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+    .disabledText {
+      color: #666;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+
+  .toteReturnDetailSelfDeliveryComponent {
+    margin-bottom: 100px;
+    .fixUiWrapper {
+      margin: flex_pt(16);
+    }
+    .viewWrapper {
+      padding-bottom: 15px;
+      margin: 0 15px;
+      border-bottom: 1px solid #f2f2f2;
+    }
+    .detailContent {
+      margin-top: 15px;
+    }
+    .titleView {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 17px;
+    }
+    .titleText {
+      font-size: 16px;
+      color: #333333;
+      font-weight: 500;
+    }
+    .copyButtonView {
+      width: 48px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3px;
+      border: 1px solid #b2b2af;
+    }
+    .buttonText {
+      font-size: 13px;
+      color: #666;
+    }
+    .descriptionText {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #999;
+      line-height: 24px;
+      margin-right: 7px;
+    }
+    .guideView {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .guideText {
+      color: #ea5c39;
+      line-height: 24px;
+      font-size: 13px;
+    }
+    .guideButtonView {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 90px;
+      img {
+        height: flex_pt(12);
+        margin-left: 3px;
+      }
+    }
+    .icon {
+      margin-top: 1px;
+      margin-left: -9px;
+      color: #ea5c39;
+    }
+  }
+  .actionWrapView {
+    z-index: 1000;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #cccccc;
+    padding: 8px 16px 0;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    .buttonItem {
+      display: flex;
+      flex: 1;
+      height: 44px;
+      justify-content: center;
+      align-items: center;
+    }
+    .leftButton {
+      border: 1px solid #cccc;
+      border-radius: 2px;
+      margin-right: 16px;
+    }
+    .whiteButton {
+      border: 1px solid #cccc;
+      background-color: #fff;
+      border-radius: 2px;
+      color: #5e5e5e;
+    }
+    .whiteBlurButton {
+      border: 1px solid #cccc;
+      background-color: #fff;
+      border-radius: 2px;
+      color: #ccc;
+    }
+    .redBlurButton {
+      background-color: #f8cec3;
+      border-radius: 2px;
+      color: #fff;
+    }
+    .redButton {
+      background-color: #ea5c39;
+      border-radius: 2px;
+      color: #fff;
+    }
+    .leftText {
+      font-size: 14px;
+      color: #5e5e5e;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+    }
+    .rightText {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+    }
+  }
+}

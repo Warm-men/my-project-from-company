@@ -1,0 +1,45 @@
+@import '~styles/flex_box.scss';
+@import '~styles/_variables.scss';
+
+.promo-code-list {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  margin-top: -10px;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  margin-bottom: 68px;
+  &.empty-page {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .not-promo-code {
+    width: flex_pt(100);
+    height: 140px;
+    margin-top: 160px;
+    .warn-bg {
+      display: block;
+      width: flex_pt(82);
+      margin: 0 auto;
+      height: 85px;
+      background: url('~src/app/containers/account/promo_code/images/icon_coupons_no.svg')
+        no-repeat center;
+      background-size: 100%;
+    }
+    p.warn-text {
+      font-size: 16px;
+      color: $dark-gray;
+      text-align: center;
+    }
+    &.unshow {
+      margin-top: 0px;
+      padding-top: 160px;
+      text-align: center;
+      width: inherit;
+      .warn-bg {
+        margin: 0px auto;
+      }
+    }
+  }
+}

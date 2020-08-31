@@ -1,0 +1,166 @@
+@import "~assets/stylesheets/variables";
+@import '~styles/flex_box';
+
+.action-button-component {
+  display: block;
+  border-radius: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $raleway;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  cursor: pointer;
+  outline: none !important;
+  text-decoration: none !important;
+
+  svg {
+
+    &.lock {
+      margin-top: -3px;
+      margin-bottom: -3px;
+
+      g {
+        fill: black;
+      }
+    }
+
+    margin-right: 8px;
+    vertical-align: bottom;
+    margin-bottom: 1px;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    transition: all 50ms ease-out;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    &:active {
+      transform: none;
+    }
+
+    &.processing {
+      cursor: wait;
+      background-color: $primary-color-new !important;
+
+      svg {
+        height: 8px;
+        position: relative;
+        top: -8px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &.large {
+    width: flex_pt(315);
+    padding: 14px 0;
+  }
+
+  &.stretch {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  &.stretch {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  &.small {
+    width: 185px;
+    padding: 14px 0;
+  }
+
+  &.smallest {
+    width: 98px;
+    padding: 14px 0;
+  }
+
+  &.rounded {
+    border-radius: 100px;
+  }
+
+  &.primary {
+    background-color: $primary-color-new;
+    color: $white;
+    border: none;
+    margin: 0 auto;
+
+    svg g {
+      fill: white;
+    }
+
+    &:hover {
+      background-color: $primary-color-new-hover;
+    }
+
+    &:disabled {
+      background-color: $light-gray;
+      color: $dark-gray;
+
+      svg.lock g {
+        fill: $dark-gray;
+      }
+    }
+
+    &.steps {
+      transition: background-color 0.5s ease-in;
+
+      &:disabled {
+        background: linear-gradient(to right, $mid-gray 0%, $mid-gray 50%, $light-gray 50%);
+        background-size: 200%;
+        background-position-x: 100%;
+        background-repeat: no-repeat;
+        transition: background-position 0.5s;
+      }
+    }
+  }
+
+  &.secondary {
+    background-color: $white;
+    color: $black;
+    border: 1px solid $black;
+
+    &.rounded {
+      border-color: $mid-gray;
+    }
+
+    &:disabled {
+      color: $mid-gray;
+      border: 1px solid $mid-gray;
+    }
+  }
+
+  &.gold {
+    background-color: $tote-tracker-bar-orange;
+    color: $white;
+    border: none;
+  }
+}
+
+.mobile {
+  .action-button-component {
+    &:active {
+      transform: none;
+    }
+
+    &.primary {
+      &:hover {
+        background-color: $primary-color-new;
+      }
+
+      &:disabled {
+        background-color: $primary_color-disabled;
+        color: $white;
+
+        svg.lock g {
+          fill: $dark-gray;
+        }
+      }
+    }
+  }
+}

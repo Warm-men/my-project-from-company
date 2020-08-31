@@ -1,0 +1,75 @@
+@import '~styles/flex_box';
+
+.onboarding-header {
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .onboarding-title-item {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+    .value {
+      width: 22px;
+      height: 22px;
+      border-radius: 11px;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+      z-index: 10;
+      margin-bottom: 10px;
+      background-color: #e85c40;
+    }
+    .value-normal {
+      width: 22px;
+      height: 22px;
+      border-radius: 11px;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+      z-index: 10;
+      margin-bottom: 10px;
+      background-color: #ccc;
+    }
+    .title {
+      color: #242424;
+      width: 25%;
+      font-size: 13px;
+      letter-spacing: 0.4px;
+      line-height: 13px;
+      text-align: center;
+    }
+    .title-normal {
+      color: #ccc;
+      width: 25%;
+      font-size: 13px;
+      letter-spacing: 0.4px;
+      line-height: 13px;
+      text-align: center;
+    }
+    .line {
+      position: absolute;
+      top: 11px;
+
+      .line-normal {
+        width: flex_pt(315 * 0.75);
+        border-top: 1px dashed #ccc;
+      }
+
+      .line-status {
+        overflow: hidden;
+        margin-top: -1px;
+      }
+
+      .line-focus {
+        display: block;
+        width: flex_pt(315 * 0.75);
+        border-top: 1px solid #e85c40;
+      }
+    }
+  }
+}

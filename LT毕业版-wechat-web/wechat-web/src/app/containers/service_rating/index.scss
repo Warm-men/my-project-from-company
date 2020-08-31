@@ -1,0 +1,94 @@
+@import '~styles/flex_box.scss';
+
+.service-rating-container {
+  padding: flex_pt(40) 0 flex_pt(90);
+  .other-rating-box {
+    font-size: 13px;
+    color: #242424;
+    letter-spacing: 0;
+    line-height: 13px;
+    text-align: center;
+    margin-top: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      width: 20px;
+      height: 16px;
+    }
+  }
+  .service-rating-title {
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 16px;
+    margin-bottom: 35px;
+    .tips-text {
+      font-size: 12px;
+      color: #989898;
+      letter-spacing: 0.17px;
+      line-height: 12px;
+      margin-top: 12px;
+      font-weight: normal;
+    }
+  }
+  .rating-box-row {
+    display: flex;
+    padding-left: flex_pt(25);
+    margin-bottom: 16px;
+    .rating-box {
+      width: flex_pt(72);
+      height: flex_pt(108);
+      margin-right: 12px;
+      position: relative;
+      background: #ffffff;
+      border: 1px solid #f7f7f7;
+      border-radius: 4px;
+      .rated-shadow {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: flex_pt(72);
+        height: flex_pt(108);
+        opacity: 0.5;
+        background-color: #fff;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+      .unrated-rating-icon {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+      .icon-container {
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        background-color: #fff;
+        width: 80%;
+        text-align: center;
+        z-index: 5;
+        background: #ffffff;
+        border: 1px solid #f3f3f3;
+        border-radius: 2px 2px 0 0;
+        transform: translate(-50%, 0%);
+        .icon-box {
+          padding: 3px 1px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .icon-text {
+            font-size: 12px;
+            color: #5e5e5e;
+            letter-spacing: 0.19px;
+            text-align: right;
+            transform: scale(0.84);
+          }
+        }
+      }
+    }
+  }
+}

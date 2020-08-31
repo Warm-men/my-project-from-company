@@ -1,0 +1,581 @@
+@import 'src/assets/stylesheets/variables';
+@import 'src/assets/stylesheets/flex_box';
+
+.my-totes-tote-tracker {
+  background: #ffffff;
+  box-shadow: 0 0 16px 0 rgba(204, 204, 204, 0.4);
+  border-radius: 8px;
+  position: relative;
+  margin: 16px 16px 0;
+
+  .tote-status-products {
+    .show-more-icon {
+      display: flex;
+      font-size: 12px;
+      color: #242424;
+      letter-spacing: 0.2px;
+      line-height: 50px;
+      justify-content: center;
+      align-items: center;
+
+      .arrow {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-size: 100%;
+        background-image: url('~src/app/containers/totes/new_totes/cart_products/images/show-more.png');
+        margin-left: 5px;
+        &.close {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .first-tote-education-container {
+    // align-items: center;
+    color: $brand-primary; // display: flex;
+    // flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+
+    .center-rule {
+      border: solid 1px $black;
+      width: 80px;
+    }
+
+    .education-overlay-description {
+      color: $black;
+      font-family: $raleway;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.6px;
+      line-height: 1.57;
+      text-align: center;
+      text-transform: none;
+      margin: 0 26px;
+    }
+
+    .education-overlay-image {
+      width: 100%;
+    }
+
+    .education-overlay-title {
+      font-family: $raleway;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1.6px;
+      line-height: 1.67;
+      margin: 20px auto;
+    }
+  }
+
+  .totes-summer-add-a {
+    margin: 0 auto;
+    padding-left: 8px;
+    width: flex_pt(268);
+    height: flex_pt(32);
+    line-height: flex_pt(26);
+    background: url('~src/assets/images/totes/warn_background.png') no-repeat
+      center;
+    background-size: 100%;
+    color: $summer-add-a-color;
+    font-size: 12px;
+
+    .summer-gift {
+      display: inline-block;
+      width: flex_pt(16);
+      height: flex_pt(14);
+      background: url('~src/assets/images/totes/gift.png') no-repeat center;
+      background-size: 100%;
+      transform: translateY(3px);
+    }
+  }
+
+  .lt-select-header {
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #343f5d;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $raleway;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    line-height: 50px;
+    color: $white;
+    margin-bottom: 30px;
+    margin-top: -30px;
+  }
+
+  .tote-tracker-description {
+    width: 88%;
+    font-family: $raleway;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: $black;
+    margin: auto;
+  }
+
+  .tote-tracker-wrapper {
+    padding: 10px;
+    background-color: $light-gray;
+  }
+
+  .tote-tracker-main {
+    background-color: $white;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  $title-height: 1rem;
+
+  .tote-tracker-title {
+    font-weight: normal;
+    text-align: center;
+    font-size: $title-height;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+    font-family: $raleway;
+    line-height: $title-height;
+    margin: 15px 0;
+  }
+
+  .tote-tracker-title-underlined {
+    margin-bottom: 10px;
+
+    span {
+      border-bottom: 1px solid $light-gray;
+      padding-bottom: 5px;
+    }
+  }
+
+  .tote-tracker-message {
+    margin-top: 10px;
+    padding: 0px 10px;
+
+    &.shipped-state {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      letter-spacing: 0.33px;
+      font-family: $raleway;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 1.57;
+      letter-spacing: 0.6px;
+      text-align: center;
+    }
+  }
+
+  .tote-tracker-hours-left {
+    font-family: $raleway;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .tote-tracker-tote-details {
+    background-color: $product-bg-gray;
+    height: 110px;
+    white-space: nowrap;
+    padding-left: 15px;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    &.products {
+      background-color: $white;
+      white-space: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      text-align: center;
+      padding: 0 6px 0 10px;
+      height: flex_pt(146);
+      position: relative;
+
+      .product-image {
+        width: flex_pt(86);
+        height: flex_pt(130);
+        display: inline-block;
+      }
+
+      .product {
+        position: relative;
+        display: inline-block;
+
+        .cancel-coupon {
+          position: absolute;
+          right: -4px;
+          top: -3px;
+          background-color: #000;
+          opacity: 0.3;
+          border-radius: 50%;
+          width: 20px;
+          height: 20px;
+          color: #fff;
+          line-height: 17px;
+        }
+
+        .coupon-text {
+          position: absolute;
+          left: 0px;
+          bottom: 5px;
+          color: #fff;
+          line-height: 18px;
+          font-size: 10px;
+          text-align: center;
+          margin: 0px;
+        }
+      }
+    }
+
+    &.purchase-heigt {
+      height: flex_pt(174);
+    }
+
+    img {
+      display: inline;
+      margin: 5px 0;
+    }
+
+    .price_tote_product {
+      .full_price {
+        font-size: 12px;
+        color: #d0d0d0;
+        letter-spacing: 0;
+        text-align: center;
+        height: flex_pt(16);
+        line-height: flex_pt(16);
+        text-decoration: line-through;
+      }
+
+      .specific_price {
+        font-size: 14px;
+        color: #ea5c39;
+        letter-spacing: 0;
+        text-align: center;
+        height: flex_pt(16);
+        line-height: flex_pt(16);
+      }
+    }
+
+    .product-purchased {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+
+      i.icon {
+        background: url('~src/assets/images/totes/purchased.svg') no-repeat
+          center;
+        background-size: flex_pt(48) flex_pt(16);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 9999;
+      }
+    }
+
+    .purchase-icon {
+      width: 52px;
+      height: 18px;
+      border-radius: 9px;
+      background-color: #ea5c39;
+      color: $white;
+      line-height: 18px;
+      text-align: center;
+      font-size: 10px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: flex_pt(104);
+    }
+  }
+
+  .tote-tracker-loader {
+    display: block;
+    height: 40px;
+    margin: 20px auto;
+  }
+
+  .tote-tracker-close {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    right: 0;
+
+    img {
+      height: 15px;
+      position: absolute;
+      left: 18px;
+      top: 18px;
+    }
+  }
+
+  .tote-tracker-missing-link {
+    font-family: $raleway;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: $mid-gray;
+    display: block;
+    padding: 5px 0 10px 0;
+  }
+
+  .tote-tracker-missing-text {
+    text-align: center;
+    margin: 5px 20px 0 20px;
+    padding: 10px 10px 20px 10px;
+
+    p {
+      margin: 0;
+      padding: 0;
+      letter-spacing: 0.33px;
+    }
+  }
+
+  .tote-tracker-error-image {
+    width: 60%;
+    margin: 0 20% 10px 20%;
+  }
+
+  .tracker-tote-number {
+    font-size: flex_pt(12);
+    color: #989898;
+    letter-spacing: 0.8px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .upgrade-season-card-tip {
+    width: flex_pt(316);
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background-color: $summer-add-a-bg-color;
+    font-size: 12px;
+    color: #e89140;
+    letter-spacing: 0.2px;
+    margin: 0 auto 12px;
+
+    .rectangle-next {
+      margin-bottom: 2px;
+    }
+  }
+
+  .tracker-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $raleway;
+    font-size: 16px;
+    font-weight: bold;
+    height: 36px;
+    line-height: 1.67;
+    letter-spacing: 0.4px;
+    text-align: center;
+    padding: 0 0 8px;
+    text-transform: uppercase; // padding-left: flex_pt(85);
+  }
+
+  .tote-tracker-message {
+    text-align: center;
+    color: #5f5f5f;
+    font-size: flex_pt(14);
+
+    .totes-preparing-tips {
+      h5 {
+        font-size: 14px;
+        margin-top: 20px;
+      }
+
+      div {
+        &:nth-of-type(1) {
+          margin-top: 14px;
+        }
+
+        &:nth-of-type(2) {
+          margin-top: 2px;
+        }
+
+        font-size: 11px;
+        color: #989898;
+      }
+    }
+  }
+
+  .styled-message-prompt {
+    position: relative;
+    width: flex_pt(18);
+    height: flex_pt(18);
+    line-height: flex_pt(18);
+    text-align: center;
+    color: #bab8bb;
+    border: 1px solid #bab8bb;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  .detail-prompt {
+    width: 270px; // height: 90px;
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 18px;
+    color: $white;
+    font-size: flex_pt(12);
+    padding: 10px;
+    position: absolute;
+    top: 24px;
+    right: flex_pt(-42);
+    z-index: 99;
+
+    .arrow {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: rgba(0, 0, 0, 0.8);
+      transform: rotate(45deg);
+      position: absolute;
+      top: -3px;
+      right: 18%;
+    }
+  }
+
+  .rating {
+    font-family: $raleway;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.67;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    display: inline;
+    margin-left: 13px;
+
+    &.not-rated {
+      margin-top: 0;
+    }
+
+    .star {
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      margin-right: 1px;
+      background: url('~src/assets/images/star-grey.svg') no-repeat;
+      background-position: 0 -1px;
+      background-size: 16px;
+      vertical-align: middle;
+
+      &.filled {
+        background: url('~src/assets/images/star-yellow.svg') no-repeat;
+        background-position: 0 -1px;
+      }
+    }
+  }
+
+  .rated-tote-container {
+    text-align: center;
+  }
+
+  .rated-tote {
+    font-family: $raleway;
+    font-size: 12px;
+    font-weight: 300; // font-style: italic;
+    letter-spacing: 0.9px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .bonus-text {
+    font-family: $raleway;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 1.6px;
+    text-align: center;
+    color: $mid-gray;
+    margin-top: 10px;
+  }
+}
+
+.mobile {
+  .tote-tracker-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .action-button-component {
+      margin-top: 0px;
+    }
+
+    @media (max-width: $tiny-mobile-breakpoint) {
+      // left: 10%;
+      // margin-top: -16px;
+      // position: fixed;
+      width: 100%;
+    }
+
+    .tracker-btn-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .order-confirm-button {
+      width: flex_pt(150);
+      height: flex_pt(47);
+      margin-right: flex_pt(12);
+      font-size: flex_pt(14);
+      border-radius: flex_pt(2);
+      padding: 0px;
+      display: inline-block;
+    }
+
+    .tote-tracker-tips {
+      display: inline-block;
+      width: 100%;
+      font-size: flex_pt(11);
+      color: #000;
+    }
+
+    .check-more-totes {
+      width: flex_pt(150);
+      height: flex_pt(48);
+      font-size: flex_pt(14);
+      border-radius: flex_pt(2);
+      border: 0px solid #e85d40;
+      display: inline-block;
+      color: #fff;
+    }
+  }
+
+  .action-button-component {
+    // margin-top: 15px;
+    @media (max-width: $tiny-mobile-breakpoint) {
+      width: 127px;
+    }
+  }
+
+  a.purchase {
+    background-color: $white !important;
+    color: $black !important;
+  }
+}

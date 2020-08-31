@@ -1,0 +1,40 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.address-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: flex_pt(12);
+  padding-bottom: flex_pt(12);
+  border-bottom: 1px solid #f2f2f2;
+  .title {
+    color: #666666;
+    font-size: flex_pt(14);
+    flex: 1;
+  }
+  .input {
+    text-align: right;
+    font-size: 13px;
+    color: #333333;
+    letter-spacing: 0;
+    line-height: 24px;
+    flex: 2;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .icon {
+      height: flex_pt(15);
+      width: flex_pt(10);
+      margin-left: 8px;
+      margin-right: -16.5px;
+    }
+    &.placeholder {
+      color: #d7d7d7;
+    }
+  }
+  .ui-popup-content {
+    display: flex;
+  }
+}

@@ -1,0 +1,17 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.container-wrapper {
+  position: relative;
+  .back-to-top {
+    width: flex_pt(40);
+    height: flex_pt(40);
+    position: fixed;
+    bottom: flex_pt(150);
+    right: 16px;
+    z-index: 100;
+    background-image: url('~src/app/containers/product/images/back_to_top.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+  }
+}

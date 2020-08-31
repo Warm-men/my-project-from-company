@@ -1,0 +1,59 @@
+@import 'src/assets/stylesheets/variables';
+@import 'src/assets/stylesheets/flex_box.scss';
+
+$vh-to-px: 6.5px;
+
+.header-nav-bar {
+  clear: both;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 54px;
+  width: 100%;
+  border-top: 1px solid #ececec;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 300ms ease;
+  display: flex;
+  align-items: center;
+  .logo-link {
+    float: left;
+    .logo {
+      display: block;
+      height: 30px;
+      width: 43px;
+      margin-top: 2px;
+    }
+  }
+  .nav-link {
+    font-size: flex_box(20);
+    letter-spacing: 0.07rem;
+    text-align: center;
+    text-transform: uppercase;
+    flex: 1;
+    color: #b2b2af;
+    &.selected {
+      color: #fb4f32;
+      .icon {
+        background-position: -0.46 * $vh-to-px -0.3 * $vh-to-px;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    .icon {
+      display: block;
+      height: 5.6vw;
+      width: 5.6vw;
+      margin: 0 auto 0.8vw;
+      background-repeat: no-repeat;
+      background-position: -3.95 * $vh-to-px -0.3 * $vh-to-px;
+      background-size: 7.1 * $vh-to-px 3.1 * $vh-to-px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

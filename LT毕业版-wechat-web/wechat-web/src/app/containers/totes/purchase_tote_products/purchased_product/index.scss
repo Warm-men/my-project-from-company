@@ -1,0 +1,29 @@
+.purchase-tote-product {
+  &.detail {
+    .product-details {
+      width: 100vw;
+      padding: 11px 16px;
+      border: 1px solid #f3f3f3 !important;
+    }
+    .product-select-summer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+      margin-bottom: 0px;
+      .title {
+        font-size: 14px;
+        color: #5e5e5e;
+        letter-spacing: 0;
+        line-height: 14px;
+      }
+      .price {
+        font-size: 14px;
+        color: #242424;
+        letter-spacing: 0;
+        text-align: right;
+        line-height: 14px;
+      }
+    }
+  }
+}

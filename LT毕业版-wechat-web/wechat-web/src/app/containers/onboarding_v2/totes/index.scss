@@ -1,0 +1,33 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.onboarding-tote {
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  padding-top: 16px;
+
+  .content-view {
+    background: #ffffff;
+    box-shadow: 0 0 16px 0 rgba(204, 204, 204, 0.4);
+    border-radius: 8px;
+    margin: 0 16px;
+    padding: 16px;
+
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+      color: #242424;
+      letter-spacing: 0.6px;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+
+  .back {
+    font-size: 14px;
+    color: #5e5e5e;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 48px auto 0;
+  }
+}

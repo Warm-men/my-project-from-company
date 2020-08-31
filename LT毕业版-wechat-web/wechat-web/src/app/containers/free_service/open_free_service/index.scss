@@ -1,0 +1,131 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.free-service {
+  margin-top: -8px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.purchase-free-service-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 77%;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}
+.desc-text {
+  margin-bottom: 16px;
+  font-size: 12px;
+  color: #989898;
+  letter-spacing: 0;
+  text-align: center;
+}
+.purchase-free-service-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  box-shadow: 0 4px 6px 0;
+  background: #e85c40;
+  width: 80%;
+  height: 44px;
+  color: white;
+  border-radius: 4px;
+}
+.card-container {
+  position: relative;
+  margin-top: -10px;
+}
+.open-help-container {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.open-image-help {
+  height: 16px;
+  width: 16px;
+}
+.open-text-help {
+  margin-left: 6px;
+  font-size: 13px;
+  color: #5e5e5e;
+  letter-spacing: 0;
+  text-align: center;
+}
+.open-video {
+  width: 100vw;
+  height: flex_pt(211);
+}
+.faq-mini-container {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: flex_pt(75);
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.faq-mini-more {
+  font-size: 12px;
+  color: #989898;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+.clothes-clean-flow-text {
+  font-size: 14px;
+  color: #70aaef;
+  letter-spacing: 0.4px;
+  line-height: 26px;
+}
+.clothes-clean-flow-text-container {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: flex_pt(128);
+  bottom: flex_pt(126);
+  left: flex_pt(100);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.clothes-clean-flow-text-container-complete {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: flex_pt(588);
+  top: flex_pt(586);
+  left: flex_pt(100);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+.learn-more-about {
+  font-size: 14px;
+  color: #70aaef;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+.learn-more-about-container {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-down {
+  width: flex_pt(22);
+  height: flex_pt(18);
+}

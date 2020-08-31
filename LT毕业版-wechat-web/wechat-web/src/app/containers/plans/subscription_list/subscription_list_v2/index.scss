@@ -1,0 +1,95 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.plans-subscription-list-v2 {
+  .subscription-select-container {
+    margin-bottom: flex_pt(11);
+  }
+  .subscription-select-box {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: space-between;
+    padding: flex_pt(14) flex_pt(20) flex_pt(14);
+
+    &.selected {
+      border: 1px solid #e85c40;
+      background-color: #f9eae8;
+      box-shadow: 0px 2px 8px 0px rgba(232, 92, 64, 0.2);
+    }
+
+    .plans-select-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .select-icon {
+      display: inline-block;
+      margin-right: flex_pt(7.5);
+      width: 20px;
+      height: 20px;
+      background: url('~src/assets/images/plans/unselected.svg') no-repeat
+        center;
+
+      &.selected {
+        background: url('~src/assets/images/plans/selected.svg') no-repeat
+          center;
+        background-size: 100%;
+      }
+    }
+
+    .sub-introduce {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .title {
+        color: #242424;
+        font-size: flex_pt(16);
+        margin-bottom: 0px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+
+        .icon {
+          width: flex_pt(60);
+          height: flex_pt(18);
+          margin-left: flex_pt(9);
+        }
+      }
+
+      .text {
+        color: #5e5e5e;
+        font-size: flex_pt(12);
+        margin-bottom: 0px;
+      }
+    }
+
+    .price-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .final-price {
+        line-height: flex_pt(18);
+        font-size: 15px;
+        color: #333333;
+        margin-left: 10px;
+
+        .unit {
+          font-size: flex_pt(14);
+        }
+      }
+
+      .original-price {
+        line-height: flex_pt(12);
+        font-size: 12px;
+        color: #989898;
+        text-decoration: line-through;
+      }
+    }
+  }
+}

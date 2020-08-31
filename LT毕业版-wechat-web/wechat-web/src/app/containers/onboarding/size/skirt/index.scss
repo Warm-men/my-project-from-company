@@ -1,0 +1,50 @@
+.size-skirt-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #242424;
+  letter-spacing: 0.4px;
+  padding: 36px 10px 24px;
+}
+.size-skirt-content {
+  font-size: 14px;
+  color: #5e5e5e;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding: 0px 12px 26px;
+
+  span {
+    color: #d67d6b;
+  }
+}
+
+.size-skirt-box {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .size-skirt-item {
+    height: 44px;
+    border-radius: 22px;
+    border: 1px solid #ccc;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .size-skirt-item-title {
+      font-size: 14px;
+      color: #242424;
+      letter-spacing: 0.4px;
+    }
+    .size-skirt-item-title-active {
+      font-size: 14px;
+      color: #e85c40;
+      letter-spacing: 0.4px;
+    }
+  }
+  .active {
+    background: #fff5f4;
+    border: 1px solid #e85c40;
+  }
+}

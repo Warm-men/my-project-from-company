@@ -1,0 +1,233 @@
+@import 'src/assets/stylesheets/variables';
+
+@import 'src/assets/stylesheets/flex_box.scss';
+
+#product {
+  .product-brand {
+    padding: 32px 0;
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f3f3f3;
+    .brand-view {
+      display: flex;
+      align-items: center;
+    }
+    .product-brand-logo {
+      width: flex_pt(49);
+      height: flex_pt(49);
+      border-radius: flex_pt(49);
+      margin-right: flex_pt(10);
+
+      &.bg-logo {
+        background-size: flex_pt(110);
+        background-repeat: no-repeat;
+        background-position: 50%;
+      }
+    }
+    .more-brand {
+      padding: 5px 8px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      font-size: 13px;
+      color: #242424;
+      letter-spacing: 0.2px;
+    }
+
+    .product-brand-name {
+      color: #242424;
+      font-size: flex_pt(14);
+      flex: 2;
+    }
+
+    .product-branch-right {
+      width: flex_pt(16);
+      height: flex_pt(16);
+    }
+  }
+
+  .product-modal-left-col .text {
+    // font-family: $raleway;
+    font-size: 21px;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+    color: $black;
+    margin: 15px 0;
+    font-weight: 300;
+  }
+
+  .product-modal-right-col {
+    text-align: right;
+
+    .add-to-closet {
+      width: 48%;
+      height: 47px;
+      float: left;
+    }
+  }
+
+  .product-modal-info-container {
+    .product-modal-left-col {
+      border-bottom: 1px solid #f0f0f0;
+      margin: 0 16px;
+      padding: 16px 0 22px 0;
+    }
+  }
+
+  .pre-order-details {
+    text-align: center;
+    font-size: 12px;
+    color: #5e5e5e;
+    padding-top: 65px;
+    letter-spacing: 0.6px;
+    max-width: 303px;
+    margin: auto;
+
+    .pre-order-date {
+      margin-bottom: 12px;
+    }
+  }
+
+  .info-brand {
+    font-size: 28px;
+    line-height: 0.86;
+    font-weight: 400;
+    color: $black;
+    margin-bottom: 10px;
+  }
+
+  .info-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.57;
+    letter-spacing: 0.6px;
+    color: $black;
+  }
+
+  .info-parts {
+    margin-top: 12px;
+    span {
+      border-radius: 1px;
+      font-size: 12px;
+      display: inline-block;
+      letter-spacing: 0.34px;
+      text-align: center;
+      padding: flex_pt(3) flex_pt(6);
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  .product-detail-ensemble {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    .ensemble-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 22px;
+      width: 75px;
+      border: 1px solid #242424;
+    }
+    .top {
+      background-color: #242424;
+      border-radius: 8px 8px 0 0;
+      .ensemble-text {
+        color: #ffffff;
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 12px;
+      }
+      .arrow {
+        display: inline-block;
+        color: #fff;
+        border-top: 1px solid;
+        border-right: 1px solid;
+        width: 6px;
+        height: 6px;
+        transform: rotate(45deg);
+      }
+    }
+    .bottom {
+      background-color: #fff;
+      border-radius: 0 0 8px 8px;
+      .ensemble-text {
+        color: #242424;
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 12px;
+      }
+    }
+  }
+
+  .price {
+    font-variant-numeric: lining-nums;
+
+    .sale-price {
+      color: $primary-color-new;
+      font-weight: bold;
+    }
+
+    .msrp {
+      text-decoration: line-through;
+      color: $mid-gray;
+    }
+  }
+}
+
+body.mobile {
+  #product {
+    .pre-order-details {
+      font-size: 10px;
+      position: relative;
+      bottom: 48px;
+    }
+
+    .product-modal-right-col {
+      height: 0px;
+    }
+
+    .product-modal-left-col {
+      font-weight: 400;
+      border-bottom: 1px solid #f3f3f3;
+      position: relative;
+
+      .info-brand {
+        font-size: flex_pt(16);
+        color: #242424;
+        padding-left: 0;
+        margin-bottom: 8px;
+        font-weight: 500;
+        width: 90vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: inherit;
+      }
+
+      .info-title {
+        color: #5e5e5e;
+        font-size: 14px;
+        width: 90vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: inherit;
+      }
+      .price {
+        .sale-price {
+          display: block;
+        }
+
+        .sale-black-bar {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true
+    }
+  },
+  "extends": ["plugin:@typescript-eslint/recommended", "react-app"],
+  "globals": {
+    "React": true,
+    "_": true,
+    "wx": true,
+    "__webpack_public_path__": true
+  },
+  "plugins": ["@typescript-eslint", "jsx-a11y", "prettier", "react"],
+  "rules": {
+    "prettier/prettier": "error",
+    "prefer-const": 0, //没有经过赋值的变量，需要改为const
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-use-before-define": 0, //先定义后使用，项目有比较多的情况，不方便大规模处理
+    "@typescript-eslint/camelcase": 0 //驼峰命名，项目涵盖太多并且Grahpql也有对应字段，不要大规模处理
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.9"
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.express-container {
+  .express-header {
+    width: flex_box(750);
+    height: flex_box(141);
+    background-image: url('~src/assets/images/express/map.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: flex_box(36) flex_box(40) flex_box(38);
+    .express-icon {
+      width: flex_box(68);
+      height: flex_box(68);
+      background-image: url('~src/assets/images/express/shunfeng.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      display: inline-block;
+      margin-right: flex_box(19);
+    }
+    .express-text-box {
+      display: inline-block;
+      height: flex_box(68);
+      line-height: flex_box(42);
+      width: 70%;
+      .express-text {
+        display: inline-block;
+        width: 100%;
+        font-size: flex_box(28);
+        line-height: flex_box(28);
+        color: #626166;
+      }
+    }
+  }
+  .express-info-container {
+    padding: flex_box(40) flex_box(46) flex_box(0) flex_box(40);
+    .express-shipping-address {
+      display: flex;
+      position: relative;
+      .shipping-address-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #e85c40;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 3.2vw;
+        position: absolute;
+        left: -10px;
+        top: 0px;
+      }
+      .shipping-address-text {
+        padding-left: flex_box(39);
+        margin-bottom: flex_pt(12);
+        font-size: flex_box(28);
+        line-height: flex_box(41);
+        letter-spacing: 0.4px;
+      }
+    }
+    .express-info-empty {
+      margin: flex_pt(80) flex_pt(72) flex_pt(0);
+      text-align: center;
+      .empty-icon {
+        background-image: url('~src/assets/images/logistics.png');
+        background-repeat: no-repeat;
+        width: 105px;
+        height: 72.6px;
+        background-size: 100%;
+        display: inline-block;
+      }
+      .empty-title {
+        font-size: flex_pt(16);
+        color: #242424;
+        margin-top: flex_pt(19);
+        margin-bottom: flex_pt(11);
+      }
+      .empty-info {
+        font-size: flex_pt(12);
+        color: #5e5e5e;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0px;
+        line-height: flex_pt(18);
+      }
+    }
+    .express-info {
+      &:last-child {
+        border-left: none;
+      }
+      padding-bottom: flex_box(52);
+      border-left: 1px dashed #d9d9d9;
+      padding-left: flex_box(39);
+      position: relative;
+      .default-info {
+        &.active {
+          background-image: url('~src/assets/images/express/record1.png');
+        }
+        position: absolute;
+        left: flex_box(-12);
+        top: 0px;
+        width: flex_box(24);
+        height: flex_box(28);
+        background-image: url('~src/assets/images/express/record2.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .express-info-head {
+        color: #929291;
+        font-size: flex_box(24);
+        line-height: flex_box(41);
+        float: left;
+        width: 100%;
+        margin-top: -3px;
+      }
+      .express-info-text {
+        color: #242424;
+        font-size: flex_box(28);
+        line-height: flex_box(41);
+        margin-bottom: 0px;
+        clear: both;
+        a {
+          color: #e85c40;
+        }
+      }
+    }
+  }
+}

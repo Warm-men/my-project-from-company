@@ -1,0 +1,161 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.mycenter-list-item-card {
+  width: 100%;
+  background: #ffffff;
+  margin-bottom: flex_pt(7);
+  .content {
+    width: flex_pt(343);
+    margin: 0 auto;
+    .time {
+      padding-top: 24px;
+      font-size: 16px;
+      color: #333333;
+      letter-spacing: 0;
+      line-height: 16px;
+    }
+    .header {
+      margin-top: 12px;
+      overflow: hidden;
+      .tag-wrapper {
+        float: left;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 23px;
+        padding-right: 8px;
+        .featured {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #e85c40;
+          border-radius: 2px;
+          height: 18px;
+          width: 45px;
+          .tag-text {
+            font-weight: 500;
+            font-size: 12px;
+            color: #ffffff;
+            letter-spacing: 0.4px;
+            line-height: 18px;
+          }
+        }
+      }
+      .share-topics {
+        float: left;
+        font-size: 14px;
+        color: #e85c40;
+        letter-spacing: 0.4px;
+        line-height: 23px;
+        padding-left: 2px;
+      }
+
+      .text {
+        font-size: 14px;
+        color: #989898;
+        letter-spacing: 0.4px;
+        line-height: 23px;
+      }
+    }
+    .photos {
+      margin-top: 12px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 26px;
+      padding-bottom: 24px;
+      .like {
+        .like-button-container img {
+          width: 22px;
+          margin-right: 5px;
+        }
+        .like-button-container .like-count {
+          font-size: 15px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+
+.mycenter-list-item-card .followers-contents {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .follower-tips-text {
+    font-size: 13px;
+    color: #adadad;
+  }
+  .follower-img-view {
+    display: flex;
+    align-items: center;
+    .follower-img {
+      width: 22px;
+      height: 22px;
+      margin-left: -5px;
+      border: 1px solid #fff;
+      border-radius: 12px;
+      box-sizing: content-box;
+      background-size: cover;
+      background-position: center;
+      display: inline-block;
+    }
+    .more-follower {
+      width: 22px;
+      height: 22px;
+      border-radius: 14px;
+      line-height: 14px;
+      background-color: #f5f5f5;
+      color: #ccc;
+      border: 1px solid #fff;
+      margin-left: -7px;
+      text-align: center;
+      box-sizing: content-box;
+    }
+  }
+}
+
+.mycenter-list-item-card .related-contents .scroll-wrapper-view .photo-img {
+  height: 222px;
+  width: 167px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.go-share-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2017;
+  height: flex_pt(60);
+  padding: flex_pt(8) flex_pt(15) flex_pt(8);
+  .btn-content {
+    display: flex;
+    align-items: center;
+    border-radius: flex_box_width(4);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #e85c40;
+    color: #fff;
+    .btn-text {
+      width: 100%;
+      font-weight: bold;
+      font-size: 14px;
+      color: #ffffff;
+      letter-spacing: 0.4px;
+      text-align: center;
+      line-height: 14px;
+    }
+  }
+}

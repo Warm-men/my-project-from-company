@@ -1,0 +1,83 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.information {
+  display: block;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #999;
+  font-size: 13px;
+}
+
+.real-name-auth-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.real-name-auth {
+  min-height: 90vh;
+  .banner {
+    display: block;
+    width: 100vw;
+  }
+
+  label {
+    width: 100vw;
+    height: 52px;
+    line-height: 52px;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0;
+    padding-left: 30px;
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    span {
+      display: inline-block;
+      width: 94px;
+    }
+
+    &::before {
+      content: '';
+      width: flex_pt(320);
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+
+    &:nth-of-type(1) {
+      margin-top: 24px;
+    }
+
+    input {
+      width: 226px;
+      height: 24px;
+      line-height: 24px;
+      outline: none;
+      border: none;
+    }
+  }
+
+  button {
+    display: block;
+    width: 315px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    background-color: $primary-color-new;
+    border-radius: 4px;
+    margin: 40px auto 0px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+
+    &:active {
+      background-color: $primary-color-new-hover;
+    }
+  }
+}

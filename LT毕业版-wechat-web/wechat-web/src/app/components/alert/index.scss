@@ -1,0 +1,77 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.alert-modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  top: 0px;
+  left: 0px;
+
+  .shade {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $black;
+    opacity: 0.7;
+  }
+
+  .hint-alert {
+    width: flex_pt(314);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    border-radius: 4px;
+
+    .top-text {
+      padding: flex_pt(28) flex_pt(34);
+      border-bottom: 1px solid #f3f3f3;
+      text-align: center;
+      font-size: 16;
+      color: #242424;
+
+      .icon {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 12px;
+      }
+
+      .title-p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        color: #242424;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .top-content {
+        display: block;
+        font-size: 14px;
+        color: #5e5e5e;
+        line-height: 24px;
+      }
+    }
+
+    .alert_padding_fix {
+      padding: 0;
+    }
+
+    .btn-same {
+      height: flex_pt(40);
+      line-height: flex_pt(40);
+      text-align: center;
+      color: #ea5c39;
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+}

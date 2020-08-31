@@ -1,0 +1,69 @@
+@import 'src/assets/stylesheets/variables';
+
+#tote-swap-error-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+
+  .error-modal-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $black;
+    opacity: 0.6;
+  }
+
+  .error-modal-body {
+    position: absolute;
+    background-color: $white;
+    width: 335px;
+    left: calc(50% - 167.5px);
+    height: 240px;
+    top: calc(50% - 142.5px);
+    border-radius: 4px;
+    box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.12),
+                0 2px 108px 0 rgba(0, 0, 0, 0.18);
+    padding: 25px;
+  }
+
+  .error-modal-body-header {
+    font-family: $playfair;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: $tote-swap-yellow;
+  }
+
+  .error-modal-body-message {
+    font-family: $raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.56;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: $dark-gray;
+    margin: 30px auto;
+  }
+
+  .error-modal-body-cta {
+    width: 220px;
+    height: 46px;
+    border-radius: 2px;
+    background-color: $primary-color-new;
+    color: $white;
+    font-family: $raleway;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 46px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}

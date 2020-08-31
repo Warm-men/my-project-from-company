@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="14px" viewBox="0 0 27 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>卡标识</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="89.4802335%" y1="100%" x2="9.10609259%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#696462" offset="0%"></stop>
+            <stop stop-color="#2C2C2C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人中心-会员-已开通免密" transform="translate(-193.000000, -178.000000)" fill="url(#linearGradient-1)">
+            <rect id="卡标识" x="193" y="178" width="27" height="14" rx="2"></rect>
+        </g>
+    </g>
+</svg>

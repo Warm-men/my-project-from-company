@@ -1,0 +1,82 @@
+@import '~styles/flex_box.scss';
+
+.product-swiper-box {
+  width: 100vw;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+  border-bottom: 7px solid #f7f7f7;
+  margin-top: flex_pt(16);
+  .product-swiper-container {
+    padding-left: 8px;
+    padding-bottom: 16px;
+    .product-item {
+      position: relative;
+      display: inline-block;
+      margin-right: 8px;
+      width: 72px;
+      text-align: center;
+      .product-price {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #242424;
+        letter-spacing: 0.4px;
+        text-align: center;
+        line-height: 14px;
+        margin-bottom: 0px;
+      }
+      .select-icon {
+        position: absolute;
+        display: inline-block;
+        width: flex_pt(14);
+        height: flex_pt(14);
+        border-radius: 50%;
+        border: 1px solid #999999;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        &.selected {
+          background: url('~src/assets/images/plans/ok.png') no-repeat center;
+          background-size: flex_pt(20);
+          border: 1px solid #e85c40;
+        }
+      }
+    }
+  }
+}
+.product-select-box {
+  padding-left: flex_pt(16);
+  padding-right: flex_pt(16);
+  border-bottom: 7px solid #f7f7f7;
+  padding-bottom: flex_pt(15);
+  .select-title {
+    font-size: 14px;
+    color: #242424;
+    letter-spacing: 0;
+    line-height: 14px;
+    padding-top: flex_pt(16);
+    padding-bottom: flex_pt(10);
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 0px;
+  }
+  .product-select-summer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    .title {
+      font-size: 14px;
+      color: #5e5e5e;
+      letter-spacing: 0;
+      line-height: 14px;
+    }
+    .price {
+      font-size: 14px;
+      color: #242424;
+      letter-spacing: 0;
+      text-align: right;
+      line-height: 14px;
+    }
+  }
+}

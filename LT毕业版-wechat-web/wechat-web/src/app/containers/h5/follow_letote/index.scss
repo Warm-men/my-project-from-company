@@ -1,0 +1,82 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.follow-lt {
+  p {
+    font-size: 16px;
+    color: #5e5e5e;
+    letter-spacing: 0.53px;
+    text-align: center;
+    line-height: 20px;
+    width: 100vw;
+    margin-top: 54px;
+  }
+
+  i.qr_code {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: url('./images/qr_code.png') no-repeat center;
+    background-size: 100%;
+    margin: 0 auto;
+  }
+
+  span.detail {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    font-size: 12px;
+    color: #989898;
+    letter-spacing: 0.2px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 8px;
+  }
+
+  footer {
+    width: flex_pt(336);
+    height: 90px;
+    border: 1px solid #eeeeee;
+    margin: 25px auto 0;
+    padding: 17px 15px;
+
+    i.logo {
+      width: 56px;
+      height: 56px;
+      background: url('./images/logo_lt.svg') no-repeat center;
+      background-size: 100%;
+      display: inline-block;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 10px;
+      padding-left: 12px;
+
+      div {
+        font-size: 12px;
+        color: #989898;
+        letter-spacing: 0.2px;
+        height: 20px;
+      }
+
+      .download-text {
+        color: #242424;
+      }
+    }
+
+    button {
+      outline: none;
+      border: 1px solid #b2b2af;
+      border-radius: 2px;
+      font-size: 13px;
+      color: #242424;
+      letter-spacing: 0.2px;
+      padding: 10px 22px;
+      background-color: $white;
+      float: right;
+      margin-top: 7px;
+    }
+  }
+}

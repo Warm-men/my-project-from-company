@@ -1,0 +1,76 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.freeServiceBannerView {
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fef8f2;
+}
+.freeServiceBannerText {
+  font-size: 12px;
+  color: #bd8846;
+  text-align: center;
+  letter-spacing: 0.4px;
+  line-height: 20px;
+}
+.descriptionView {
+  margin: 24px 0;
+  padding: 0 16px;
+}
+.descriptionTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.descriptionText {
+  font-size: 13px;
+  color: #999;
+  line-height: 22px;
+}
+.buttonView {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 flex_pt(65);
+}
+.bottomBannerView {
+  margin: 16px 16px;
+  padding: 16px 12px;
+  border: 1px solid #e9e9e9;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+}
+.bottomBannerText {
+  font-size: 12px;
+  color: #5e5e5e;
+  letter-spacing: 0.4px;
+  line-height: 22px;
+}
+.highLight {
+  font-weight: 500;
+  color: #242424;
+}
+.buttonItem {
+  display: flex;
+  width: 104px;
+  height: 32px;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+}
+.onFocusText {
+  font-size: 14px;
+  color: #ffffff;
+}
+.onBlureText {
+  color: #5e5e5e;
+  font-size: 14px;
+}
+.onFocus {
+  background-color: #f2be7d;
+}
+.onBlure {
+  border: 1px solid #cccccc;
+}

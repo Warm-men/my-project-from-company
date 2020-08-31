@@ -1,0 +1,44 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.arrow-right {
+  width: flex_pt(5);
+  color: '#000';
+}
+.fill-size-box {
+  margin-top: flex_pt(20);
+  .fill-size-text {
+    font-size: flex_pt(12);
+    margin-right: flex_pt(6);
+    color: #e85c40;
+    .arrow-img {
+      margin-left: flex_pt(6);
+    }
+  }
+  .fill-size-button-box {
+    height: flex_pt(68);
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 1px 0px 10px #eee;
+    align-items: center;
+    .fill-size-button-text {
+      color: #5e5e5e;
+      font-size: 12px;
+      line-height: flex_pt(22);
+      margin: 0 flex_pt(18) 0 flex_pt(15);
+      flex: 1;
+    }
+    .fill-size-button {
+      width: flex_pt(84);
+      height: flex_pt(30);
+      line-height: flex_pt(30);
+      text-align: center;
+      font-size: 12px;
+      color: #fff;
+      background: #e85c40;
+      border-radius: flex_pt(15);
+      margin-right: flex_pt(15);
+    }
+  }
+}

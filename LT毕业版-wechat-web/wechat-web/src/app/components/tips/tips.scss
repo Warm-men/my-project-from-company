@@ -1,0 +1,64 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+.hidden {
+  display: none;
+}
+.tips {
+  background-color: #242424;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+  border-radius: flex_box_width(4);
+  padding: 6px 12px;
+  z-index: 99999999;
+  transform: translate(-50%, -50%);
+
+  .alert-content {
+    font-size: 14px;
+  }
+
+  img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto 5px;
+  }
+}
+
+.fadeIn8 {
+  opacity: 1;
+  transition: all 0.3 ease-in-out; // -webkit-animation-name: fadeIn8;
+  // animation-name: fadeIn8;
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: flex_pt(68);
+  color: #fff;
+  transform: translate(-50%, 0);
+  opacity: 0.8;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  background: #242424;
+  border-radius: 4px;
+  min-height: 40px;
+  padding: 5px 0px;
+  width: flex_pt(343);
+  z-index: 99999999;
+  line-height: 16px;
+  padding-left: flex_pt(16);
+  display: flex;
+  align-items: center;
+  .toast-icon {
+    width: flex_pt(23);
+    height: flex_pt(23);
+    background-size: 100%;
+    display: inline-block;
+    margin-right: flex_pt(12);
+    &.warning {
+      background-image: url('~src/app/components/tips/images/warning.svg');
+    }
+  }
+}

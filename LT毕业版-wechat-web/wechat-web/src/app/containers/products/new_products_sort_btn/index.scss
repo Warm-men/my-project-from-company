@@ -1,0 +1,38 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.new-products-sort-btn-container {
+  height: flex_pt(51);
+  .new-products-sort-btn-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+  .new-products-sort-btn-box {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: flex_pt(15) 0px flex_pt(15) flex_pt(18);
+    z-index: 110;
+    background-color: #fff;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    .new-products-sort-btn {
+      margin-right: flex_pt(30);
+      font-size: 12px;
+      color: #666666;
+      letter-spacing: 0;
+      line-height: 12px;
+      width: 80px;
+      display: inline-block;
+      padding: flex_pt(5) 0px flex_pt(4);
+      text-align: center;
+      &.active {
+        background: #000000;
+        border-radius: 100px;
+        color: #fff;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

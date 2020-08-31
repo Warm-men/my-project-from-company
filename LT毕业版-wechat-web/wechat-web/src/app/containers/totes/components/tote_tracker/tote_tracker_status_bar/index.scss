@@ -1,0 +1,57 @@
+@import 'src/assets/stylesheets/variables';
+
+.tote-tracker-bar-container {
+  margin-top: 16px;
+
+  .tote-tracker-bar {
+    height: 6px;
+    border-radius: 3px;
+    background: #f7f7f7;
+  }
+
+  .tote-tracker-bar-fill {
+    height: 6px;
+    border-radius: 3px;
+    background-color: $tote-tracker-bar-orange;
+    position: relative;
+    overflow: hidden;
+    top: -1px;
+    left: -1px;
+  }
+
+  .tote-tracker-bar-labels {
+    margin: 18px 5px 0px 5px;
+    display: flex;
+    .step-box {
+      flex: 1;
+      text-align: center;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: -12px;
+        width: 1px;
+        height: 8px;
+        background-color: $light-gray;
+      }
+      &.active {
+        .status {
+          color: #242424;
+        }
+      }
+    }
+    .date {
+      font-size: 11px;
+      color: #ccc;
+      letter-spacing: 0.2px;
+      display: block;
+    }
+    .status {
+      font-size: 12px;
+      color: #ccc;
+      letter-spacing: 0.4px;
+      display: block;
+    }
+  }
+}

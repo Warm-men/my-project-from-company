@@ -1,0 +1,100 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.select-container {
+  padding-top: 24px;
+  border-top: 7px solid #f7f7f7;
+  padding-bottom: 24px;
+  background-color: #fff;
+
+  .title {
+    padding-left: 20px;
+    letter-spacing: 0;
+    margin-bottom: 22px;
+    font-size: 16px;
+    color: #242424;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    .standby {
+      margin-left: 8px;
+      color: #666666;
+      letter-spacing: 0;
+      line-height: 7px;
+      font-size: 10px;
+    }
+  }
+
+  .select-box {
+    display: flex;
+    padding-left: 0px;
+    text-align: center;
+    margin-bottom: flex_pt(35);
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    .link {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+
+      .img {
+        width: 24px;
+        height: 24px;
+        margin: 0 auto 6px;
+      }
+
+      .share-icon-img {
+        position: absolute;
+        top: -23px;
+        left: 50%;
+        width: 83px;
+        transform: translate(-50%, 0);
+      }
+
+      .text {
+        font-size: 13px;
+        color: #5e5e5e;
+        letter-spacing: 0.4px;
+        text-align: center;
+        line-height: 16px;
+      }
+
+      .icon {
+        position: absolute;
+        right: 25px;
+        top: 0px;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        background-color: #e85c40;
+      }
+      .bnt-bubble-text {
+        position: absolute;
+        top: -33px;
+        left: 15px;
+        z-index: 5;
+        background-color: #e85c40;
+        font-size: 10px;
+        color: #fff;
+        box-shadow: 0 3px 5px 0 rgba(232, 92, 64, 0.33);
+        border-radius: 20px;
+        padding: 0 8px;
+        word-break: keep-all;
+        line-height: 22px;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 20px;
+          left: 30px;
+          width: 0;
+          height: 0;
+          border: 7px solid;
+          border-color: #e85c40 transparent transparent transparent;
+        }
+      }
+    }
+  }
+}

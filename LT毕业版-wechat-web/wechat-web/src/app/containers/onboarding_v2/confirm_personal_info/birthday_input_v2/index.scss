@@ -1,0 +1,30 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.brithday-input-v2 {
+  margin-top: 40px;
+  margin-left: 50px;
+
+  .brithday-title {
+    font-size: 14px;
+    color: #242424;
+    letter-spacing: 0;
+    line-height: 16px;
+  }
+
+  .date-pick {
+    padding-left: 0;
+    text-align: left;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: flex_pt(295);
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import '~styles/flex_box';
+@import '~styles/variables';
+
+.exchange-results {
+  text-align: center;
+  .result-icon {
+    width: flex_pt(76);
+    height: flex_pt(76);
+    background: url('~src/app/containers/new_clothes_free/images/success.png')
+      no-repeat center;
+    background-size: 100%;
+    margin: 138px auto 24px;
+    &.fail {
+      background: url('~src/assets/images/fail.png') no-repeat center;
+      background-size: 100%;
+    }
+  }
+
+  .results {
+    width: 204px;
+    height: 40px;
+    line-height: 40;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(36, 36, 36, 1);
+    line-height: 16px;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(234, 92, 57, 1);
+  }
+
+  .results-desc {
+    font-size: 16px;
+    color: #242424;
+    letter-spacing: 1px;
+    line-height: 16px;
+    font-weight: bold;
+  }
+
+  .result-tips {
+    font-size: 14px;
+    color: #989898;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 14px;
+    margin-top: 16px;
+    .tips-text {
+      margin-bottom: 6px;
+    }
+  }
+
+  .result-btn {
+    margin-top: 40px;
+    border: 1px solid #b2b2af;
+    color: #242424;
+    background-color: #fff;
+  }
+}

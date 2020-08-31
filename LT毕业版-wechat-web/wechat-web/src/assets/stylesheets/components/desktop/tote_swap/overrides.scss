@@ -1,0 +1,33 @@
+@import '../../../variables';
+
+body.tote-swap {
+  min-width: 960px;
+  padding-top: 0;
+}
+
+body.tote-swap-mobile {
+  min-width: 100vw;
+
+  #nav-bar {
+    display: none;
+  }
+
+  #page-content {
+    height: 100%;
+  }
+}
+
+.tote-swap-experience {
+  width: 100%;
+}
+
+body.tote-swap-mobile {
+  .tote-swap-experience {
+    max-width: 100vw;
+    overflow-x: hidden;
+
+    .row {
+      margin: 0;
+    }
+  }
+}

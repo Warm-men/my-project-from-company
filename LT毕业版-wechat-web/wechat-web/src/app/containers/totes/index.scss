@@ -1,0 +1,33 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.new-totes-icon {
+  width: 90px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3px;
+  border: 1px solid #c8c8c8;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  z-index: 108;
+  transform: translateX(-50%);
+  letter-spacing: 0;
+  background-color: #fff;
+  position: fixed;
+  bottom: flex_pt(64);
+  left: 50%;
+  span {
+    font-size: 12px;
+    color: #5e5e5e;
+  }
+  img {
+    margin-right: -10px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.totes-default {
+  padding-bottom: 100px;
+}

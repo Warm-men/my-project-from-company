@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="343px" height="48px" viewBox="0 0 343 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>banner底图</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFF7FC" offset="0%"></stop>
+            <stop stop-color="#FFE0EE" offset="100%"></stop>
+        </linearGradient>
+        <path d="M4,0 L339,0 C341.209139,-4.05812251e-16 343,1.790861 343,4 L343,44 C343,46.209139 341.209139,48 339,48 L4,48 C1.790861,48 2.705415e-16,46.209139 0,44 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-2"></path>
+        <linearGradient x1="86.5556319%" y1="12.4098558%" x2="-3.53708791%" y2="12.4098558%" id="linearGradient-4">
+            <stop stop-color="#FFD9E2" offset="0%"></stop>
+            <stop stop-color="#FFEBF8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="邀请好友提示" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="晒单详情-邀请好友2" transform="translate(-16.000000, -603.000000)">
+            <g id="banner底图" transform="translate(16.000000, 603.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="矩形" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <circle id="椭圆形" fill="#FFD9E2" opacity="0.397530692" style="mix-blend-mode: multiply;" mask="url(#mask-3)" cx="338.5" cy="30.5" r="51.5"></circle>
+                <circle id="椭圆形" fill="#FFDED9" opacity="0.397530692" style="mix-blend-mode: multiply;" mask="url(#mask-3)" cx="338.5" cy="30.5" r="51.5"></circle>
+                <circle id="椭圆形复制-2" fill="#FFF6E9" opacity="0.4" mask="url(#mask-3)" cx="247" cy="2" r="59"></circle>
+                <path d="M228.106727,20.2462738 L228.442591,14.898424 L223.094741,17.98106 L228.106727,20.2462738 Z" id="矩形" stroke="#FFFFFF" mask="url(#mask-3)"></path>
+                <circle id="椭圆形复制" fill="url(#linearGradient-4)" mask="url(#mask-3)" cx="178" cy="89" r="55"></circle>
+                <circle id="椭圆形复制-3" fill="url(#linearGradient-4)" opacity="0.640369234" mask="url(#mask-3)" cx="33.5" cy="-21.5" r="45.5"></circle>
+                <g id="编组-4复制" opacity="0.400000006" mask="url(#mask-3)" fill="#FFFFFF">
+                    <g transform="translate(195.000000, -3.000000)">
+                        <circle id="椭圆形复制-7" cx="1" cy="5" r="1"></circle>
+                        <circle id="椭圆形复制-8" cx="5" cy="5" r="1"></circle>
+                        <circle id="椭圆形复制-9" cx="9" cy="5" r="1"></circle>
+                        <circle id="椭圆形复制-10" cx="13" cy="5" r="1"></circle>
+                        <circle id="椭圆形复制-14" cx="1" cy="9" r="1"></circle>
+                        <circle id="椭圆形复制-13" cx="5" cy="9" r="1"></circle>
+                        <circle id="椭圆形复制-12" cx="9" cy="9" r="1"></circle>
+                        <circle id="椭圆形复制-11" cx="13" cy="9" r="1"></circle>
+                    </g>
+                </g>
+                <g id="编组-4复制-2" opacity="0.5" mask="url(#mask-3)" fill="#FFFFFF">
+                    <g transform="translate(211.000000, -3.000000)">
+                        <circle id="椭圆形复制-7" cx="1" cy="5" r="1"></circle>
+                        <circle id="椭圆形复制-8" cx="5" cy="5" r="1"></circle>
+                        <circle id="椭圆形复制-9" cx="9" cy="5" r="1"></circle>
+                        <circle id="椭圆形复制-10" cx="13" cy="5" r="1"></circle>
+                        <circle id="椭圆形复制-14" cx="1" cy="9" r="1"></circle>
+                        <circle id="椭圆形复制-13" cx="5" cy="9" r="1"></circle>
+                        <circle id="椭圆形复制-12" cx="9" cy="9" r="1"></circle>
+                        <circle id="椭圆形复制-11" cx="13" cy="9" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,73 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.hive-box-fill {
+  display: flex;
+  flex-direction: column;
+  label {
+    width: 100vw;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 22px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: flex_pt(316);
+      height: 1px;
+      background-color: #f2f2f2;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    input {
+      height: 22px;
+      line-height: 22px;
+      float: right;
+      text-align: right;
+      border: none;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #242424;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .submit {
+    margin-top: 40px;
+  }
+  .buttonView {
+    margin-top: 40px;
+    height: 40px;
+    display: flex;
+    background-color: #ea5c39;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    margin: 16px 30px 0;
+  }
+  .buttonViewBlue {
+    margin-top: 40px;
+    height: 40px;
+    display: flex;
+    background-color: #f8cfc4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    margin: 16px 30px 0;
+  }
+  .buttonText {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+  }
+}

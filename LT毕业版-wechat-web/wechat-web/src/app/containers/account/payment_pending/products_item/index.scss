@@ -1,0 +1,138 @@
+@import '~styles/flex_box';
+@import '~styles/variables';
+
+.products-item {
+  width: flex_pt(345);
+  background-color: $white;
+  padding-left: flex_pt(15);
+  margin-top: 15px;
+  box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  .payment-time {
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+  }
+
+  .discount {
+    padding: 16px 15px 16px 0;
+    position: relative;
+    font-size: 14px;
+    color: #5e5e5e;
+    letter-spacing: 0;
+    line-height: 14px;
+    .valid-promo-num {
+      font-size: 12px;
+      color: #3e3e3e;
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+    .next-icon {
+      width: 20px;
+      display: inline-block;
+      height: flex_pt(14);
+      background: url('~src/assets/images/account/next.svg') no-repeat right;
+      background-size: flex_pt(8) flex_pt(14);
+      vertical-align: top;
+    }
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #f3f3f3;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .price {
+      text-align: left;
+      float: right;
+      font-size: 14px;
+      color: #242424;
+      letter-spacing: 0;
+      line-height: 14px;
+      &.empty-promo {
+        color: #afafaf;
+      }
+    }
+  }
+  .overdue_surcharge_tips {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    .overdue_surcharge_tips_text {
+      margin-left: 7px;
+      font-size: 12px;
+      color: #e85c40;
+      letter-spacing: 0;
+      line-height: 12px;
+    }
+    .overdue_surcharge_tips_img {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  .payment-button {
+    width: flex_pt(315);
+    height: 48px;
+    background-color: #f2f2f5;
+    line-height: 48px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    span.total-price {
+      display: inline-block;
+      width: flex_pt(67);
+      color: #e85c40;
+      height: 48px;
+      line-height: 48px;
+      font-size: 16px;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 1px;
+        height: 22px;
+        background-color: #c8c8c8;
+        position: absolute;
+        right: 0;
+        top: 28%;
+      }
+    }
+
+    span.save-price {
+      display: inline-block;
+      width: flex_pt(108);
+      color: #888;
+      font-size: 12px;
+      position: relative;
+      top: -3px;
+    }
+
+    button {
+      display: inline-block;
+      background-color: #e85d40;
+      width: flex_pt(140);
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      outline: none;
+      font-size: 14px;
+      color: $white;
+      border: none;
+    }
+
+    .set-gray {
+      background-color: $mid-gray;
+    }
+  }
+}

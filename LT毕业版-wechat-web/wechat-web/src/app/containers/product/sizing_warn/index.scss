@@ -1,0 +1,28 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.size-help-left {
+  align-items: center;
+  padding: 11px 0px;
+  &.top {
+    align-items: flex-start;
+  }
+  .help-tips-box {
+    display: flex;
+    align-items: center;
+    color: #5e5e5e;
+    .help-tips-text {
+      font-size: 12px;
+      color: #e85c40;
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+    .help-text-icon {
+      margin-left: 5px;
+      font-size: 20px;
+      color: #e85c40;
+    }
+  }
+  .help-text {
+    color: #5e5e5e;
+  }
+}

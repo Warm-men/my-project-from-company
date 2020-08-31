@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>我的-喜欢icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="我的-喜欢icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle-16-Copy-8" opacity="0.361979167" x="0" y="0" width="24" height="24"></rect>
+            <circle id="Oval-8" stroke="#242424" stroke-width="1.5" cx="12" cy="12" r="10"></circle>
+            <circle id="Oval-9" fill="#EA5C39" cx="8" cy="9" r="1"></circle>
+            <circle id="Oval-9-Copy" fill="#EA5C39" cx="16" cy="9" r="1"></circle>
+            <path d="M15.5,14.4908424 C14.9108914,15.8391682 13.5654854,16.7814401 12,16.7814401 C10.4345146,16.7814401 9.08910862,15.8391682 8.5,14.4908424" id="Combined-Shape" stroke="#EA5C39" stroke-width="1.5" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

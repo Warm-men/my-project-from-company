@@ -1,0 +1,34 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.corporation-btn-container {
+  position: fixed;
+  bottom: flex_pt(120);
+  right: flex_pt(15);
+  width: flex_pt(48);
+  z-index: 10;
+  .corporation-btn {
+    &:last-child {
+      margin-bottom: 0;
+    }
+    background-color: #fff;
+    color: #626166;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    line-height: 45px;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: flex_pt(15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    .corporation-btn-text {
+      letter-spacing: 1px;
+      font-size: 11px;
+      line-height: 14px;
+      padding: 6px;
+    }
+  }
+}

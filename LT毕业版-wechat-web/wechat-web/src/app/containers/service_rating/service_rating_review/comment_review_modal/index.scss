@@ -1,0 +1,42 @@
+@import '~styles/flex_box.scss';
+
+.rating-comment-modal-container {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  z-index: 105;
+  width: 100vw;
+  .shadow {
+    height: 100vh;
+    background-color: #00000099;
+  }
+  .comment-box {
+    padding: 0px 16px;
+    .comment {
+      background: #fcfcfc;
+      border: 1px solid #efefef;
+      padding: 16px;
+      font-size: 14px;
+      color: #5e5e5e;
+      letter-spacing: 0.2px;
+      line-height: 22px;
+    }
+  }
+  .rating-modal-box {
+    border-top: 1px solid #f3f3f3;
+    background-color: #fff;
+    padding-bottom: 24px;
+    .modal-title {
+      padding: 20px 16px;
+      font-size: 16px;
+      color: #242424;
+      letter-spacing: 0;
+      line-height: 16px;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 0 0 0 #f3f3f3;
+      border-bottom: 1px solid #f3f3f3;
+      margin-bottom: 16px;
+    }
+  }
+}

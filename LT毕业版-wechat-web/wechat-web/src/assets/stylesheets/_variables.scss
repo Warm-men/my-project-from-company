@@ -1,0 +1,17 @@
+@import './bootstrap/functions';
+@import './bootstrap/variables';
+@import './colors';
+
+$proxima: "Proxima-Nova", sans-serif;
+$proxima-light: "ProximaNova-Light", sans-serif;
+$proxima-semibold: "ProximaNova-Semibold", sans-serif;
+$proxima-bold: "ProximaNova-Bold", sans-serif;
+
+$vh-to-px: 6.5px;
+$nav-bar-height: 9 * $vh-to-px;
+//NOTE:all.scss have use chinese font-family
+$raleway: "Raleway", sans-serif;
+$playfair: "Playfair", "PlayfairDisplay", serif;
+$brand-primary: #e85c40;
+
+$tiny-mobile-breakpoint: 320px; // iphone 5 / se

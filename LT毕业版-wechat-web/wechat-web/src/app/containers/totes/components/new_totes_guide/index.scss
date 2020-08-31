@@ -1,0 +1,20 @@
+@import '~styles/flex_box';
+.new-totes-guide {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  background-color: #00000099;
+  height: 100vh;
+  align-items: flex-end;
+  display: flex;
+
+  .guide-img {
+    margin-bottom: flex_pt(120);
+    background-image: url('~src/app/containers/totes/components/new_totes_guide/images/guide.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: flex_pt(250);
+  }
+}

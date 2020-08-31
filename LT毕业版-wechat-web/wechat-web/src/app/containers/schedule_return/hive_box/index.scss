@@ -1,0 +1,51 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.hive-box {
+  padding-bottom: 32px;
+
+  .hive-box-hint {
+    font-size: 13px;
+    color: #989898;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding: 15px;
+    background: #f7f7f7;
+    border-radius: 2px;
+    width: flex_pt(346);
+    padding: 15px;
+    margin: 17px auto 24px;
+  }
+
+  .use-hive-box {
+    width: flex_pt(335);
+    margin-top: 30px;
+  }
+
+  .hive-box-guide {
+    width: 100vw;
+    border-top: 7px solid #f7f7f7;
+    margin-top: 30px;
+
+    .title {
+      display: block;
+      font-size: 16px;
+      color: #242424;
+      letter-spacing: 0;
+      width: 100vw;
+      text-align: center;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+  }
+
+  .not-bordertop {
+    border: none;
+  }
+
+  img.send-back-flow {
+    display: block;
+    margin: 24px auto 0;
+    width: flex_pt(350);
+  }
+}

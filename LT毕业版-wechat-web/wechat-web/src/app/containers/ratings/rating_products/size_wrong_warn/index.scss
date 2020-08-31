@@ -1,0 +1,55 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999999;
+}
+
+.size-wrong-warn {
+  .icon-delete {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: url('./images/delete.svg') no-repeat center;
+    background-size: 100%;
+  }
+
+  padding: 26px 24px;
+  width: flex_pt(346);
+  height: 96px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.12);
+  font-size: 12px;
+  color: #5e5e5e;
+  letter-spacing: 0.4px;
+  line-height: 22px;
+
+  .fix-size-wrong {
+    color: #ea5c39;
+
+    i.icon-red {
+      display: inline-block;
+      width: 6px;
+      height: 12px;
+      background: url('./images/next.svg') no-repeat center;
+      background-size: 100%;
+      transform: translateY(2px);
+    }
+  }
+}
+
+.size-wrong-container {
+  position: fixed;
+  bottom: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999999999;
+}

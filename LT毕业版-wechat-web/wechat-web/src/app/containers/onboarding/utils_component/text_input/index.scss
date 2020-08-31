@@ -1,0 +1,43 @@
+.text-input {
+  margin-top: 35px;
+  border-bottom: 1px solid #f3f3f3;
+
+  &.clear-margin {
+    margin-top: 0px;
+  }
+  .text-title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #242424;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-bottom: 12px;
+  }
+  .input-box {
+    position: relative;
+    .input-container {
+      height: 40px;
+      display: inline-block;
+      width: 90%;
+      border: none;
+      font-size: 13px;
+      color: #242424;
+      letter-spacing: 0;
+
+      &::placeholder {
+        color: #ccc;
+      }
+    }
+    .clear-text {
+      position: absolute;
+      top: 14px;
+      right: 0px;
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      background-image: url('~src/assets/images/delete.png');
+      background-size: 100%;
+      z-index: 5;
+    }
+  }
+}

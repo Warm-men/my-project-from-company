@@ -1,0 +1,30 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.h5-payment {
+  width: 100vw;
+  img.suc {
+    display: block;
+    width: flex_pt(77);
+    height: flex_pt(77);
+    margin: 50px auto 26px;
+  }
+  p {
+    width: 100vw;
+    text-align: center;
+    font-size: 16px;
+  }
+  span {
+    display: block;
+    width: 100vw;
+    color: #989898;
+    font-size: 12px;
+    text-align: center;
+  }
+  img.code {
+    display: block;
+    width: flex_pt(250);
+    height: flex_pt(250);
+    margin: 30px auto;
+  }
+}

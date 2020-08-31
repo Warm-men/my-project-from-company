@@ -1,0 +1,29 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.list-loading {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loading-icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .loading-text {
+    line-height: 25px;
+    color: #5e5e5e;
+    font-size: 14px;
+  }
+}
+
+.loading-view {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}

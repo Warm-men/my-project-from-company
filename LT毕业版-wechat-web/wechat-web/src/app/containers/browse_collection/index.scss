@@ -1,0 +1,11 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.collections-list {
+  li {
+    margin-bottom: 0px;
+  }
+  .collections-box {
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,22 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.address-container {
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: flex_pt(6) flex_pt(10) 0px;
+  .address-btn {
+    position: fixed;
+    z-index: 99999;
+    display: inline-block;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    background-color: #d96545;
+  }
+}

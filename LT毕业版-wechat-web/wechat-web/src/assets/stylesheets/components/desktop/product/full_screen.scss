@@ -1,0 +1,22 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+.full-screen-container{
+    width: 100vw;
+    overflow: hidden;
+    margin-top: flex_pt(45);
+    .back-icon{
+        position: absolute;
+        right: flex_pt(20);
+        top:flex_pt(12);
+    }
+    .swiper-img{
+        display: inline-block;
+        width: 100%;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: '#f5f5f5';
+    }
+}
+.swiper-pagination-bullet{
+    background: #000;
+}

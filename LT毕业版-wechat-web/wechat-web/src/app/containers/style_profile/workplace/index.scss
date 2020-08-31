@@ -1,0 +1,10 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.tips-text {
+  margin: flex_pt(16) 0px flex_pt(40);
+  font-size: 13px;
+  color: #5e5e5e;
+  letter-spacing: 0;
+  text-align: center;
+}

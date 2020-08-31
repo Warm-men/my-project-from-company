@@ -1,0 +1,45 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+@import 'src/assets/stylesheets/variables';
+
+.appointment-tips-modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.58);
+  border-radius: 0;
+  z-index: 1005;
+  padding: 0px flex_pt(20);
+  .appointment-tips-container {
+    margin-top: flex_pt(200);
+    padding: flex_pt(30) flex_pt(35);
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    .tips-title {
+      font-size: flex_pt(16);
+      color: #000;
+      margin-bottom: flex_pt(20);
+    }
+    .tips-btn-box {
+      display: flex;
+      .tips-btn {
+        flex: 1;
+        &.marginRight {
+          margin-right: flex_pt(10);
+        }
+        &:first-child {
+          background-color: #f2be7d;
+        }
+        height: flex_pt(49);
+        line-height: flex_pt(49);
+        text-align: center;
+        display: inline-block;
+        background-color: #e85d40;
+        color: $white;
+        border-radius: flex_pt(2);
+      }
+    }
+  }
+}

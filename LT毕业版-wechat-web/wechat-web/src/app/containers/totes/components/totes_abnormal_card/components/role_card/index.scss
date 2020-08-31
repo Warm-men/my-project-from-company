@@ -1,0 +1,9 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.role-card-box {
+  padding: flex_pt(16);
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  text-align: center;
+}

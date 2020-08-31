@@ -1,0 +1,67 @@
+@import '~styles/flex_box';
+@import '~styles/variables';
+
+.payment-pending {
+  min-height: 100vh;
+  background-color: rgba(240, 240, 240, 0.6);
+  padding-bottom: 40px;
+  header {
+    width: flex_pt(375);
+    height: flex_pt(95);
+    background: url('./images/mine_waitpay_photo-text.png') no-repeat center;
+    background-size: flex_pt(375) flex_pt(95);
+  }
+  .warning {
+    width: 100vw;
+    font-size: 12px;
+    color: #545454;
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+
+.blank-page {
+  span.blank-icon {
+    display: block;
+    width: flex_pt(141);
+    height: flex_pt(120);
+    background: url('./images/mine_waitpayfor_no.png') no-repeat center;
+    background-size: flex_pt(141) flex_pt(120);
+    margin-top: 120px;
+  }
+  h3.title {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #242424;
+    font-weight: 500;
+  }
+  p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #989898;
+    line-height: 20px;
+  }
+}
+
+.instruction {
+  width: flex_pt(345);
+  margin: 24px auto 0;
+  line-height: 22px;
+  padding: 20px 25px;
+  background-color: $white;
+  p.payment-instr {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  .instr-desc {
+    font-size: 12px;
+    color: #5e5e5e;
+    a {
+      color: $primary-color-new;
+    }
+  }
+}

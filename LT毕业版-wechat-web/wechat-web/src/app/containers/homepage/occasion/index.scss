@@ -1,0 +1,54 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.hp-occasion {
+  .title {
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #242424;
+    letter-spacing: 2.6px;
+  }
+
+  .slider-item {
+    margin-top: 32px;
+    display: flex;
+    padding: 0px 16px 0px;
+    justify-content: space-between;
+    .occasion-img {
+      width: flex_pt(109);
+      height: flex_pt(145);
+    }
+    &:nth-child(2) {
+      margin-top: 16px;
+    }
+  }
+
+  .swiper-list {
+    // margin-left: 8px;
+    overflow-x: hidden;
+
+    .occasion-swiper-container {
+      height: flex_pt(192);
+
+      .swiper-wrapper {
+        width: 160vw;
+
+        img {
+          height: flex_pt(192);
+          width: flex_pt(128);
+        }
+
+        .occasion-swiper {
+          overflow: hidden;
+          &:first-child {
+            margin-left: 8px;
+          }
+
+          &:last-child {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}

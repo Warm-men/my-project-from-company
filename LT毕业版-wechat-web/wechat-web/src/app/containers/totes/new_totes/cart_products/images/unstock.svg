@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="18px" viewBox="0 0 50 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>待返架</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.2.7新衣箱-不能下单提醒" transform="translate(-279.000000, -261.000000)">
+            <g id="衣服" transform="translate(16.000000, 156.000000)">
+                <g id="待返架" transform="translate(263.000000, 105.000000)">
+                    <polygon id="Rectangle" fill="#242424" opacity="0.6" points="0 0 50 0 50 18 0 18"></polygon>
+                    <text font-family="PingFangSC-Regular, PingFang SC" font-size="11" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="9" y="13">待返架</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,58 @@
+.status-bar-free-service-return {
+  align-items: center;
+
+  .content-view {
+    display: flex;
+
+    .message {
+      font-size: 13px;
+      color: #5e5e5e;
+      letter-spacing: 0.4px;
+      line-height: 21px;
+      padding-right: 10px;
+    }
+
+    .button-view {
+      padding-left: 12px;
+      border-left: 1px solid #e8e8e8;
+      height: 32px;
+
+      .button {
+        width: 82px;
+        display: flex;
+        background: #e85c40;
+        border-radius: 2px;
+        font-size: 12px;
+        line-height: 32px;
+        color: #fff;
+        letter-spacing: 0.4px;
+        padding: 0 16px;
+      }
+    }
+  }
+  .timer {
+    background: #fafafa;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 15px;
+
+    .content {
+      font-size: 12px;
+      color: #5e5e5e;
+
+      .times {
+        color: #e7c27a;
+      }
+    }
+
+    .button {
+      font-size: 11px;
+      color: #989898;
+      letter-spacing: 0.2px;
+      line-height: 11px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.unbind-jd {
+  width: 100vw;
+  max-height: 100vh;
+  padding-top: flex_pt(200);
+
+  .icon-success {
+    width: 60px;
+    height: 60px;
+    display: block;
+    background: url('~src/assets/images/plans/icon_buysuccessful.png') no-repeat
+      center;
+    background-size: 100%;
+    margin: 0 auto;
+  }
+
+  p.unbind-text {
+    font-size: 14px;
+    width: 100vw;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+  }
+}

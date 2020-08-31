@@ -1,0 +1,71 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  .error-icon {
+    width: 99px;
+    margin-bottom: 12px;
+  }
+  .error-text {
+    font-size: 16px;
+    color: #242424;
+    letter-spacing: 0.46px;
+    text-align: center;
+    line-height: 16px;
+  }
+}
+
+.exchange-page {
+  background-image: url('./images/bg.png');
+  padding: flex_pt(60) flex_pt(30) 0px;
+  height: 100vh;
+  .exchange-box {
+    position: relative;
+    .text-box {
+      position: absolute;
+      top: flex_pt(180);
+      left: 0px;
+      text-align: center;
+      width: 100%;
+      font-size: 14px;
+      color: #5e5e5e;
+      letter-spacing: 0.79px;
+    }
+    .exchange-btn {
+      background: #ea5c39;
+      border-radius: 2px;
+      padding: 15px 56px;
+      display: inline-block;
+      color: #fff;
+      font-size: 14px;
+      margin-top: 33px;
+    }
+    .code-input {
+      border-radius: 4px;
+      border: 1px solid #5e5e5e;
+      width: flex_pt(248);
+      height: 44px;
+      text-align: center;
+      font-size: 15px;
+      &::placeholder {
+        color: #d4d4d4;
+      }
+    }
+    .btn-box {
+      position: absolute;
+      bottom: flex_pt(60);
+      left: 0px;
+      text-align: center;
+      width: 100%;
+      font-size: 14px;
+      color: #5e5e5e;
+      letter-spacing: 0.79px;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+version: 2
+jobs:
+  build-job:
+    working_directory: ~/mern-starter
+    docker:
+      - image: circleci/node:10
+    environment:
+      - CI: false
+    steps:
+      - checkout
+      - run:
+          name: install-npm-wee
+          command: yarn
+      - run:
+          name: test
+          command: yarn test --runInBand
+      - store_artifacts:
+          path: test-results.xml
+          prefix: tests
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
+      - store_test_results:
+          path: test-results.xml
+
+  deploy-job:
+    environment:
+      - CI: false
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/deploy-starter
+    steps:
+      - checkout
+      - add-ssh-keys:
+          fingerprints:
+            - '53:1f:d2:c0:88:85:c0:ae:ff:45:35:4a:d8:c6:71:5d'
+      - run:
+          name: install-rsync
+          command: sudo apt install rsync
+      - run:
+          name: install-npm
+          command: yarn install
+      - run:
+          name: build project
+          command: yarn build
+      - run:
+          name: upload
+          command: rsync -e "ssh -o StrictHostKeyChecking=no -p 11690" -azP --delete ./build/* ubuntu@52.83.224.191:/var/www/react/build/
+      - run:
+          name: upload to aliyun develop
+          command: ssh -o StrictHostKeyChecking=no -p 11690 ubuntu@52.83.224.191 '/bin/sh /usr/local/shell/sync-s3-static.sh'
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build-job
+      - deploy-job:
+          requires:
+            - build-job
+          filters:
+            branches:
+              only: master

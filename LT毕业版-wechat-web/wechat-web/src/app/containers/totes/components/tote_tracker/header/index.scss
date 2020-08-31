@@ -1,0 +1,59 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.tote-tracker-header {
+  padding: 0 16px 20px;
+}
+
+.tote-progress-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+
+  .progress-status {
+    display: flex;
+    align-items: center;
+
+    .title {
+      font-size: flex_pt(16);
+      color: #333;
+      letter-spacing: 0.6px;
+      font-weight: 500;
+      margin-right: 12px;
+    }
+
+    .arrow {
+      width: 10px;
+      height: 6px;
+    }
+
+    .arrow-close {
+      width: 10px;
+      height: 6px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+
+    .button {
+      font-size: 12px;
+      color: #5e5e5e;
+      letter-spacing: 0.2px;
+      margin: 0 flex_pt(20);
+      line-height: 24px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    span {
+      width: 1px;
+      height: 12px;
+      background: #e8e8e8;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.container-box {
+  .sticky-button-fixed {
+    left: 0px;
+    &.submiting {
+      background-color: #f8cfc4;
+    }
+  }
+  .sticky-button-fixed {
+    display: flex;
+    .left-btn {
+      border: 1px solid #979797;
+      border-radius: 2px;
+      background-color: #fff;
+      color: #5e5e5e;
+      margin-right: flex_pt(7.5);
+      padding: flex_pt(10) 0px;
+    }
+    .right-btn {
+      background: #e85c40;
+      border-radius: 2px;
+      color: #fff;
+      padding: flex_pt(10) 0px;
+    }
+  }
+  .action-button-component {
+    margin-top: 0px;
+    &.left-btn:hover {
+      background-color: transparent !important;
+    }
+  }
+  .action-button-component.primary:disabled {
+    background-color: #f9cec5;
+    color: #ffffff;
+  }
+}

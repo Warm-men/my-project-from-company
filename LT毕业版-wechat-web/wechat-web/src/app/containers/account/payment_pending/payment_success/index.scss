@@ -1,0 +1,31 @@
+@import '~styles/flex_box';
+@import '~styles/variables';
+
+.payment-pending-suc {
+  .payment-bg {
+    width: flex_pt(76);
+    height: flex_pt(76);
+    margin: 118px auto 16px;
+    background: url('~src/assets/images/plans/icon_buysuccessful.png') no-repeat
+      center;
+    background-size: 100%;
+  }
+  .pay-suc {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    font-size: 14px;
+    color: #5e5e5e;
+  }
+  .go-back {
+    width: flex_pt(200);
+    height: flex_pt(48);
+    line-height: flex_pt(48);
+    text-align: center;
+    border: 1px solid #b2b2af;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #242424;
+    margin: 40px auto;
+  }
+}

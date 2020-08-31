@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>选中</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-109.000000, -63.000000)">
+            <g id="选中" transform="translate(109.000000, 63.000000)">
+                <circle id="Oval-Copy" fill="#E85C40" cx="10" cy="10" r="10"></circle>
+                <polygon id="Combined-Shape" fill="#FFFFFF" points="8.53553391 11.9497475 13.4852814 7 14.1923882 7.70710678 8.53553391 13.363961 5 9.82842712 5.70710678 9.12132034"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+@import '~styles/flex_box';
+.product-detail-guide {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 120;
+  background-color: #00000099;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  .guide-img {
+    background-image: url('~src/app/containers/product/guide/images/guide.png');
+    background-size: 100%;
+    width: 100vw;
+    height: flex_pt(250);
+    background-repeat: no-repeat;
+  }
+}

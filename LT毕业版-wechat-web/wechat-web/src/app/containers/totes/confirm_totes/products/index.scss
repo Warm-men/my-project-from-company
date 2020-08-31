@@ -1,0 +1,14 @@
+.tote-products-container {
+  .products {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .empty {
+    flex: 1;
+  }
+
+  .custom-product {
+    flex: 1;
+  }
+}

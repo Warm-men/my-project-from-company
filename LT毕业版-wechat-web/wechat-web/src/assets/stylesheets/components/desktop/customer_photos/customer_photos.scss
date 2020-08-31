@@ -1,0 +1,59 @@
+.collection {
+  padding-top: 2vw;
+  background-color: #f7f7f7;
+}
+
+.customer-sharing-cell {
+  width: 96vw;
+  box-shadow: 0px 2px 6px 0px rgba(52, 59, 69, .1);
+  margin-left: 2vw;
+  border: solid 0.5px rgba(158, 159, 160, 0.1);
+  background-color: #fff;
+  img{
+    pointer-events: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+
+    &.sharing-user {
+      height: 18vw;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 20px 10px 15px 10px;
+
+      }
+    }
+    &.sharing-product {
+      display: flex;
+      img {
+        width: 45px;
+        height: 68px;
+        margin: 10px 10px 15px 10px;
+      }
+    }
+
+    li {
+      float: left;
+      text-align: left;
+    }
+    img {
+      width: 96vw;
+      height: 96vw;
+    }
+  }
+
+  .sharing-productname {
+    font-size: 14px;
+    margin-top: 18px;
+    max-width: 180px;
+    display: block;
+  }
+
+  .sharing-brand {
+    font-size: 12px;
+    color: #b3b1b3;
+  }
+}

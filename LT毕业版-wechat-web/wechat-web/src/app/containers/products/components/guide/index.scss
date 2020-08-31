@@ -1,0 +1,17 @@
+@import '~styles/flex_box';
+.closet-products-guide {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 120;
+  background-color: #00000099;
+  height: 100vh;
+  .guide-img {
+    margin-top: flex_pt(20);
+    background-image: url('~src/app/containers/products/components/guide/images/guide_closet.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: flex_pt(250);
+  }
+}

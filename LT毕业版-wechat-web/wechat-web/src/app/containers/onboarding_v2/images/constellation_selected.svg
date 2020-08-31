@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>选中</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="第8步-基本信息" transform="translate(-316.000000, -570.000000)">
+            <g id="选中" transform="translate(316.000000, 570.000000)">
+                <path d="M18,0 L18,16 C18,17.1045695 17.1045695,18 16,18 L0,18 L18,0 Z" id="Rectangle" fill="#F2BE7D"></path>
+                <polygon id="Combined-Shape" fill="#FFFFFF" transform="translate(11.199747, 12.785534) rotate(-360.000000) translate(-11.199747, -12.785534) " points="10.1390873 14.1997475 14.381728 9.95710678 15.0888348 10.6642136 10.1390873 15.613961 7.31066017 12.7855339 8.01776695 12.0784271"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

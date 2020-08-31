@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>不满意icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="评价" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.评价衣服-已点评" transform="translate(-283.000000, -240.000000)">
+            <g id="不满意icon" transform="translate(283.000000, 240.000000)">
+                <circle id="Oval-12-Copy" fill="#FFDA34" transform="translate(9.000000, 9.000000) scale(-1, 1) translate(-9.000000, -9.000000) " cx="9" cy="9" r="9"></circle>
+                <circle id="Oval-5" fill="#242424" cx="6" cy="7" r="1"></circle>
+                <circle id="Oval-5-Copy" fill="#242424" cx="12" cy="7" r="1"></circle>
+                <path d="M5.5,11 L12.5,11 C12.7761424,11 13,11.2238576 13,11.5 L13,11.5 C13,11.7761424 12.7761424,12 12.5,12 L5.5,12 C5.22385763,12 5,11.7761424 5,11.5 L5,11.5 C5,11.2238576 5.22385763,11 5.5,11 Z" id="Rectangle-22" fill="#242424" transform="translate(9.000000, 11.500000) rotate(-370.000000) translate(-9.000000, -11.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

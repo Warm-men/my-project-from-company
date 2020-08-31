@@ -1,0 +1,87 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.reappointment-ratings-tips {
+  background: #fff6e9;
+  padding: flex_pt(13) flex_pt(20);
+
+  .ratings-tips {
+    font-size: 13px;
+    color: #e89140;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+}
+
+.margin-tips {
+  margin-top: flex_pt(114);
+}
+
+.satisfyTips {
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+.wrapper-star {
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.09);
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.star-submit-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .rating-btn {
+    color: #ea5c39;
+    border: 1px solid #ea5c39;
+    position: relative;
+
+    .rating-icon {
+      position: absolute;
+      top: flex_pt(-13);
+      right: flex_pt(5);
+      background: url('~src/app/containers/ratings/images/prize_of_bubble.svg')
+        no-repeat;
+      width: flex_pt(70);
+      height: flex_pt(23);
+      background-size: 100%;
+    }
+  }
+
+  .appointment-btn {
+    color: #ffffff;
+    background: #e85c40;
+  }
+
+  .submit-btn {
+    letter-spacing: 0;
+    font-size: 14px;
+    width: flex_pt(168.5);
+    height: flex_pt(40);
+    display: inline-block;
+    line-height: flex_pt(40);
+    text-align: center;
+    border-radius: 2px;
+  }
+
+  .maxwidth {
+    width: 100%;
+  }
+}
+
+.tote-ratings-container {
+  .sticky-button-fixed {
+    padding: 0px 15px 10px;
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>我的-常见问题icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="我的-常见问题icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle-9" x="0" y="0" width="24" height="24"></rect>
+            <path d="M6.67954464,20.3469835 L2.97549719,20.8027203 L3.68314963,17.4520733 C3.08285102,16.5595583 2.61744771,15.554218 2.32349061,14.4571551 C0.894072495,9.12249411 4.05989739,3.63912454 9.39455842,2.20970643 C14.7292195,0.78028831 20.212589,3.9461132 21.6420071,9.28077424 C23.0714253,14.6154353 19.9056004,20.0988048 14.5709393,21.528223 C11.7807078,22.2758632 8.94979417,21.7663876 6.67954464,20.3469835 Z" id="Combined-Shape" stroke="#242424" stroke-width="1.5"></path>
+            <g id="Group-10" transform="translate(10.000000, 7.000000)">
+                <path d="M2,6.02119926 C2,5.20039848 2.26879929,4.56574014 3.17128888,3.91261598 C3.67336188,3.54926996 4,2.95843027 4,2.29130017 C4,1.18673067 3.1045695,0.291300168 2,0.291300168 C0.8954305,0.291300168 0,1.18673067 0,2.29130017" id="Oval-3" stroke="#EA5C39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <circle id="Oval-5" fill="#EA5C39" cx="2" cy="9" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

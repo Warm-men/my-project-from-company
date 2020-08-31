@@ -1,0 +1,26 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+@import 'src/assets/stylesheets/_colors.scss';
+
+.product-size-chart{
+  .modal-overlay{
+    background-color:rgba($color:#fff, $alpha: .0)
+  }
+  .chart-container{
+    margin-bottom: flex_pt(30);
+    .chart-title{
+      height: flex_pt(49);
+      padding: flex_pt(14) flex_pt(20) flex_pt(13) flex_pt(15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0px;
+      font-size: flex_pt(16);
+      color: #242424;
+    }
+    .chart-img{
+      width: flex_pt(325);
+      margin: flex_pt(26) auto 0px;
+      display: inherit;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+.closet-empty-container{
+    text-align: center;
+    padding-top: flex_pt(122);
+    height: 100vh;
+    .closet-empty-image{
+        width: flex_pt(138);
+        height: flex_pt(119);
+        background-image: url('~src/assets/images/products/mine_collect.png');
+        margin: 0 auto;
+        background-size: 100%;
+    }
+    .closet-empty-text{
+        color:#5e5e5e;
+        font-size: flex_pt(14);
+        margin-top: flex_pt(20);
+
+    }
+    .closet-empty-button{
+        width: flex_pt(180);
+        line-height: flex_pt(48);
+        text-align: center;
+        height: flex_pt(48);
+        border: 1px solid #b2b2af;
+        display: inline-block;
+        border-radius: flex_pt(4);
+        margin-top: 15px;
+    }
+}

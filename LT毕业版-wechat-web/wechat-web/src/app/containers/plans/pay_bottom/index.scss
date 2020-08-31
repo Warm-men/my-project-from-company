@@ -1,0 +1,56 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.pay {
+  width: 100vw;
+  height: flex_pt(64);
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+
+  .vip-time {
+    font-size: flex_pt(11);
+    color: #989898;
+    margin-left: flex_pt(19);
+  }
+
+  .pay-not-deadline {
+    margin-top: 10px;
+  }
+
+  .pay-money-title {
+    display: inline-block;
+    color: #242424;
+    line-height: flex_pt(18);
+    font-size: flex_pt(14);
+    margin-left: flex_pt(19);
+  }
+
+  .pay-money-price {
+    display: inline-block;
+    line-height: flex_pt(18);
+    color: #e85c40;
+    font-size: flex_pt(20);
+    margin-top: flex_pt(14);
+    margin-bottom: flex_pt(4);
+  }
+
+  button {
+    width: 44vw;
+    height: 12vw;
+    background-color: #e85c40;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 0.53vw;
+    font-size: 4.3vw;
+    position: absolute;
+    right: 4vw;
+    top: 2.13vw;
+
+    &.submit {
+      background-color: #f8cec5;
+    }
+  }
+}

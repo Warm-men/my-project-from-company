@@ -1,0 +1,17 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.remind {
+  border-top: flex_pt(7) solid #f7f7f7;
+  padding: 10px 15px 15px;
+}
+.remindTitle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+  margin: 13px 0;
+}
+.remindContent {
+  font-size: 13px;
+  color: #999;
+  line-height: 24px;
+}

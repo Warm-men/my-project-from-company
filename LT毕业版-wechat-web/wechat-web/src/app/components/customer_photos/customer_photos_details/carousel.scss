@@ -1,0 +1,14 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+#customer-photo-detail-carousel {
+  width: flex_pt(345);
+  height: flex_pt(460);
+  margin: 0px auto;
+  .customer-photo-detail-image {
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+}

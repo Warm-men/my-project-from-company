@@ -1,0 +1,33 @@
+@import '~styles/variables';
+@import '~styles/flex_box';
+
+.basic-size {
+  .page1 {
+    margin-top: 6px;
+
+    .size-groups {
+      margin-top: 25px;
+
+      .title {
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: 0;
+        line-height: 16px;
+      }
+
+      .size-button {
+        display: inline-block;
+        width: flex_pt(40);
+        height: flex_pt(32);
+        line-height: flex_pt(32);
+        text-align: center;
+        border: 1px solid #cccccc;
+        border-radius: 2px;
+        margin-right: 16px;
+        margin-top: 12px;
+        font-size: 13px;
+        color: #5e5e5e;
+      }
+    }
+  }
+}

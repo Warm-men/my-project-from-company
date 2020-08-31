@@ -1,0 +1,70 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+@import 'src/assets/stylesheets/variables';
+.wx-address-info {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: flex_box_height(20);
+  .username-tips {
+    font-size: flex_pt(12);
+    color: #e85c40;
+    letter-spacing: -0.29px;
+    line-height: 18px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    .icon {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      background-image: url('./images/icon.svg');
+      background-size: 100%;
+      margin-right: 8px;
+    }
+  }
+  .bg-color {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $faint-gray;
+    border-radius: 30px;
+    position: relative;
+    p.send-title {
+      font-size: flex_pt(16);
+    }
+    div {
+      padding-left: flex_pt(16);
+      width: 90%;
+      font-size: 14px;
+      position: relative;
+    }
+    span {
+      position: absolute;
+      top: 10px;
+      right: flex_pt(16);
+      display: inline-block;
+      color: $mid-gray;
+      width: flex_pt(8);
+      height: flex_pt(16);
+      background: url('~src/assets/images/account/next.svg') no-repeat center;
+      background-size: flex_pt(8) flex_pt(16);
+    }
+    .address-icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .bg-color-no-info {
+    position: relative;
+    height: 48px;
+    div {
+      position: relative;
+      top: -18px;
+      left: 0;
+      padding-left: flex_pt(16);
+      font-size: 14px;
+    }
+    span {
+      top: 10px;
+    }
+  }
+}

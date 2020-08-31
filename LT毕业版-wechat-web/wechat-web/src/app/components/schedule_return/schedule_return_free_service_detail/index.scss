@@ -1,0 +1,29 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.toteFreeServiceDetails {
+  .container {
+    margin-bottom: 8px;
+    padding: 0 flex_pt(16);
+  }
+  .subTitleVeiw {
+    margin-top: flex_pt(32);
+  }
+  .subTitleText {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+  }
+  .returnTypeVeiw {
+    margin-top: 25px;
+  }
+  .returnText {
+    font-size: 14px;
+    color: #5e5e5e;
+    margin-bottom: 12px;
+  }
+  .text {
+    font-size: 13px;
+    color: #999;
+    line-height: 24px;
+  }
+}

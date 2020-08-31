@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="335px" height="2px" viewBox="0 0 335 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>进度条-线条</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.评价-未评" transform="translate(-20.000000, -407.000000)" fill="#E4E4E4">
+            <g id="Group-4" transform="translate(20.000000, 401.000000)">
+                <path d="M1,6 L334,6 C334.552285,6 335,6.44771525 335,7 L335,7 C335,7.55228475 334.552285,8 334,8 L1,8 C0.44771525,8 6.76353751e-17,7.55228475 0,7 L0,7 C-6.76353751e-17,6.44771525 0.44771525,6 1,6 Z" id="进度条-线条"></path>
+            </g>
+        </g>
+    </g>
+</svg>

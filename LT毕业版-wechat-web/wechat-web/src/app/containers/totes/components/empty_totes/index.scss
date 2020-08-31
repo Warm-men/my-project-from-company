@@ -1,0 +1,36 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.empty-totes-guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+
+  .image {
+    width: flex_pt(180);
+    height: flex_pt(168);
+    margin-bottom: flex_pt(32);
+  }
+
+  span {
+    font-size: 14px;
+    color: #696969;
+    letter-spacing: 0.4px;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .button {
+    margin-top: 26px;
+    width: 160px;
+    background: #e85c40;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0.4px;
+    text-align: center;
+    line-height: 42px;
+  }
+}

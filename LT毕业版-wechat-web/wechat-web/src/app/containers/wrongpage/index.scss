@@ -1,0 +1,22 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.wrong-page {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .wrong-img {
+    margin: 0 auto;
+    width: flex_box_width(180);
+    height: flex_box_height(180);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('~src/assets/images/wrong/wrong.png');
+  }
+  .wrong-text {
+    margin-top: flex_box_height(57);
+    font-size: flex_box_width(28);
+    color: rgb(159, 157, 166);
+  }
+}

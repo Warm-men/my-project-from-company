@@ -1,0 +1,188 @@
+@import '~styles/flex_box.scss';
+@import '~styles/_variables.scss';
+
+.migration-details {
+  .mig-banner {
+    width: 100vw;
+    height: flex_pt(186);
+    background: url('./images/migration_banner.png') no-repeat center;
+    background-size: 100%;
+  }
+
+  .mig-box {
+    width: flex_pt(316);
+    padding: 36px 18px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: flex_pt(-60) auto 0;
+    padding-top: 24px;
+    background-color: $white;
+
+    .mig-item {
+      width: 285px;
+      margin: 0 auto;
+
+      i.icon {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        background: url('./images/no_letote_icon.png') no-repeat center;
+        background-size: 42px;
+      }
+
+      &:nth-of-type(2) {
+        i.icon {
+          background-image: url('./images/letote.png');
+        }
+      }
+
+      &:nth-of-type(3) {
+        i.icon {
+          background-image: url('./images/membership_data.png');
+        }
+      }
+
+      .desc {
+        display: inline-block;
+        height: 70px;
+        line-height: 70px;
+        width: 215px;
+        vertical-align: top;
+        border-bottom: 1px solid #f2f2f2;
+        font-size: 14;
+        color: #5e5e5e;
+
+        .detail {
+          display: inline-block;
+          width: 90px;
+        }
+
+        .count {
+          padding-left: 20px;
+          font-size: 16px;
+          color: #242424;
+          width: 245px;
+        }
+      }
+    }
+
+    .upgrade {
+      width: flex_pt(255);
+      margin: 26px auto 15px;
+    }
+
+    .consulting-service {
+      width: flex_pt(255);
+      margin: 0 auto;
+      border-color: #cccccc;
+    }
+  }
+}
+
+.migration-alert {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999999;
+
+  .migration-icon {
+    width: 256px;
+    height: 238px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+
+    .migration-btn {
+      width: 200px;
+      height: 60px;
+      position: absolute;
+      bottom: -18px;
+      left: 20px;
+      opacity: 0;
+      z-index: 999;
+    }
+  }
+}
+
+.more-migration-containers {
+  background: #f7f7f7;
+  min-height: 100vh;
+  .mig-options-box {
+    padding: flex_pt(32) flex_pt(20) 0px;
+    .options-title {
+      font-size: 16px;
+      color: #242424;
+      letter-spacing: 0;
+      line-height: 15px;
+      margin-bottom: flex_pt(16);
+    }
+    .migration-options {
+      background: #ffffff;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      margin-bottom: flex_pt(12);
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      &.selected {
+        background: #f9eae8;
+        border: 1px solid #e85c40;
+      }
+      .select-box {
+        margin-right: flex_pt(16);
+        margin-left: flex_pt(16);
+      }
+      .select-icon {
+        display: inline-block;
+        width: flex_pt(20);
+        height: flex_pt(20);
+        border-radius: 50%;
+        border: 1px solid $mid-gray;
+      }
+      .selected {
+        background: url('~src/assets/images/plans/ok.png') no-repeat center;
+        background-size: flex_pt(20);
+        border: 1px solid #e85c40;
+      }
+      .option-box {
+        padding-top: flex_pt(16);
+        padding-bottom: flex_pt(16);
+        .bold-font {
+          font-size: 13px;
+          color: #121212;
+          letter-spacing: 0.4px;
+          line-height: 14px;
+        }
+        .option-title {
+          font-size: 18px;
+          color: #242424;
+          letter-spacing: 0.6px;
+          line-height: 18px;
+          padding-bottom: 10px;
+          border-bottom: 1px dashed #cccccc;
+          margin-bottom: 10px;
+        }
+        .option-text {
+          font-size: 13px;
+          color: #5e5e5e;
+          letter-spacing: 0.4px;
+          line-height: 14px;
+          margin-bottom: 8px;
+          .tips-icon {
+            margin-right: 6px;
+          }
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}

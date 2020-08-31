@@ -1,0 +1,36 @@
+@import 'src/assets/stylesheets/variables';
+@import 'src/assets/stylesheets/flex_box.scss';
+.product-freeservice-container {
+  border-bottom: 1px solid #f3f3f3;
+  .product-freeservice {
+    height: 41px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding-left: 16px;
+    padding-right: 16px;
+    .product-freeservice-desc {
+      font-size: 14px;
+      color: #242424;
+      letter-spacing: 0.4px;
+      line-height: 14px;
+    }
+    .product-freeservice-button {
+      background: #e85c40;
+      display: flex;
+      border-radius: 15px;
+    }
+    .button-text {
+      padding: 3px;
+      padding-left: 9px;
+      padding-right: 9px;
+      color: #ffffff;
+      font-size: 13px;
+    }
+  }
+  &.line {
+    padding-bottom: 20px;
+  }
+}

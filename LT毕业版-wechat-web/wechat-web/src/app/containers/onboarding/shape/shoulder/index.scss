@@ -1,0 +1,39 @@
+.shape-shoulder-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #242424;
+  letter-spacing: 0.4px;
+  padding: 36px 10px 24px;
+}
+
+.shape-shoulder-box {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .shape-shoulder-item {
+    height: 44px;
+    border-radius: 22px;
+    border: 1px solid #ccc;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .shape-shoulder-item-title {
+      font-size: 14px;
+      color: #242424;
+      letter-spacing: 0.4px;
+    }
+    .shape-shoulder-item-title-active {
+      font-size: 14px;
+      color: #e85c40;
+      letter-spacing: 0.4px;
+    }
+  }
+  .active {
+    background: #fff5f4;
+    border: 1px solid #e85c40;
+  }
+}

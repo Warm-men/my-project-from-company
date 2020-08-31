@@ -1,0 +1,113 @@
+@import '~styles/variables';
+@import '~styles/flex_box.scss';
+
+.change-telephone-container {
+  padding: flex_pt(60) flex_pt(20) 0px;
+  .change-telephone-title {
+    color: #242424;
+    font-size: flex_pt(15);
+    font-weight: 350;
+  }
+  .change-telephone-tel {
+    color: #242424;
+    font-size: flex_pt(24);
+    margin-top: flex_pt(20);
+    clear: both;
+  }
+  .change-telephone-tip {
+    color: #989898;
+    font-size: flex_pt(12);
+    margin-top: flex_pt(35);
+  }
+  .change-telephone-icon {
+    width: flex_pt(13);
+    height: flex_pt(17);
+    background-image: url('~src/assets/images/phone.png');
+    background-size: 100%;
+    float: left;
+    margin-right: flex_pt(8);
+  }
+  .change-telephone-btn {
+    &.nickname-btn {
+      margin-top: flex_pt(30);
+    }
+    &:disabled {
+      background-color: #f8cec5 !important;
+      color: #fff !important;
+    }
+    width: 100%;
+    height: flex_pt(48);
+    background-color: #e85c40;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin-top: flex_pt(50);
+  }
+  .input-tip-text {
+    font-size: flex_pt(12);
+    color: #989898;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.bind-tel {
+  width: 100vw;
+  .logo {
+    width: flex_pt(41);
+    height: flex_pt(28);
+    background-image: url('~src/assets/images/logo.png');
+    display: block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 80px auto 56px;
+  }
+  span {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    font-size: 12px;
+    color: #5e5e5e;
+    margin-top: 80px;
+  }
+  .tel {
+    width: 100vw;
+    font-size: 24px;
+    color: $darkest-gray;
+    text-align: center;
+    margin: 10px 0 64px;
+    font-weight: 500;
+  }
+}
+
+.AccountContainerBox {
+  .update-select-box {
+    .select-container {
+      border: none;
+      font-size: 12px;
+      color: #666666;
+      padding-top: inherit;
+      padding-bottom: inherit;
+      &::placeholder {
+        color: #c8c8c8;
+      }
+    }
+  }
+}
+
+.update-brithday-input {
+  .date-pick {
+    line-height: 13px;
+    height: inherit;
+    padding-left: 0px;
+    text-align: left;
+  }
+  .date-pick a.select-btn.select {
+    color: #666666;
+  }
+  .date-pick a.select-btn {
+    text-align: left;
+  }
+}

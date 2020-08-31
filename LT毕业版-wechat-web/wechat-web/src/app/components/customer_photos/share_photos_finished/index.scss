@@ -1,0 +1,70 @@
+@import 'src/assets/stylesheets/flex_box.scss';
+
+.finished-share-container {
+  padding-bottom: 36px;
+  .share-topic {
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #5e5e5e;
+    letter-spacing: 0.4px;
+    line-height: 23px;
+  }
+  .scroll-wrapper-view {
+    padding-left: 15px;
+    .photos-img-views {
+      margin-top: 16px;
+      .img-wrapper {
+        width: 200px;
+        height: 294px;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+  .related-product {
+    padding-left: 15px;
+    margin-top: 20px;
+    .related-product-title {
+      font-size: 14px;
+      color: #333333;
+      font-weight: 500;
+    }
+    .related-product-img-views {
+      margin-top: 16px;
+      .img-wrapper {
+        width: 60px;
+        margin-right: 12px;
+        .related-product-img {
+          width: 60px;
+        }
+      }
+    }
+  }
+  .tags-view {
+    margin-top: 24px;
+    padding-left: 15px;
+    .tags-view-title {
+      font-size: 14px;
+      color: #333333;
+      font-weight: 500;
+    }
+    .tage-wrapper {
+      margin-top: 16px;
+      display: flex;
+      .tag {
+        height: 26px;
+        width: 80px;
+        border: 1px solid #e85c40;
+        border-radius: 40px;
+        background-color: #fff2ef;
+        margin-right: 8px;
+        font-size: 12px;
+        color: #e85c40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

@@ -1,0 +1,332 @@
+@import '~styles/flex_box.scss';
+@import '~styles/variables';
+
+.new-gift {
+  width: flex_pt(60);
+  height: flex_pt(60);
+  position: fixed;
+  right: flex_pt(20);
+  bottom: flex_pt(78);
+  z-index: 99999;
+}
+
+.title-box {
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title-border {
+      border-bottom: 1px solid #cdcdcd;
+      display: inline-block;
+      width: 27px;
+      height: 1px;
+    }
+
+    .title-text {
+      font-size: 18px;
+      color: #000000;
+      letter-spacing: 1px;
+      text-align: center;
+      line-height: 18px;
+      margin: 0px 8px;
+    }
+  }
+}
+
+.homepage-banner-box {
+  position: relative;
+
+  .banner {
+    width: 100%;
+    min-height: flex_pt(410);
+  }
+}
+
+.place-holer {
+  margin-top: flex_pt(328);
+}
+
+.nonmember-first-tote {
+  width: flex_pt(344);
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 24px 16px;
+
+  .non-title {
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0.6px;
+    text-align: center;
+
+    .money {
+      font-size: 18px;
+      color: $primary-color-new;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  .first-tote-banner {
+    display: block;
+    width: flex_pt(310);
+    height: flex_pt(66);
+    background: url('./images/first_tote_banner.png') no-repeat center;
+    background-size: 100%;
+    margin: 16px auto;
+  }
+
+  .custom {
+    width: flex_pt(310);
+  }
+
+  &.first-tote {
+    height: flex_pt(240);
+  }
+
+  .tote-preview {
+    width: flex_pt(300);
+    height: 88px;
+    margin-top: 16px;
+    background: #242424;
+    border-radius: 4px;
+    padding-top: 12px;
+
+    .tote-lists {
+      margin-left: 6px;
+      .image-item {
+        width: flex_pt(42);
+        height: 64px;
+        display: inline-block;
+        margin-right: 6px;
+        &:last-child {
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  .exchange-clothing {
+    width: flex_pt(145);
+    border: 1px solid #cccccc;
+    float: left;
+    margin-top: 16px;
+  }
+
+  .payment-tote {
+    float: right;
+    width: flex_pt(152);
+    margin-top: 16px;
+  }
+}
+
+.other-homepage-activity {
+  margin-top: flex_pt(48);
+  padding: 0px flex_pt(16);
+
+  .activity-container {
+    margin-top: flex_pt(24);
+
+    .activity-img {
+      margin-bottom: flex_pt(16);
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.homepgae-play-container {
+  position: absolute;
+  bottom: -26%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #ffffff;
+  border: 0 solid #f3f3f3;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding-top: flex_pt(32);
+  width: flex_pt(343);
+}
+
+.other-homepage-play {
+  .play-tips {
+    margin-top: flex_pt(24);
+    font-size: 12px;
+    color: #242424;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .flow-img {
+    margin-top: flex_pt(16);
+  }
+
+  .play-icons-containers {
+    text-align: center;
+    margin-top: flex_pt(24);
+
+    .icon {
+      margin-right: flex_pt(45);
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  .join-member-btn {
+    margin-top: flex_pt(24);
+    background: #e85c40;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    display: inline-block;
+    width: flex_pt(311);
+    height: flex_pt(48);
+    line-height: flex_pt(48);
+    margin-bottom: flex_pt(46);
+  }
+
+  .join-member-btn-abtest {
+    margin-top: flex_pt(20);
+    background: #e85c40;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    display: inline-block;
+    width: flex_pt(311);
+    height: flex_pt(48);
+    line-height: flex_pt(48);
+  }
+}
+
+.introduction-img {
+  width: flex_pt(303);
+  display: block;
+  margin: 12px auto 0;
+}
+
+.help-btn {
+  font-size: 12px;
+  color: #989898;
+  display: flex;
+  height: flex_pt(48);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: flex_pt(10);
+}
+
+.what-icon {
+  width: flex_pt(14);
+  margin-right: flex_pt(6);
+}
+
+.other-homepage-brand {
+  margin-top: flex_pt(48);
+
+  .other-homepage-brand-box {
+    padding: 0px flex_pt(16);
+    margin-top: flex_pt(24);
+
+    .brands-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: flex_pt(8);
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      .brand-img {
+        width: flex_pt(109);
+        height: flex_pt(82);
+      }
+    }
+  }
+
+  .check-brands-btn {
+    border: 1px solid #f3f3f3;
+    border-radius: 4px;
+    font-size: 14px;
+    width: flex_pt(343);
+    height: flex_pt(48);
+    line-height: flex_pt(48);
+    display: inline-block;
+    margin-top: flex_pt(16);
+  }
+}
+
+.other-homepage-styles {
+  margin-top: flex_pt(48);
+}
+
+.styles-containers {
+  margin-top: flex_pt(24);
+}
+
+.other-homepage-occasion {
+  margin-top: flex_pt(48);
+
+  .other-occasion-container {
+    margin-top: flex_pt(24);
+
+    .products-list {
+      .products-list-row {
+        display: flex;
+        border-top: 1px solid #f3f3f3;
+
+        &:last-child {
+          .product-box {
+            &:nth-of-type(1) {
+              border-bottom: 1px solid #f3f3f3;
+            }
+
+            &:nth-of-type(2) {
+              border-bottom: 1px solid #f3f3f3;
+            }
+          }
+        }
+
+        .product-box {
+          width: 50%;
+          overflow: hidden;
+          .product-thumbnail {
+            img {
+              max-height: flex_pt(280);
+            }
+          }
+
+          &:first-child {
+            border-right: 1px solid #f3f3f3;
+          }
+        }
+      }
+    }
+
+    .occasion-box {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-bottom: flex_pt(16);
+      display: flex;
+      justify-content: space-between;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      .img-box {
+        width: 109px;
+        width: flex_pt(109);
+        border-radius: 4px;
+      }
+    }
+  }
+}

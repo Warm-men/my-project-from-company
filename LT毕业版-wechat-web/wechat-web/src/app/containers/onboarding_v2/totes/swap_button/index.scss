@@ -1,0 +1,34 @@
+@import '~styles/flex_box.scss';
+
+.onboarding-tote-swap-button {
+  .swap-button {
+    border: 1px solid #b2b2af;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 1.05px;
+    text-align: center;
+    line-height: 46px;
+    margin: 14px;
+  }
+
+  .lock-button {
+    background: #e85c40;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1.05px;
+    text-align: center;
+    line-height: 46px;
+    margin: 14px;
+  }
+
+  .onboarding-tip {
+    font-size: 13px;
+    color: #5e5e5e;
+    letter-spacing: 0.37px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+}
